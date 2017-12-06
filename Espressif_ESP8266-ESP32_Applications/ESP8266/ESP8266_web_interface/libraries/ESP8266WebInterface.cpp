@@ -15,10 +15,6 @@ WebInterface::WebInterface()
 	updateHomePage();
 }
 
-String WebInterface::resetPage()
-{
-   return headerPage();
-}
 
 String WebInterface::headerPage()
 {
@@ -28,7 +24,6 @@ String WebInterface::headerPage()
 	tempPage += MICROSEMI_LOGO;
 	tempPage += CALIT2_LOGO;
     tempPage += "<p>Microsemi Innovation Laboratory, UC Irvine/Calit2</p><br>";
-	tempPage += "<p><a href=\"/\"><button>HOME</button></a></p>";
 	return tempPage;
 }
 
@@ -36,19 +31,19 @@ String WebInterface::headerPage()
 void WebInterface::updateHomePage()
 {
 	homePage =  headerPage();
-	homePage += "<meta http-equiv='refresh' content='2'/>";
 	homePage += "<p><b>Inputs to send:</b></p>";
 	homePage += "<p><b>-------------------------------</b></p>";
 
-	for(int i = 0 ; i < MAX_LED;i++)
+	for(int i = 0 ; i < 2;i++)
 		homePage += "<p>LED"+String(i)+" <a href=\"LED"+String(i)+"_ON\"><button>ON</button></a><a href=\"LED"+String(i)+"_OFF\"><button>OFF</button></a></p>";
   	
-  	homePage += "<p><a href=\"RESET\"><button>RESET</button></a></p>";
+  	//homePage += "<p><a href=\"/\"><button>REFRESH LOOP</button></a></p>"; //example: from static page to refreshing page if refreshing is disabled
+  	homePage += "<p><a href=\"RESET\"><button>ESP RESET</button></a></p>";
   	homePage += "<p><b>-------------------------------</b></p>";
   	homePage += "<p><b>Messages to report:</b></p>";
   	homePage += "<b>-------------------------------</b>";
   	homePage += "<p>Message Text: "+message+"</p>";
-  	homePage += "<p>WiFi Status: "+wifistat+"</p>";
+  	//homePage += "<p>WiFi Status: "+wifistat+"</p>";
   	homePage += "<b>-------------------------------</b>";
   	/*Example of <svg> embedded in html. Remember \" is the escape character for " in html*/
   	//homePage += "<img src=\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 37 37' enable-background='new 0 0 37 37' xml:space='preserve' height='37px' width='37px'><g><path d='M25.785,5L14.5,16.566l-5.286-5.01L5.5,15.271l9,8.729l15-15.285L25.785,5z'/></g></svg>\">";
@@ -78,10 +73,15 @@ void WebInterface::startAP(char const *pw)
 	WiFi.softAP(AP_NameChar, pw);
 }
 
-String WebInterface::getHomePage()
+String WebInterface::getHomePage(boolean refresh)
 {
-	updateWiFiStatus();
-	return homePage;
+	String send = homePage;
+	if(refresh){
+		send += "<meta http-equiv='refresh' content='2'/>";
+	}else{
+		send +=  "<meta http-equiv='refresh' content='0; url =/' />";
+	}
+	return send;
 }
 
 void WebInterface::appendMessage(String s)
@@ -103,7 +103,8 @@ String WebInterface::getMessage()
 
 void WebInterface::updateWiFiStatus()
 {
-	String wifistat = (WiFi.status() == WL_CONNECTED)? "connected":"not connected";
+	/*Limits output buffer*/
+	//wifistat = (WiFi.status() == WL_CONNECTED)? "connected":"not connected";
 }
 
 void WebInterface::readSerial()

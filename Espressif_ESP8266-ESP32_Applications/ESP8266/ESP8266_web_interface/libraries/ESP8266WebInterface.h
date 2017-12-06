@@ -53,9 +53,8 @@ class WebInterface
 		void appendMessage(String s);
 		void newMessage(String s);
 		void startAP(char const *pw);
-		String getHomePage();
+		String getHomePage(boolean refresh);
 		String getMessage();
-	    String resetPage();
 	    void readSerial();
 }; 
 #endif
