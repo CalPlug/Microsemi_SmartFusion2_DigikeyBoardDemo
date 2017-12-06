@@ -5,5 +5,5 @@ THis project contains two parts:  1a) The FPGA fabric project (Built in Libero 1
 
 Note:  The Microsemi SmartFusion Digikey Maker Board has the capability to interface both the ESP8266 (8 pin module) in addition to a ESP32 module that is soldered down to the PCB as an optional addition.
 
-
+Note:  The Device "M2S010-TQ144" should target the device on the board in Libero, the G submodel denotes ROHS compliance.
 
