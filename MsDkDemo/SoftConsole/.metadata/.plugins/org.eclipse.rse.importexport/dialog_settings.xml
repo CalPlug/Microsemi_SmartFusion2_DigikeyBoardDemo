@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="RemoteImportWizard">
+		<item value="false" key="RemoteImportWizardPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="" key="RemoteImportWizardPage1.STORE_DESCRIPTION_FILE_NAME_ID"/>
+		<item value="false" key="RemoteImportWizardPage1.STORE_CREATE_DESCRIPTION_FILE_ID"/>
+		<item value="false" key="RemoteImportWizardPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="RemoteImportWizardPage1.STORE_REVIEW_SYNCHRONIZE_ID"/>
+		<list key="RemoteImportWizardPage1.STORE_SOURCE_NAMES_ID">
+			<item value="mspc1.Local:C:/Users/Hiperwall/Desktop/Servo-arm3 - Copy/SoftConsole/servoarm"/>
+			<item value="mspc1.Local:C:/Servo-arm3/SoftConsole/servoarm"/>
+		</list>
+	</section>
+</section>
