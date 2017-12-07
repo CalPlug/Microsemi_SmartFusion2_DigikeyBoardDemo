@@ -1579,15 +1579,15 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;SF2_MSS_sys;0
-SmartDesign;SF2_MSS_sys_sb;0
-Reports;Reports;0
-ReportsCurrentItem;Run PROGRAM Action:SF2_MSS_sys_PROGRAM.log
-Constraint Manager;Constraint Manager;0
-StartPage;StartPage;0
-SmartDesign;DESIGN_FIRMWARE;0
 SmartDesign;SF2_MSS_sys_sb_MSS;0
-ACTIVEVIEW;Reports
+Reports;Reports;0
+ReportsCurrentItem;Place and Route:SF2_MSS_sys_glb_net_report.xml
+SmartDesign;SF2_MSS_sys_sb;0
+SmartDesign;SF2_MSS_sys;0
+Constraint Manager;Constraint Manager;0
+SmartDesign;DESIGN_FIRMWARE;0
+StartPage;StartPage;0
+ACTIVEVIEW;Constraint Manager
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CoreGPIO_Driver::work","","FALSE","FALSE"

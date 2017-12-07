@@ -21,7 +21,7 @@
 
 //**************************************************************************************************
 //Debugging Control     NOTE: Comment out on production eNVM builds to avoid Semihosting errors!!  (There is no target for the debug messages when running without a console)
-//#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - do not go too crazy with Semihosting, it will slow down operation if used excessively.
+#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - do not go too crazy with Semihosting, it will slow down operation if used excessively.
 //**************************************************************************************************
 #ifdef VERBOSEDEBUGCONSOLE
 	   extern void initialise_monitor_handles(void); //ARM Semihosting enabled
