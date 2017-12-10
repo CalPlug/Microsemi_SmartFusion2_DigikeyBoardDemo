@@ -1,0 +1,1 @@
+Note:  Remember to run the initialize_EEPROM.INO example on a virgin board or one where the EEPROM has been used altenatively to set up the basic EEPROM Structure.
