@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Hiperwall/Desktop/Servo-arm3/simulation
+Pcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1509492797
+R0
+8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd
+FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd
+l0
+L8
+VP1FJQM<>6JMgKii;jO0[F1
+!s100 gVfSlKUabhG5Bm_ka09Ba2
+Z4 OW;C;10.5c;63
+33
+!s110 1509668482
+!i10b 1
+!s108 1509668482.000000
+!s90 -reportprogress|300|-2008|-explicit|-work|COREGPIO_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd|
+!s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd|
+!i113 1
+Z5 o-2008 -explicit -work COREGPIO_LIB -O0
+Z6 tCvgOpt 0
+Ecoregpio
+R3
+Z7 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z8 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z9 DPx4 work 12 coregpio_pkg 0 22 k==dDB:dCBLf=W7bEj^XX2
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z11 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z12 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+R2
+R0
+Z13 8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd
+Z14 FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd
+l0
+L29
+V:zmW@jFDUZUb_6R88eZU`0
+!s100 [BbCKIOIKmh`Ao>d`SL7a0
+R4
+33
+Z15 !s110 1509668479
+!i10b 1
+Z16 !s108 1509668479.000000
+Z17 !s90 -reportprogress|300|-2008|-explicit|-work|COREGPIO_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd|
+Z18 !s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd|
+!i113 1
+R5
+R6
+Artl
+R7
+R8
+R9
+R10
+R11
+R12
+R1
+R2
+DEx4 work 8 coregpio 0 22 :zmW@jFDUZUb_6R88eZU`0
+l373
+L184
+Vfe7D=mi8:2G^S10C8h;gm1
+!s100 ^?H@M5b>nPSeIgakVn94=3
+R4
+33
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R5
+R6
+Pcoregpio_pkg
+R7
+R8
+R12
+R11
+R1
+R2
+R3
+R0
+Z19 8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd
+Z20 FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd
+l0
+L36
+Vk==dDB:dCBLf=W7bEj^XX2
+!s100 :VL6<4Uin4[iJ=iBNE@JQ1
+R4
+33
+b1
+R15
+!i10b 1
+R16
+Z21 !s90 -reportprogress|300|-2008|-explicit|-work|COREGPIO_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd|
+Z22 !s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd|
+!i113 1
+R5
+R6
+Bbody
+R9
+R7
+R8
+R12
+R11
+R1
+R2
+l0
+L59
+V[@^8@URHG1QETUCfS6`C]2
+!s100 98mQEA1[fn@KHN]>d<93Z3
+R4
+33
+R15
+!i10b 1
+R16
+R21
+R22
+!i113 1
+R5
+R6
