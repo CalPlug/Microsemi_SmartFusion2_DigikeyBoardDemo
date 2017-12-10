@@ -1,6 +1,0 @@
-17:37:19 **** Build of configuration Debug for project digkey ****
-make all 
-make: *** No rule to make target '../RemoteSystemsTempFiles/Users/Hiperwall/Desktop/Servo-arm3/SoftConsole/servoarm/RemoteSystemsTempFiles/Users/Hiperwall/Desktop/Servo-arm3/SoftConsole/servoarm/hal/CortexM3/GNU/hw_reg_access.S', needed by 'RemoteSystemsTempFiles/Users/Hiperwall/Desktop/Servo-arm3/SoftConsole/servoarm/RemoteSystemsTempFiles/Users/Hiperwall/Desktop/Servo-arm3/SoftConsole/servoarm/hal/CortexM3/GNU/hw_reg_access.o'.  Stop.
-
-17:37:20 Build Finished (took 1s.203ms)
-

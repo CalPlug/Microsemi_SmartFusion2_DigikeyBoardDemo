@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)</text>
-<text>Date: Fri Dec 01 17:00:39 2017
+<text>Date: Fri Dec 08 20:33:11 2017
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\SF2_MSS_sys.edn</cell>
+ <cell>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys.edn</cell>
 </row>
 </table>
 <section><name>Options</name></section>

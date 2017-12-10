@@ -1,8 +1,8 @@
 Software Version: 11.8.1.12
-Opened 'C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
+Opened 'C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
 The 'open_project' command succeeded.
-PDB file 'C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\7a7202b2-2bba-43c8-abba-73c82bba73c8.pdb' has been loaded successfully.
-DESIGN : SF2_MSS_sys;  CHECKSUM : 6817;  PDB_VERSION : 1.9
+PDB file 'C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\ef1e8c33-ab4d-4dc0-ab4d-1dc0ab4d1dc0.pdb' has been loaded successfully.
+DESIGN : SF2_MSS_sys;  CHECKSUM : C9E7;  PDB_VERSION : 1.9
 The 'load_programming_data' command succeeded.
 The 'set_programming_file' command succeeded.
 Project saved.

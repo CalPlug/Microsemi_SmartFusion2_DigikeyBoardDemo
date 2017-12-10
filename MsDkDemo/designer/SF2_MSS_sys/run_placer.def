@@ -1,5 +1,5 @@
 DESIGN=SF2_MSS_sys
-DESDIR=C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys
+DESDIR=C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys
 FAM=SmartFusion2
 DIE=PA4M1000_N
 PACKAGE=tq144
@@ -24,7 +24,7 @@ MINDELAYG4_REPAIR=1
 RANDOM_SEED=0
 NETLIST_TYPE=EDIF
 LAYOUT_STATE=NOT_VALID
-PDC_FILE=C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\constraint\io\user.pdc,,
+PDC_FILE=C:\Users\Hiperwall\Desktop\DigiKeyBoard\constraint\io\user.pdc,,
 USE_CONSTRAINT_FLOW=1
 TARGET_DEVICES_FOR_MIGRATION='PA4M1000_N '
 RESTRICTPROBEPINS=1

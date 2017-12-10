@@ -1,6 +1,6 @@
 <project name="SF2_MSS_sys" version="1.1">
     <ProjectDirectory>
-        C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\SF2_MSS_sys_fp
+        C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\SF2_MSS_sys_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         M2S010
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.log
+        C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.log
     </LogFile>
     <SerializationOption>
         Skip

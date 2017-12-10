@@ -38,9 +38,9 @@ set_io {GPIO_IN[1]}   \
     -fixed yes        \
     -DIRECTION INPUT
 
-#GPIO2-ESP8266
+#UNDRIVENPIN
 set_io {GPIO_IN[2]}   \
-    -pinname 81     \
+    -pinname 115     \
     -fixed yes        \
     -DIRECTION INPUT
 
@@ -50,57 +50,57 @@ set_io {GPIO_OUT[0]}   \
     -fixed yes         \
     -DIRECTION OUTPUT
 
-
+#GPIO-0 held high for normal operation
 set_io {GPIO_OUT[1]}   \
-    -pinname 118    \
+    -pinname 93    \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 #ESP8266EPROMRESET
 set_io {GPIO_OUT[2]}   \
-    -pinname 93      \
+    -pinname 81      \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[0]}        \
-    -pinname   122    \
+    -pinname   118    \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[1]}        \
-    -pinname 123       \
+    -pinname 122       \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[2]}        \
-    -pinname 124        \
+    -pinname 123        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[3]}        \
-    -pinname 125       \
+    -pinname 124       \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[4]}        \
-    -pinname 128        \
+    -pinname 125        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
 set_io {PWM[5]}        \
-    -pinname   129     \
+    -pinname   128     \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 #unconnected pin in same bank as LEDs
 set_io {PWM[6]}        \
-    -pinname   115     \
+    -pinname   129     \
     -fixed yes         \
     -DIRECTION OUTPUT
 

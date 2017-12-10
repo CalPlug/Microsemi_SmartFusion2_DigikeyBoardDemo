@@ -82,7 +82,7 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\SF2_MSS_sys.edn"}
+    -value {"C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys.edn"}
 set_compile_info \
     -category {"Options"} \
     -name {"Enable Single Event Transient mitigation"} \
@@ -96,7 +96,7 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys} \
+    -desdir {C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys} \
     -design SF2_MSS_sys \
     -fam SmartFusion2 \
     -die PA4M1000_N \

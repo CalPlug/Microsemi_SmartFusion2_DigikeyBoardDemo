@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\synlog\SF2_MSS_sys_premap.srr</data>
+<data>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synlog\SF2_MSS_sys_premap.srr</data>
 <title>Synopsys Generic Technology Pre-mapping</title>
 </report_link>
 <job_status>
@@ -15,19 +15,19 @@ The file contains the job information from mapper to be displayed as part of the
 <info name="Notes">
 <data>76</data>
 <report_link name="more">
-<data>C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\synlog\report\SF2_MSS_sys_premap_notes.txt</data>
+<data>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synlog\report\SF2_MSS_sys_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
 <data>18</data>
 <report_link name="more">
-<data>C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\synlog\report\SF2_MSS_sys_premap_warnings.txt</data>
+<data>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synlog\report\SF2_MSS_sys_premap_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\synlog\report\SF2_MSS_sys_premap_errors.txt</data>
+<data>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synlog\report\SF2_MSS_sys_premap_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>140MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1512176429</data>
+<data type="timestamp">1512793981</data>
 </info>
 </job_info>
 </job_run_status>

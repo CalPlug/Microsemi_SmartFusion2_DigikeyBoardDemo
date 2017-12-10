@@ -1,4 +1,4 @@
-# Fri Dec 01 17:00:29 2017
+# Fri Dec 08 20:33:01 2017
 
 Synopsys Generic Technology Mapper, Version map201609actrcp1, Build 005R, Built Jan 25 2017 01:01:33
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -24,57 +24,57 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri1 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri1 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
-@N: MO111 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri0 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri0 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri7 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri6 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri5 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri4 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri3 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri2 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri1 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri1 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
+@N: MO111 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":316:27:316:99|Tristate driver un1_tri0 (in view: corepwm_lib.corepwm_reg_if(trans)) on net un1_tri0 (in view: corepwm_lib.corepwm_reg_if(trans)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: FA239 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_0.iPSELS_raw_6[2:0] (in view: work.SF2_MSS_sys_sb(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_0.iPSELS_raw_6[2:0] (in view: work.SF2_MSS_sys_sb(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM .delname. (in view: work.SF2_MSS_sys_sb(rtl)) with 16 words by 3 bits.
+@W: FA239 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_0.iPSELS_raw_6[2:0] (in view: work.SF2_MSS_sys_sb(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM CoreAPB3_0.iPSELS_raw_6[2:0] (in view: work.SF2_MSS_sys_sb(rtl)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM .delname. (in view: work.SF2_MSS_sys_sb(rtl)) with 16 words by 3 bits.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
-@N: MF135 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|RAM GEN_BITS\.0\.REG_GEN\.CONFIG_reg[7:0] (in view: coregpio_lib.CoreGPIO(rtl)) is 4 words by 8 bits.
-@W: FX107 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|RAM GEN_BITS\.0\.REG_GEN\.CONFIG_reg[7:0] (in view: coregpio_lib.CoreGPIO(rtl)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
-@N: BN362 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_0[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_1[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_2[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: MO231 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":75:6:75:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance period_cnt_int[15:0] 
-@N: MO231 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":58:6:58:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance prescale_cnt[15:0] 
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":83:19:83:45|Found 16 by 16 bit equality operator ('==') un17_prescale_cnt (in view: corepwm_lib.corepwm_timebase(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un145_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un183_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un221_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un259_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un297_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un87_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un90_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un125_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un128_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un163_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un166_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un201_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un204_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un239_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un242_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un277_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un280_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un31_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un69_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un107_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un11_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un14_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un49_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MF179 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un52_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
-@N: MO231 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\clock_gen.vhd":214:11:214:12|Found counter in view:coreuartapb_lib.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen(rtl) instance baud_cntr[12:0] 
+@N: MF135 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|RAM GEN_BITS\.0\.REG_GEN\.CONFIG_reg[7:0] (in view: coregpio_lib.CoreGPIO(rtl)) is 4 words by 8 bits.
+@W: FX107 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|RAM GEN_BITS\.0\.REG_GEN\.CONFIG_reg[7:0] (in view: coregpio_lib.CoreGPIO(rtl)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@N: BN362 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_0[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_1[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\coregpio\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Removing sequential instance CONFIG_reg_2[2] (in view: coregpio_lib.CoreGPIO(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MO231 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":75:6:75:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance period_cnt_int[15:0] 
+@N: MO231 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":58:6:58:7|Found counter in view:corepwm_lib.corepwm_timebase(trans) instance prescale_cnt[15:0] 
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd":83:19:83:45|Found 16 by 16 bit equality operator ('==') un17_prescale_cnt (in view: corepwm_lib.corepwm_timebase(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un145_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un183_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un221_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un259_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un297_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un87_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un90_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un125_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.4\.PWM_output_generation\.un128_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un163_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.5\.PWM_output_generation\.un166_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un201_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.6\.PWM_output_generation\.un204_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un239_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.7\.PWM_output_generation\.un242_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un277_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.8\.PWM_output_generation\.un280_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un31_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un69_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":79:82:79:158|Found 16 by 16 bit equality operator ('==') PWM_output_select\.3\.PWM_output_generation\.un107_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un11_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.1\.PWM_output_generation\.un14_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:26:75:154|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un49_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MF179 :"c:\users\hiperwall\desktop\digikeyboard\component\actel\directcore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd":75:163:75:239|Found 16 by 16 bit equality operator ('==') PWM_output_select\.2\.PWM_output_generation\.un52_pwm_enable_reg (in view: corepwm_lib.corepwm_pwm_gen(trans))
+@N: MO231 :"c:\users\hiperwall\desktop\digikeyboard\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\clock_gen.vhd":214:11:214:12|Found counter in view:coreuartapb_lib.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen(rtl) instance baud_cntr[12:0] 
 Encoding state machine xmit_state[0:5] (in view: coreuartapb_lib.SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async(translated))
 original code -> new code
    00000000000000000000000000000000 -> 000001
@@ -89,16 +89,16 @@ original code -> new code
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\rx_async.vhd":264:6:264:7|There are no possible illegal states for state machine rx_state[0:3] (in view: coreuartapb_lib.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async(translated)); safe FSM implementation is not required.
-@W: BN132 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\rx_async.vhd":241:7:241:8|Removing instance SF2_MSS_sys_sb_0.CoreUARTapb_0.uUART.make_RX.last_bit[2] because it is equivalent to instance SF2_MSS_sys_sb_0.CoreUARTapb_0.uUART.make_RX.last_bit[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO225 :"c:\users\hiperwall\desktop\digikeyboard\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\rx_async.vhd":264:6:264:7|There are no possible illegal states for state machine rx_state[0:3] (in view: coreuartapb_lib.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async(translated)); safe FSM implementation is not required.
+@W: BN132 :"c:\users\hiperwall\desktop\digikeyboard\component\work\sf2_mss_sys_sb\coreuartapb_0\rtl\vhdl\core\rx_async.vhd":241:7:241:8|Removing instance SF2_MSS_sys_sb_0.CoreUARTapb_0.uUART.make_RX.last_bit[2] because it is equivalent to instance SF2_MSS_sys_sb_0.CoreUARTapb_0.uUART.make_RX.last_bit[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 149MB peak: 149MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 149MB peak: 149MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 150MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 150MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 153MB)
@@ -107,13 +107,13 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 153MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 153MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 163MB peak: 166MB)
@@ -131,10 +131,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 169MB peak: 170MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 169MB peak: 170MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 169MB peak: 170MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 169MB peak: 170MB)
 
 
 
@@ -165,12 +165,12 @@ Clock Tree ID     Driving Element                     Drive Element Type     Fan
 
 Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 137MB peak: 170MB)
 
-Writing Analyst data base C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\synwork\SF2_MSS_sys_m.srm
+Writing Analyst data base C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synwork\SF2_MSS_sys_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 165MB peak: 170MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 165MB peak: 170MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\SF2_MSS_sys.edn
+@N: FX1056 |Writing EDF file: C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys.edn
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 L-2016.09M-2
@@ -180,7 +180,7 @@ Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s
 
 Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 170MB)
 
-@W: MT246 :"c:\users\hiperwall\desktop\servo-arm3 - copy\component\work\sf2_mss_sys_sb\ccc_0\sf2_mss_sys_sb_ccc_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\hiperwall\desktop\digikeyboard\component\work\sf2_mss_sys_sb\ccc_0\sf2_mss_sys_sb_ccc_0_fccc.vhd":110:4:110:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT420 |Found inferred clock SF2_MSS_sys|SPI_0_CLK_F2M with period 10.00ns. Please declare a user-defined clock on object "p:SPI_0_CLK_F2M"
 @N: MT615 |Found clock SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT with period 20.00ns 
 @N: MT615 |Found clock SF2_MSS_sys_sb_0/CCC_0/GL0 with period 14.29ns 
@@ -188,7 +188,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Dec 01 17:00:33 2017
+# Timing Report written on Fri Dec 08 20:33:06 2017
 #
 
 
@@ -196,7 +196,7 @@ Top view:               SF2_MSS_sys
 Requested Frequency:    1.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\synthesis.fdc
+Constraint File(s):    C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\synthesis.fdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -351,10 +351,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 ##### END OF TIMING REPORT #####]
 
 Timing exceptions that could not be applied
-@W: MT447 :"c:/users/hiperwall/desktop/servo-arm3 - copy/designer/sf2_mss_sys/synthesis.fdc":10:0:10:0|Timing constraint (through [get_nets { SF2_MSS_sys_sb_0.CORERESETP_0.ddr_settled SF2_MSS_sys_sb_0.CORERESETP_0.count_ddr_enable SF2_MSS_sys_sb_0.CORERESETP_0.release_sdif*_core SF2_MSS_sys_sb_0.CORERESETP_0.count_sdif*_enable }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
-@W: MT447 :"c:/users/hiperwall/desktop/servo-arm3 - copy/designer/sf2_mss_sys/synthesis.fdc":11:0:11:0|Timing constraint (from [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.MSS_HPMS_READY_int }] to [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.sm0_areset_n_rcosc SF2_MSS_sys_sb_0.CORERESETP_0.sm0_areset_n_rcosc_q1 }]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
-@W: MT447 :"c:/users/hiperwall/desktop/servo-arm3 - copy/designer/sf2_mss_sys/synthesis.fdc":12:0:12:0|Timing constraint (from [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.MSS_HPMS_READY_int SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PERST_N_re }] to [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.sdif*_areset_n_rcosc* }]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
-@W: MT447 :"c:/users/hiperwall/desktop/servo-arm3 - copy/designer/sf2_mss_sys/synthesis.fdc":13:0:13:0|Timing constraint (through [get_nets { SF2_MSS_sys_sb_0.CORERESETP_0.CONFIG1_DONE SF2_MSS_sys_sb_0.CORERESETP_0.CONFIG2_DONE SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PERST_N SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PSEL SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PWRITE SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PRDATA[*] SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_EXT_RESET_OUT SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_RESET_F2M SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_M3_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_MDDR_DDR_AXI_S_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_FDDR_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF*_PHY_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF*_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF0_0_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF0_1_CORE_RESET }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/hiperwall/desktop/digikeyboard/designer/sf2_mss_sys/synthesis.fdc":10:0:10:0|Timing constraint (through [get_nets { SF2_MSS_sys_sb_0.CORERESETP_0.ddr_settled SF2_MSS_sys_sb_0.CORERESETP_0.count_ddr_enable SF2_MSS_sys_sb_0.CORERESETP_0.release_sdif*_core SF2_MSS_sys_sb_0.CORERESETP_0.count_sdif*_enable }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/hiperwall/desktop/digikeyboard/designer/sf2_mss_sys/synthesis.fdc":11:0:11:0|Timing constraint (from [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.MSS_HPMS_READY_int }] to [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.sm0_areset_n_rcosc SF2_MSS_sys_sb_0.CORERESETP_0.sm0_areset_n_rcosc_q1 }]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/hiperwall/desktop/digikeyboard/designer/sf2_mss_sys/synthesis.fdc":12:0:12:0|Timing constraint (from [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.MSS_HPMS_READY_int SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PERST_N_re }] to [get_cells { SF2_MSS_sys_sb_0.CORERESETP_0.sdif*_areset_n_rcosc* }]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/hiperwall/desktop/digikeyboard/designer/sf2_mss_sys/synthesis.fdc":13:0:13:0|Timing constraint (through [get_nets { SF2_MSS_sys_sb_0.CORERESETP_0.CONFIG1_DONE SF2_MSS_sys_sb_0.CORERESETP_0.CONFIG2_DONE SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PERST_N SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PSEL SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PWRITE SF2_MSS_sys_sb_0.CORERESETP_0.SDIF*_PRDATA[*] SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_EXT_RESET_OUT SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_RESET_F2M SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_M3_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_MDDR_DDR_AXI_S_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_FDDR_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF*_PHY_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF*_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF0_0_CORE_RESET SF2_MSS_sys_sb_0.CORERESETP_0.SOFT_SDIF0_1_CORE_RESET }]) (false path) was not applied to the design because none of the '-through' objects specified by the constraint exist in the design 
 
 Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 170MB)
 
@@ -412,9 +412,9 @@ Total number of LUTs after P&R:  888 + 36 + 0 + 0 = 924;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 170MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 34MB peak: 170MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Fri Dec 01 17:00:34 2017
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+# Fri Dec 08 20:33:06 2017
 
 ###########################################################]

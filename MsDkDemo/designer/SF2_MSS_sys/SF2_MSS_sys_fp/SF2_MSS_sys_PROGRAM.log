@@ -1,10 +1,10 @@
 Software Version: 11.8.1.12
 Embedded FlashPro5 programmer detected.
 programmer 'E20023JXLX' : FlashPro5
-Opened 'C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
+Opened 'C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
 The 'open_project' command succeeded.
-IPD file 'C:/Users/Hiperwall/Desktop/Servo-arm3 - Copy/designer/SF2_MSS_sys/SF2_MSS_sys.ipd' has been loaded successfully.
-DESIGN : SF2_MSS_sys;  CHECKSUM : 6817;  PDB_VERSION : 1.9
+IPD file 'C:/Users/Hiperwall/Desktop/DigiKeyBoard/designer/SF2_MSS_sys/SF2_MSS_sys.ipd' has been loaded successfully.
+DESIGN : SF2_MSS_sys;  CHECKSUM : C9E7;  PDB_VERSION : 1.9
 The 'set_programming_file' command succeeded.
 Warning: Programming is already enabled for device 'M2S010'.
 The 'enable_device' command succeeded.
@@ -23,10 +23,10 @@ programmer 'E20023JXLX' : device 'M2S010' : Programming FPGA Array and eNVM...
 programmer 'E20023JXLX' : device 'M2S010' : ===================================================================================
 programmer 'E20023JXLX' : device 'M2S010' : EXPORT DSN[128] = 878af3a0dd27b17f2ff48a6c7c88828d
 programmer 'E20023JXLX' : device 'M2S010' : ===================================================================================
-programmer 'E20023JXLX' : device 'M2S010' : Finished: Tue Dec 05 15:48:28 2017 (Elapsed time 00:00:27)
+programmer 'E20023JXLX' : device 'M2S010' : Finished: Fri Dec 08 20:38:05 2017 (Elapsed time 00:00:27)
 programmer 'E20023JXLX' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E20023JXLX' : Chain programming PASSED.
-Chain Programming Finished: Tue Dec 05 15:48:28 2017 (Elapsed time 00:00:27)
+Chain Programming Finished: Fri Dec 08 20:38:05 2017 (Elapsed time 00:00:27)
 
                         o - o - o - o - o - o
 

@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
-Date: Fri Dec 01 17:00:39 2017
+Date: Fri Dec 08 20:33:11 2017
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,11 +20,11 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+------------------------------------------------------------------------+
-| Topcell | SF2_MSS_sys                                                            |
-| Format  | EDIF                                                                   |
-| Source  | C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\synthesis\SF2_MSS_sys.edn |
-+---------+------------------------------------------------------------------------+
++---------+-------------------------------------------------------------------+
+| Topcell | SF2_MSS_sys                                                       |
+| Format  | EDIF                                                              |
+| Source  | C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys.edn |
++---------+-------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+

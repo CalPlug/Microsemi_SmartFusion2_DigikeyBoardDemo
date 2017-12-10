@@ -1,7 +1,7 @@
 # Microsemi Corp.
-# Date: 2017-Dec-01 17:00:22
+# Date: 2017-Dec-08 20:32:55
 # This file was generated based on the following SDC source files:
-#   C:/Users/Hiperwall/Desktop/Servo-arm3 - Copy/constraint/SF2_MSS_sys_derived_constraints.sdc
+#   C:/Users/Hiperwall/Desktop/DigiKeyBoard/constraint/SF2_MSS_sys_derived_constraints.sdc
 #
 
 create_clock -name {SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} -period 20 [ get_pins { SF2_MSS_sys_sb_0.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT } ]

@@ -12,20 +12,19 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.rse.importexport.importWizards"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Users\Hiperwall\Desktop\NewArm\Servo-arm3\SoftConsole\servoarm\drivers\CorePWM"/>
-			<item value="C:\Users\Hiperwall\Desktop\Documents"/>
-			<item value="C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\SoftConsole\SF2_GNU_SC4_interrupt_blink"/>
+			<item value="C:\Users\Hiperwall\Desktop\NewArm\Servo-arm3\SoftConsole\digikey"/>
 		</list>
 	</section>
 </section>

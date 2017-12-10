@@ -2,7 +2,7 @@
 <device>
   <name>SF2_MSS_sys</name>
   <version>1.0</version>
-  <description>CMSIS description for SF2_MSS_sys.  Created by Microsemi SmartDesign on Fri Dec 01 14:24:04 2017</description>
+  <description>CMSIS description for SF2_MSS_sys.  Created by Microsemi SmartDesign on Fri Dec 08 16:23:40 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

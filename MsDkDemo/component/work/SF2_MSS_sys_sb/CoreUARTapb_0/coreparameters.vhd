@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Tue Nov 28 18:07:52 2017
+-- Created by Microsemi SmartDesign Fri Dec 08 20:32:43 2017
 -- Parameters for CoreUARTapb
 ----------------------------------------------------------------------
 
@@ -22,5 +22,5 @@ package coreparameters is
     constant RX_LEGACY_MODE : integer := 0;
     constant testbench : string( 1 to 4 ) := "User";
     constant TX_FIFO : integer := 0;
-    constant USE_SOFT_FIFO : integer := 0;
+    constant USE_SOFT_FIFO : integer := 1;
 end coreparameters;

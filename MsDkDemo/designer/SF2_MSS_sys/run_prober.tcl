@@ -1,5 +1,5 @@
 probe \
-    -desdir {C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\designer\SF2_MSS_sys} \
+    -desdir {C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys} \
     -design SF2_MSS_sys \
     -fam SmartFusion2 \
     -die PA4M1000_N \

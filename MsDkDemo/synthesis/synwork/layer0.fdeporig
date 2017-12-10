@@ -1,5 +1,5 @@
 #defaultlanguage:vhdl
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\synthesis\\synwork\\SF2_MSS_sys_comp.srs|-top|work.SF2_MSS_sys|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREGPIO_LIB|-lib|COREGPIO_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREAPB3_LIB|-lib|COREGPIO_LIB|-lib|COREPWM_LIB|-lib|COREUARTAPB_LIB|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\synthesis\\synwork\\SF2_MSS_sys_comp.srs|-top|work.SF2_MSS_sys|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREGPIO_LIB|-lib|COREGPIO_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREPWM_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREUARTAPB_LIB|-lib|COREAPB3_LIB|-lib|COREGPIO_LIB|-lib|COREPWM_LIB|-lib|COREUARTAPB_LIB|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_vhdl.exe":1480007492
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\location.map":1478833188
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\std.vhd":1487970586
@@ -11,68 +11,68 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1487970586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1487970586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1487970454
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp_pcie_hotreset.vhd":1509668308
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp.vhd":1509668308
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CCC_0\\SF2_MSS_sys_sb_CCC_0_FCCC.vhd":1511921271
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1509492801
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\FABOSC_0\\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":1511921274
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS_syn.vhd":1509574262
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS.vhd":1509574263
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_muxptob3.vhd":1509492796
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_iaddr_reg.vhd":1509492796
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1509492796
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\coregpio_pkg.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\coregpio.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\pwm_gen.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\reg_if.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\tach_if.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\timebase.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\t_corepwm_pkg.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\corepwm.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Clock_gen.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Rx_async.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Tx_async.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\fifo_256x8_g4.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUART.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUARTapb.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\components.vhd":1509492796
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\components.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\components.vhd":1509492797
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\components.vhd":1511921272
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys_sb\\SF2_MSS_sys_sb.vhd":1511921274
-#CUR:"C:\\Users\\Hiperwall\\Desktop\\Servo-arm3 - Copy\\component\\work\\SF2_MSS_sys\\SF2_MSS_sys.vhd":1511921453
-0 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd" vhdl
-1 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp.vhd" vhdl
-2 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd" vhdl
-3 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
-4 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd" vhdl
-5 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb_MSS\SF2_MSS_sys_sb_MSS_syn.vhd" vhdl
-6 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb_MSS\SF2_MSS_sys_sb_MSS.vhd" vhdl
-7 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd" vhdl
-8 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd" vhdl
-9 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd" vhdl
-10 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio_pkg.vhd" vhdl
-11 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd" vhdl
-12 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd" vhdl
-13 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd" vhdl
-14 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\tach_if.vhd" vhdl
-15 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd" vhdl
-16 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\t_corepwm_pkg.vhd" vhdl
-17 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd" vhdl
-18 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd" vhdl
-19 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd" vhdl
-20 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd" vhdl
-21 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8_g4.vhd" vhdl
-22 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd" vhdl
-23 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUART.vhd" vhdl
-24 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd" vhdl
-25 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd" vhdl
-26 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\components.vhd" vhdl
-27 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\components.vhd" vhdl
-28 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\components.vhd" vhdl
-29 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd" vhdl
-30 "C:\Users\Hiperwall\Desktop\Servo-arm3 - Copy\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd" vhdl
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp_pcie_hotreset.vhd":1509668308
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp.vhd":1509668308
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CCC_0\\SF2_MSS_sys_sb_CCC_0_FCCC.vhd":1512793961
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1509492801
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\FABOSC_0\\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":1512793964
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS_syn.vhd":1509574264
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS.vhd":1509574264
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_muxptob3.vhd":1509492796
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_iaddr_reg.vhd":1509492796
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1509492796
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\coregpio_pkg.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\coregpio.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\pwm_gen.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\reg_if.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\tach_if.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\timebase.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\t_corepwm_pkg.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\corepwm.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Clock_gen.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Rx_async.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Tx_async.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\fifo_256x8.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUART.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUARTapb.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\components.vhd":1509492796
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\components.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\components.vhd":1509492797
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\components.vhd":1512793963
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys_sb\\SF2_MSS_sys_sb.vhd":1512793965
+#CUR:"C:\\Users\\Hiperwall\\Desktop\\DigiKeyBoard\\component\\work\\SF2_MSS_sys\\SF2_MSS_sys.vhd":1512793971
+0 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd" vhdl
+1 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp.vhd" vhdl
+2 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd" vhdl
+3 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
+4 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd" vhdl
+5 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb_MSS\SF2_MSS_sys_sb_MSS_syn.vhd" vhdl
+6 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb_MSS\SF2_MSS_sys_sb_MSS.vhd" vhdl
+7 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd" vhdl
+8 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd" vhdl
+9 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd" vhdl
+10 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio_pkg.vhd" vhdl
+11 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd" vhdl
+12 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\pwm_gen.vhd" vhdl
+13 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd" vhdl
+14 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\tach_if.vhd" vhdl
+15 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\timebase.vhd" vhdl
+16 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\t_corepwm_pkg.vhd" vhdl
+17 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd" vhdl
+18 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd" vhdl
+19 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd" vhdl
+20 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd" vhdl
+21 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8.vhd" vhdl
+22 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd" vhdl
+23 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUART.vhd" vhdl
+24 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd" vhdl
+25 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd" vhdl
+26 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\components.vhd" vhdl
+27 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\components.vhd" vhdl
+28 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\components.vhd" vhdl
+29 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd" vhdl
+30 "C:\Users\Hiperwall\Desktop\DigiKeyBoard\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1
@@ -189,10 +189,10 @@ arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_rx_async translated 19
 module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_rx_async 19
 arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_tx_async translated 20
 module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_tx_async 20
-arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_ram128x8_pa4 translated 21
-module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_ram128x8_pa4 21
-arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_ctrl_128 translated 21
-module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_ctrl_128 21
+arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_ram16x8 translated 21
+module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_ram16x8 21
+arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_ctrl_256 translated 21
+module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_ctrl_256 21
 arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_256x8 translated 21
 module coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_fifo_256x8 21
 arch coreuartapb_lib sf2_mss_sys_sb_coreuartapb_0_coreuart translated 23
