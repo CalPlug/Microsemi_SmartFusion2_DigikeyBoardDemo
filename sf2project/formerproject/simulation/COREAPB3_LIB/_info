@@ -1,0 +1,152 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Hiperwall/Desktop/Servo-arm3/simulation
+Pcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1509492796
+R0
+8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+l0
+L30
+V6XQdn^E]^IOnRfgRRBHVY3
+!s100 M`a74h2Z=cgYBZBf=LgIj0
+Z4 OW;C;10.5c;63
+33
+!s110 1509668482
+!i10b 1
+!s108 1509668482.000000
+!s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd|
+!i113 1
+Z5 o-2008 -explicit -work COREAPB3_LIB -O0
+Z6 tCvgOpt 0
+Ecoreapb3
+R3
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R0
+Z8 8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd
+Z9 FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd
+l0
+L34
+VamPF_`f[kKjGCGOV?Yh_K3
+!s100 cjbRHcKg3E]Fo9Pm?ENf:3
+R4
+33
+Z10 !s110 1509668479
+!i10b 1
+Z11 !s108 1509668479.000000
+Z12 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd|
+Z13 !s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd|
+!i113 1
+R5
+R6
+Acoreapb3_arch
+R7
+R1
+R2
+DEx4 work 8 coreapb3 0 22 amPF_`f[kKjGCGOV?Yh_K3
+l634
+L161
+V_4aXKgJVOfYg=Ge6MSak93
+!s100 3TMQMOX]@oEeBnCR>KF>h3
+R4
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ecoreapb3_iaddr_reg
+R3
+R1
+R2
+R0
+Z14 8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd
+Z15 FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd
+l0
+L24
+VoA[l_jmQ[iX^89bkD@7Ca3
+!s100 6gWM7KQe_TN6dXNI7omMN2
+R4
+33
+R10
+!i10b 1
+R11
+Z16 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd|
+Z17 !s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd|
+!i113 1
+R5
+R6
+Artl
+R1
+R2
+DEx4 work 18 coreapb3_iaddr_reg 0 22 oA[l_jmQ[iX^89bkD@7Ca3
+l54
+L46
+V@A2iL_b]Z8U?8dh8?_lhl2
+!s100 ATVOXl2PJ:7K8]3@Rm9Rl0
+R4
+33
+R10
+!i10b 1
+R11
+R16
+R17
+!i113 1
+R5
+R6
+Ecoreapb3_muxptob3
+R3
+R7
+R1
+R2
+R0
+Z18 8C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd
+Z19 FC:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd
+l0
+L33
+VKR;2=UTAPNBFi:XG^ST]>0
+!s100 `me8:T4T93:XHkJeT]<ej3
+R4
+33
+R10
+!i10b 1
+Z20 !s108 1509668478.000000
+Z21 !s90 -reportprogress|300|-2008|-explicit|-work|COREAPB3_LIB|C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd|
+Z22 !s107 C:/Users/Hiperwall/Desktop/Servo-arm3/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd|
+!i113 1
+R5
+R6
+Acoreapb3_muxptob3_arch
+R7
+R1
+R2
+DEx4 work 17 coreapb3_muxptob3 0 22 KR;2=UTAPNBFi:XG^ST]>0
+l84
+L61
+VI;HT^9l:Hf4;LQ;0HRahG2
+!s100 WSg:LRFMHFAbm3FWcLDOR1
+R4
+33
+R10
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R5
+R6

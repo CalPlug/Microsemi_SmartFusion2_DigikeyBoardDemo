@@ -1,9 +1,16 @@
+//Example ESP8266 Interface to demo the Microsemi SmartFusion2 Digikey Demo
+//Developed by Paolo Caraos, Calit2, UC Irvine  (2017) 
+
+//Note:
+//Tested in Ardino Version 1.8.5.  1.6.2 (and before) is known to have issues with library version control
+//Place project libraries into your Arduino library folder before trying to compile, make sure you are on proper Arduino, board, and library versions  (all default except for the ones attached to this project).  If this fails, delete compile temp folder, restart Arduino, pray, re-compile 
+
 #include <ESP8266WebInterface.h>
 
-// Replace with your network credentials
-const char* ssid = "UCInet Mobile Access";
+// Sample Network Credentials - never used in current version because example is AP Only
+const char* ssid = "ExampleAP";
 const char* password = "";
-const char* AP_PW = "CalPlug";
+const char* AP_PW = "test123456789";
 ESP8266WebServer server(80);
 WebInterface interface;
 
@@ -113,3 +120,4 @@ void loop(void){
     }
   }  
 } 
+
