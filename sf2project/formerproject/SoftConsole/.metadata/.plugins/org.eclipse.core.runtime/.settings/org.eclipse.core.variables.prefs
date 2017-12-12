@@ -1,2 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n<valueVariable name\="openocd_executable" readOnly\="false" value\="openocd"/>\r\n<valueVariable name\="openocd_path" readOnly\="false" value\="C\:\\Microsemi\\SoftConsole_v5.1\\openocd\\bin"/>\r\n</valueVariables>\r\n
