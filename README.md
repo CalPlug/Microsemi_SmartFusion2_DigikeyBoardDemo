@@ -1,9 +1,14 @@
 # Microsemi_SmartFusion2_DigikeyBoardDemo for the Maker Board
 Demonstration application for the Microsemi/Digikey Demonstration board.
 Project developed by Crystal Lai, Brandon Metcalf, and Paolo Caraos (UC Irvine / Calit2 Microsemi Innovation Laboratory)
+
 Project Lead:  Crystal Lai
+
 Project Advisors: Dr. Michael Klopfer and Prof. G.P. Li
+
 Dec 10, 2017 v. 1.0
+
+
 
 Project copyright of the Regents of the University of California and released into the bublic domain.  Project elements copyright of denoted authors and used fairly per licensing requirements.
 
