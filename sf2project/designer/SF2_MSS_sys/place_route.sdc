@@ -1,5 +1,5 @@
 # Microsemi Corp.
-# Date: 2017-Dec-10 17:43:10
+# Date: 2017-Dec-12 12:35:05
 # This file was generated based on the following SDC source files:
 #   C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_DigikeyBoardDemo/sf2project/constraint/SF2_MSS_sys_derived_constraints.sdc
 #

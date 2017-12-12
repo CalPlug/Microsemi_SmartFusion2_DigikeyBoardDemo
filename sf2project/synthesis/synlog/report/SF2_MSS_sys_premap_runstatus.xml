@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>76</data>
+<data>83</data>
 <report_link name="more">
 <data>C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\synthesis\synlog\report\SF2_MSS_sys_premap_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:01s</data>
 </info>
 <info name="Peak Memory">
-<data>140MB</data>
+<data>141MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1512972311</data>
+<data type="timestamp">1513100604</data>
 </info>
 </job_info>
 </job_run_status>

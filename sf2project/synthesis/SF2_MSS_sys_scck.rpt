@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker(syntax only), version map201609actrcp1, Build 005R, built Jan 25 2017
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Sun Dec 10 22:05:10 2017
+# Written on Tue Dec 12 09:43:23 2017
 
 
 ##### DESIGN INFO #######################################################
@@ -24,7 +24,7 @@ Clock Summary
 Start                                                 Requested     Requested     Clock                                                                  Clock                   Clock
 Clock                                                 Frequency     Period        Type                                                                   Group                   Load 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-SF2_MSS_sys_sb_0/CCC_0/GL0                            70.0 MHz      14.286        generated (from SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT)     default_clkgroup        649  
+SF2_MSS_sys_sb_0/CCC_0/GL0                            70.0 MHz      14.286        generated (from SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT)     default_clkgroup        549  
 SF2_MSS_sys_sb_0/CCC_0/GL1                            1.0 MHz       1000.000      generated (from SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT)     default_clkgroup        0    
 SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT     50.0 MHz      20.000        declared                                                               default_clkgroup        0    
 SF2_MSS_sys|SPI_0_CLK_F2M                             100.0 MHz     10.000        inferred                                                               Inferred_clkgroup_0     1    

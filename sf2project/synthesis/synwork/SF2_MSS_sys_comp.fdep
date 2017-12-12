@@ -11,7 +11,7 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1487970586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1487970454
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp_pcie_hotreset.vhd":1512882879
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CCC_0\\SF2_MSS_sys_sb_CCC_0_FCCC.vhd":1512956339
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CCC_0\\SF2_MSS_sys_sb_CCC_0_FCCC.vhd":1513100330
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1487970428
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1512882883
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS_syn.vhd":1512874710
@@ -24,25 +24,25 @@
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\tach_if.vhd":1512882879
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\timebase.vhd":1512882879
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\t_corepwm_pkg.vhd":1512882879
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Clock_gen.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Rx_async.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Tx_async.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\fifo_256x8.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1512956341
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Clock_gen.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Rx_async.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\Tx_async.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\fifo_256x8.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\coreuart_pkg.vhd":1513100333
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\components.vhd":1512882877
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\components.vhd":1512882878
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\components.vhd":1512882879
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\components.vhd":1512956341
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\components.vhd":1513100333
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreResetP\\7.0.104\\rtl\\vhdl\\core\\coreresetp.vhd":1512882879
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\FABOSC_0\\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":1512956343
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\FABOSC_0\\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":1513100335
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb_MSS\\SF2_MSS_sys_sb_MSS.vhd":1512874710
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1512882877
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\CoreGPIO\\3.1.101\\rtl\\vhdl\\core\\coregpio.vhd":1512882878
 #CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\Actel\\DirectCore\\corepwm\\4.3.101\\rtl\\vhdl\\core\\corepwm.vhd":1512882879
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUART.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUARTapb.vhd":1512956341
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\SF2_MSS_sys_sb.vhd":1512956343
-#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys\\SF2_MSS_sys.vhd":1512874710
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUART.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\CoreUARTapb_0\\rtl\\vhdl\\core\\CoreUARTapb.vhd":1513100333
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys_sb\\SF2_MSS_sys_sb.vhd":1513100336
+#CUR:"C:\\Users\\Mike Klopfer\\Documents\\GitHub\\Microsemi_SmartFusion2_DigikeyBoardDemo\\sf2project\\component\\work\\SF2_MSS_sys\\SF2_MSS_sys.vhd":1513100482
 0			"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd" vhdl
 1			"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreResetP\7.0.104\rtl\vhdl\core\coreresetp.vhd" vhdl
 2			"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd" vhdl

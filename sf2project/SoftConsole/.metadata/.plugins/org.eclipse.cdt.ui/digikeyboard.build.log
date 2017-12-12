@@ -1,4 +1,4 @@
-22:51:47 **** Incremental Build of configuration Debug for project digikeyboard ****
+12:29:41 **** Incremental Build of configuration Debug for project digikeyboard ****
 make all 
 Building file: ../main.c
 Invoking: Cross ARM C Compiler
@@ -17,9 +17,9 @@ Finished building: digikeyboard.hex
 Invoking: Cross ARM GNU Print Size
 arm-none-eabi-size --format=berkeley "digikeyboard.elf"
    text	   data	    bss	    dec	    hex	filename
-  23336	   2528	  39664	  65528	   fff8	digikeyboard.elf
+  23736	   2528	  39264	  65528	   fff8	digikeyboard.elf
 Finished building: digikeyboard.siz
  
 
-22:51:54 Build Finished (took 6s.575ms)
+12:29:47 Build Finished (took 6s.114ms)
 

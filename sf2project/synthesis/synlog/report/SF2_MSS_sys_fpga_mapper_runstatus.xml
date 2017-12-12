@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>73</data>
+<data>65</data>
 <report_link name="more">
 <data>C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\synthesis\synlog\report\SF2_MSS_sys_fpga_mapper_notes.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:10s</data>
-</info>
-<info name="Real Time">
 <data>0h:00m:11s</data>
 </info>
+<info name="Real Time">
+<data>0h:00m:12s</data>
+</info>
 <info name="Peak Memory">
-<data>170MB</data>
+<data>193MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1512972323</data>
+<data type="timestamp">1513100617</data>
 </info>
 </job_info>
 </job_run_status>

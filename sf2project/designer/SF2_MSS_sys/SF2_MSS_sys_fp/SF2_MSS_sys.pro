@@ -16,10 +16,10 @@
     </SerializationOption>
     <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
         <name>
-            E20023JXLX
+            E2001OV11W
         </name>
         <id>
-            E20023JXLX
+            E2001OV11W
         </id>
     </programmer>
     <configuration>

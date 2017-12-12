@@ -9090,3 +9090,138 @@ java.lang.Exception: No executable file specified.\nUse the "file" or "exec-file
 
 !ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-10 22:51:58.128
 !MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+!SESSION 2017-12-12 09:54:10.066 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -pluginCustomization plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86 -pluginCustomization plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-12 09:54:44.246
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-12 09:54:44.259
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mike Klopfer'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 10:39:11.692
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 10:39:16.257
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 10:50:01.262
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 10:50:03.526
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 10:51:09.928
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 11:00:01.431
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:00:15.211
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:00:17.521
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:01:42.911
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:01:45.193
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 11:22:38.054
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 11:22:40.935
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:22:47.723
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:22:50.153
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:47:21.352
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:47:23.729
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:49:35.842
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:49:38.134
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:51:09.016
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:51:11.232
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:53:02.443
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:53:04.696
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:57:17.927
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 11:57:20.163
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:04:58.497
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:05:00.762
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:07:46.346
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:07:48.631
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:09:40.575
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:09:44.788
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:09:52.662
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2017-12-12 12:10:05.218
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@93c239): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2017-12-12 12:10:05.218
+!MESSAGE Interrupt failed.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:17:07.518
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:17:14.950
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2017-12-12 12:17:19.623
+!MESSAGE Debug session 'digikeyboard Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:17:36.944
+!MESSAGE C:\Microsemi\SoftConsole_v5.1\openocd\bin/openocd -c gdb_port 3333 -c telnet_port 4444 --command set DEVICE M2S010-TQ144 --file board/microsemi-cortex-m3.cfg -c echo "Started by GNU ARM Eclipse"
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag.openocd 4 1 2017-12-12 12:17:39.377
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx

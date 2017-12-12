@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by Microsemi SmartDesign Sun Dec 10 17:39:00 2017
+-- Created by Microsemi SmartDesign Tue Dec 12 09:38:52 2017
 -- Parameters for CoreGPIO
 ----------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ package coreparameters is
     constant IO_INT_TYPE_29 : integer := 7;
     constant IO_INT_TYPE_30 : integer := 7;
     constant IO_INT_TYPE_31 : integer := 7;
-    constant IO_NUM : integer := 3;
+    constant IO_NUM : integer := 8;
     constant IO_TYPE_0 : integer := 0;
     constant IO_TYPE_1 : integer := 0;
     constant IO_TYPE_2 : integer := 0;

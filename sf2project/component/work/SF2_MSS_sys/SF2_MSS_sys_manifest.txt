@@ -1,14 +1,14 @@
-Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
 
-Date      :  Fri Dec 08 20:32:51 2017
-Project   :  C:\Users\Hiperwall\Desktop\DigiKeyBoard
+Date      :  Tue Dec 12 09:41:22 2017
+Project   :  C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project
 Component :  SF2_MSS_sys
 Family    :  SmartFusion2
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys/SF2_MSS_sys.vhd
+    C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_DigikeyBoardDemo/sf2project/component/work/SF2_MSS_sys/SF2_MSS_sys.vhd
 
 Stimulus files for all Simulation tools:
-    C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys/subsystem.bfm
+    C:/Users/Mike Klopfer/Documents/GitHub/Microsemi_SmartFusion2_DigikeyBoardDemo/sf2project/component/work/SF2_MSS_sys/subsystem.bfm
 

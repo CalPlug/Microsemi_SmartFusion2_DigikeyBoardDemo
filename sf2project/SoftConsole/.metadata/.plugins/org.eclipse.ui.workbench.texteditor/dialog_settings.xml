@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="servo" key="selection"/>
+		<item value="PIO_1_MASK" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="PIO_1_MASK"/>
 			<item value="servo"/>
 			<item value="hello"/>
 			<item value="g_message"/>
@@ -15,7 +16,6 @@
 			<item value="rx_size"/>
 			<item value="enable"/>
 			<item value="GPIO_set"/>
-			<item value="PWM_enable"/>
 		</list>
 		<list key="replacehistory">
 			<item value="disable"/>

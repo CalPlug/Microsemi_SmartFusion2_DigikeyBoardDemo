@@ -6,10 +6,9 @@
 
 # Family: SmartFusion2 , Die: M2S025 , Package: 256 VF
 
-# Date generated: Mon Feb 13 21:59:52 2017 
+# Date generated: Dec 12 21:59:52 2017 
 
-# Notes: V1.1 - Set for Future Creative Board  - button 1 is GPIO0, button 2 is GPIO1, TX/RX for UART are set to the TX/RX pins of the MikroBUS header 
-
+# Notes: V1.0 - Set for Digikey Maker Board 
 
 # 
 # User Locked I/O Bank Settings
@@ -27,98 +26,143 @@
 # User Locked I/O settings
 # 
 
+######################################Board UI Inputs######################################
+
+#Pushbutton 1
 set_io {GPIO_IN[0]}   \
     -pinname 143     \
     -fixed yes        \
     -DIRECTION INPUT
 
-
+#Pushbutton 2
 set_io {GPIO_IN[1]}   \
     -pinname 144     \
     -fixed yes        \
     -DIRECTION INPUT
 
-#UNDRIVENPIN
+#UNDRIVENPIN - Parked Input
 set_io {GPIO_IN[2]}   \
+    -pinname 130     \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+#UNDRIVENPIN - Parked Input
+set_io {GPIO_IN[3]}   \
+    -pinname 110     \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+#UNDRIVENPIN - Parked Input
+set_io {GPIO_IN[4]}   \
+    -pinname 112     \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+#UNDRIVENPIN - Parked Input
+set_io {GPIO_IN[5]}   \
     -pinname 115     \
     -fixed yes        \
     -DIRECTION INPUT
 
+#UNDRIVENPIN - Parked Input
+set_io {GPIO_IN[6]}   \
+    -pinname 116     \
+    -fixed yes        \
+    -DIRECTION INPUT
 
+#UNDRIVENPIN - Parked Input
+set_io {GPIO_IN[7]}   \
+    -pinname 142     \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+
+######################################Board LED Outputs######################################
+
+# LED 0 - GPIO Driven (D9)
 set_io {GPIO_OUT[0]}   \
-    -pinname 117      \
+    -pinname 129      \
     -fixed yes         \
     -DIRECTION OUTPUT
 
-#GPIO-0 held high for normal operation
+# LED 1 - GPIO Driven   (D8)
 set_io {GPIO_OUT[1]}   \
-    -pinname 93    \
+    -pinname 128      \
     -fixed yes         \
     -DIRECTION OUTPUT
 
-#ESP8266EPROMRESET
+# LED 2 - GPIO Driven   (D7)
 set_io {GPIO_OUT[2]}   \
-    -pinname 81      \
+    -pinname 125      \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+# LED 3 - GPIO Driven   (D6)
+set_io {GPIO_OUT[3]}   \
+    -pinname 124      \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+# LED 4 - GPIO Driven
+set_io {GPIO_OUT[4]}   \
+    -pinname 123      \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
-set_io {PWM[0]}        \
+##############PWM LED Drive#################
+
+#PWM - Driven LEDs - LED 5
+set_io {PWM[2]}        \
+    -pinname  117      \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+#PWM - Driven LEDs - LED 6
+set_io {PWM[1]}        \
     -pinname   118    \
     -fixed yes         \
     -DIRECTION OUTPUT
 
-
-set_io {PWM[1]}        \
+#PWM - Driven LEDs - LED 7
+set_io {PWM[0]}        \
     -pinname 122       \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
-set_io {PWM[2]}        \
-    -pinname 123        \
+######################################ESP8266 Communication####################################
+
+# ESP8266 GPIO0 - SF2 GPIO Driven
+set_io {GPIO_OUT[5]}   \
+    -pinname  93     \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+# ESP8266 GPIO2 - SF2 GPIO Driven
+set_io {GPIO_OUT[6]}   \
+    -pinname 81      \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+# ESP8266 Board RESET - GPIO Driven
+set_io {GPIO_OUT[7]}   \
+    -pinname 88      \
     -fixed yes         \
     -DIRECTION OUTPUT
 
 
-set_io {PWM[3]}        \
-    -pinname 124       \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-
-set_io {PWM[4]}        \
-    -pinname 125        \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-
-set_io {PWM[5]}        \
-    -pinname   128     \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-#unconnected pin in same bank as LEDs
-set_io {PWM[6]}        \
-    -pinname   129     \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
-#unconnected pin in same bank as LEDs
-set_io {PWM[7]}        \
-    -pinname  116      \
-    -fixed yes         \
-    -DIRECTION OUTPUT
-
+##########ESP8266 UART Communication##########
 
 set_io RX             \
-    -pinname 82       \
+    -pinname 83       \
     -fixed yes        \
     -DIRECTION INPUT
 
 
 set_io TX              \
-    -pinname 83        \
+    -pinname 82        \
     -fixed yes         \
     -DIRECTION OUTPUT
 
@@ -134,4 +178,3 @@ set_io TX              \
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
-

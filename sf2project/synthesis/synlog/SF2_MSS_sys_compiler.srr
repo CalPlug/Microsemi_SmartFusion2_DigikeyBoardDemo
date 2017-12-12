@@ -40,9 +40,18 @@ File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardD
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd changed - recompiling
 File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd changed - recompiling
 VHDL syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\components.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUART.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd changed - recompiling
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vhd2008\std1164.vhd":890:16:890:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd":17:7:17:17|Synthesizing work.sf2_mss_sys.rtl.
 @N: CD630 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd":29:7:29:20|Synthesizing work.sf2_mss_sys_sb.rtl.
@@ -177,8 +186,13 @@ Post processing for corepwm_lib.corepwm_pwm_gen.trans
 Post processing for corepwm_lib.corepwm_timebase.trans
 @N: CD630 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":30:7:30:20|Synthesizing corepwm_lib.corepwm_reg_if.trans.
 @N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":163:21:163:31|Removing redundant assignment.
-@W: CG296 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":520:3:520:9|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":556:46:556:56|Referenced variable pwm_stretch is not in sensitivity list.
+@W: CG296 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":360:3:360:9|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":376:46:376:56|Referenced variable pwm_stretch is not in sensitivity list.
+@W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 3 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 4 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 5 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 6 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 7 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
 @W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 8 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
 @W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 9 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
 @W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 10 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
@@ -189,16 +203,6 @@ Post processing for corepwm_lib.corepwm_timebase.trans
 @W: CD796 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":91:10:91:28|Bit 15 of signal pwm_enable_out_wire is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
 Post processing for corepwm_lib.corepwm_reg_if.trans
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":245:6:245:7|Pruning unused register pwm_enable_reg_5(16 downto 1). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_70(128 downto 113). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_70(128 downto 113). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_61(112 downto 97). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_61(112 downto 97). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_52(96 downto 81). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_52(96 downto 81). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_43(80 downto 65). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_43(80 downto 65). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_34(64 downto 49). Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_34(64 downto 49). Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_25(48 downto 33). Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_25(48 downto 33). Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_16(32 downto 17). Make sure that there are no unused intermediate registers.
@@ -206,6 +210,7 @@ Post processing for corepwm_lib.corepwm_reg_if.trans
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":205:15:205:16|Pruning unused register pwm_negedge_reg_7(16 downto 1). Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":201:12:201:13|Pruning unused register pwm_posedge_reg_7(16 downto 1). Make sure that there are no unused intermediate registers.
 @W: CL169 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":111:6:111:7|Pruning unused register psh_enable_reg2_6(16 downto 9). Make sure that there are no unused intermediate registers.
+@W: CL271 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\reg_if.vhd":111:6:111:7|Pruning unused bits 8 to 4 of psh_enable_reg1_6(8 downto 1). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Post processing for corepwm_lib.corepwm.trans
 @W: CL252 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":294:10:294:20|Bit 0 of signal PRDATA_TACH is floating -- simulation mismatch possible.
 @W: CL252 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":294:10:294:20|Bit 1 of signal PRDATA_TACH is floating -- simulation mismatch possible.
@@ -225,6 +230,31 @@ Post processing for corepwm_lib.corepwm.trans
 @W: CL252 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":294:10:294:20|Bit 15 of signal PRDATA_TACH is floating -- simulation mismatch possible.
 @W: CL240 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":186:6:186:12|Signal TACHINT is floating; a simulation mismatch is possible.
 @N: CD630 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":29:7:29:14|Synthesizing coregpio_lib.coregpio.rtl.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":666:18:666:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":669:14:669:22|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":666:18:666:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":669:14:669:22|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":666:18:666:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":669:14:669:22|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":666:18:666:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":669:14:669:22|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":666:18:666:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":669:14:669:22|Removing redundant assignment.
 @N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":566:16:566:23|Removing redundant assignment.
 @N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":593:16:593:23|Removing redundant assignment.
 @N: CD364 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":620:16:620:24|Removing redundant assignment.
@@ -301,7 +331,7 @@ Post processing for work.sf2_mss_sys.rtl
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":154:0:154:9|Input PSLVERRS13 is unused.
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":155:0:155:9|Input PSLVERRS14 is unused.
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":156:0:156:9|Input PSLVERRS15 is unused.
-@N: CL134 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Found RAM CONFIG_reg, depth=3, width=8
+@N: CL134 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":521:8:521:9|Found RAM CONFIG_reg, depth=8, width=8
 @W: CL246 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\CoreGPIO\3.1.101\rtl\vhdl\core\coregpio.vhd":174:4:174:9|Input port bits 31 to 8 of pwdata(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":180:6:180:10|Input port bits 1 to 0 of paddr(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\Actel\DirectCore\corepwm\4.3.101\rtl\vhdl\core\corepwm.vhd":185:6:185:11|Input TACHIN is unused.
@@ -418,35 +448,33 @@ State machine has 4 reachable states with original encodings of:
 @W: CL246 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd":83:6:83:10|Input port bits 1 to 0 of paddr(4 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 80MB peak: 81MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Sun Dec 10 22:05:07 2017
-
-###########################################################]
-Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
-@N|Running in 64-bit mode
-
-Linker output is up to date. No re-linking necessary
-
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Sun Dec 10 22:05:08 2017
-
-###########################################################]
-@END
-
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 102MB peak: 105MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Dec 10 22:05:08 2017
+# Tue Dec 12 09:43:19 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+File C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Dec 12 09:43:20 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Tue Dec 12 09:43:20 2017
 
 ###########################################################]

@@ -70,13 +70,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100332"
 SIZE="3259"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100332"
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -204,13 +204,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreGPIO\3.1.101\CoreGPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100332"
 SIZE="3851"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreGPIO\3.1.101\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100332"
 SIZE="6166"
 LIBRARY="COREGPIO_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreGPIO\3.1.101\CoreGPIO.cxf"
@@ -363,7 +363,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\corepwm\4.3.101\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="6894"
 LIBRARY="COREPWM_LIB"
 PARENT="<project>\component\Actel\DirectCore\corepwm\4.3.101\corepwm.cxf"
@@ -371,7 +371,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\corepwm\4.3.101\corepwm.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100333"
 SIZE="2070"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
@@ -450,7 +450,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.0.104\CoreResetP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="582"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
@@ -470,19 +470,19 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreUARTapb\5.6.102\CoreUARTapb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="404"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956340"
+TIME="1513100331"
 SIZE="241"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956343"
+TIME="1513100335"
 SIZE="682"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
@@ -620,32 +620,32 @@ SIZE="2407"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512882779"
+TIME="1513102988"
 SIZE="6095"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.vhd,hdl"
 STATE="utd"
-TIME="1512874710"
-SIZE="7245"
+TIME="1513100482"
+SIZE="7238"
 PARENT="<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956339"
+TIME="1513100330"
 SIZE="710"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1512956339"
+TIME="1513100330"
 SIZE="5710"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CCC_0\SF2_MSS_sys_sb_CCC_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Clock_gen.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="12921"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -653,7 +653,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="2740"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -661,7 +661,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUART.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="22433"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -669,7 +669,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\CoreUARTapb.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="17799"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -677,7 +677,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\coreuart_pkg.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="531"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -685,7 +685,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\fifo_256x8.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="15186"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -693,7 +693,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Rx_async.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="21585"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -701,7 +701,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\rtl\vhdl\core\Tx_async.vhd,hdl"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="11228"
 LIBRARY="COREUARTAPB_LIB"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf"
@@ -709,31 +709,31 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\CoreUARTapb_0\SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956341"
+TIME="1513100333"
 SIZE="1900"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956343"
+TIME="1513100335"
 SIZE="476"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.vhd,hdl"
 STATE="utd"
-TIME="1512956343"
+TIME="1513100335"
 SIZE="1591"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\FABOSC_0\SF2_MSS_sys_sb_FABOSC_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512956352"
-SIZE="10655"
+TIME="1513100343"
+SIZE="10736"
 ENDFILE
 VALUE "<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.vhd,hdl"
 STATE="utd"
-TIME="1512956343"
+TIME="1513100336"
 SIZE="57599"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 IS_READONLY="TRUE"
@@ -793,8 +793,8 @@ SIZE="2031"
 ENDFILE
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
 STATE="utd"
-TIME="1512874710"
-SIZE="2627"
+TIME="1513103566"
+SIZE="3759"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\constraint\SF2_MSS_sys_derived_constraints.sdc,sdc"
@@ -1231,8 +1231,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1328,15 +1328,16 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-HDL;constraint\io\user.pdc;0
-SmartDesign;SF2_MSS_sys_sb;0
-StartPage;StartPage;0
-Constraint Manager;Constraint Manager;0
 Reports;Reports;0
-ReportsCurrentItem;SF2_MSS_sys reports:SF2_MSS_sys
-SmartDesign;SF2_MSS_sys_sb_MSS;0
+ReportsCurrentItem;Run PROGRAM Action:SF2_MSS_sys_PROGRAM.log
+Constraint Manager;Constraint Manager;0
+HDL;constraint\SF2_MSS_sys_derived_constraints.sdc;0
+SmartDesign;SF2_MSS_sys_sb;0
+HDL;constraint\io\user.pdc;0
 SmartDesign;SF2_MSS_sys;0
-ACTIVEVIEW;constraint\io\user.pdc
+SmartDesign;SF2_MSS_sys_sb_MSS;0
+StartPage;StartPage;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CoreGPIO_Driver::work","","FALSE","FALSE"

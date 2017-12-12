@@ -1,0 +1,63 @@
+INFO: Reading User SDC file C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\constraint\SF2_MSS_sys_derived_constraints.sdc.
+
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 21 fixed I/O macros, 11 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V4.0 - 11.8.2 
+Design: SF2_MSS_sys                     Started: Tue Dec 12 12:33:09 2017
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 2 seconds
+Placement Runtime            : 24 seconds
+
+Placer completed successfully.
+
+Design: SF2_MSS_sys                     
+Finished: Tue Dec 12 12:34:10 2017
+Total CPU Time:     00:00:58            Total Elapsed Time: 00:01:01
+Total Memory Usage: 331.3 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\designer\SF2_MSS_sys\SF2_MSS_sysStarted: Tue Dec 12 12:34:19 2017
+
+Final stats: search run time 9.126562
+
+Router completed successfully.
+
+Design: C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\sf2project\designer\SF2_MSS_sys\SF2_MSS_sys
+Finished: Tue Dec 12 12:34:40 2017
+Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:21
+Total Memory Usage: 496.8 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 981  | 12084 | 8.12       |
+| DFF           | 609  | 12084 | 5.04       |
+| I/O Register  | 0    | 246   | 0.00       |
+| Logic Element | 1091 | 12084 | 9.03       |
++---------------+------+-------+------------+
+

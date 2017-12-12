@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version map201609actrcp1, Build 005R, built Jan 25 2017
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Sun Dec 10 22:05:11 2017
+# Written on Tue Dec 12 09:43:24 2017
 
 
 ##### DESIGN INFO #######################################################
@@ -39,17 +39,22 @@ p:DEVRST_N
 p:GPIO_IN[0]
 p:GPIO_IN[1]
 p:GPIO_IN[2]
+p:GPIO_IN[3]
+p:GPIO_IN[4]
+p:GPIO_IN[5]
+p:GPIO_IN[6]
+p:GPIO_IN[7]
 p:GPIO_OUT[0]
 p:GPIO_OUT[1]
 p:GPIO_OUT[2]
+p:GPIO_OUT[3]
+p:GPIO_OUT[4]
+p:GPIO_OUT[5]
+p:GPIO_OUT[6]
+p:GPIO_OUT[7]
 p:PWM[0]
 p:PWM[1]
 p:PWM[2]
-p:PWM[3]
-p:PWM[4]
-p:PWM[5]
-p:PWM[6]
-p:PWM[7]
 p:RX
 p:SPI_0_CLK_M2F
 p:SPI_0_DI_F2M

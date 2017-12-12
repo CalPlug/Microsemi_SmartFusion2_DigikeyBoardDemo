@@ -22,7 +22,7 @@
 //Debugging Control     NOTE: Comment out on production eNVM builds to avoid Semihosting errors!!  (There is no target for the debug messages when running without a console)
 //**************************************************************************************************
 
-#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - do not go too crazy with Semihosting, it will slow down operation if used excessively.
+#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - Production build will not compile if you do not comment out!
 
 #ifdef VERBOSEDEBUGCONSOLE
 	   extern void initialise_monitor_handles(void); //ARM Semihosting enabled
@@ -100,6 +100,19 @@ uint32_t duty_cycle = 1;  //Set PWM initial duty cycle
 #define LED7 7 //(Digi-Key Board- Pin 128)
 #define LED8 8 //(Digi-Key Board -Pin 129)
 
+/*  //Identify GPIO Output numbers for use in "GPIO_set_output()" function (alternative)
+typedef enum __gpio_id_t {
+GPIO_0 = 0,
+GPIO_1 = 1,
+GPIO_2 = 2,
+GPIO_3 = 3,
+GPIO_4 = 4,
+GPIO_5 = 5,
+GPIO_6 = 6,
+GPIO_7 = 7
+} gpio_id_t;
+*/
+
 /******************************************************************************
  * Local function prototypes.
  *****************************************************************************/
@@ -137,8 +150,6 @@ int main( void )
 	    uint8_t rx_data[MAX_RX_DATA_SIZE]={0}; //initialize buffer as all 0's
 	    size_t rx_size;
 
-
-
 #ifdef VERBOSEDEBUGCONSOLE
 	iprintf("CoreUARTapb initialized\n");
 #endif
@@ -159,24 +170,57 @@ int main( void )
 * Initialize the CoreGPIO driver with the base address of the CoreGPIO
 * instance to use and the initial state of the outputs.
 *************************************************************************/
-    GPIO_init( &g_gpio,    COREGPIO_BASE_ADDR, GPIO_APB_32_BITS_BUS );
+    GPIO_init( &g_gpio, COREGPIO_BASE_ADDR, GPIO_APB_32_BITS_BUS );
 
 /**************************************************************************
 * Configure the GPIOs for the indicator LEDs
 *************************************************************************/
-    GPIO_config( &g_gpio, GPIO_0, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_LOW );  //LED1
-    GPIO_config( &g_gpio, GPIO_1, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH  );  //GPIO-0 held high for normal operation mode
-    GPIO_config( &g_gpio, GPIO_2, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //GPIO-2(EEPROM) held high
+    GPIO_config( &g_gpio, GPIO_0, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED0
+    GPIO_config( &g_gpio, GPIO_1, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED1
+    GPIO_config( &g_gpio, GPIO_2, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED2
+    GPIO_config( &g_gpio, GPIO_3, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED3
+    GPIO_config( &g_gpio, GPIO_4, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED4
+    GPIO_config( &g_gpio, GPIO_5, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 GPIO 0  (Program low)
+    GPIO_config( &g_gpio, GPIO_6, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 GPIO 2  GPIO Input
+    GPIO_config( &g_gpio, GPIO_7, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 Board Reset (Active low)
 
 
 /**************************************************************************
-* Configure the GPIOs for Inputs.
+* Configure the GPIOs for Inputs and Outputs.
 *************************************************************************/
-    GPIO_config( &g_gpio, GPIO_0, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE  );  //Button 1
-    GPIO_config( &g_gpio, GPIO_1, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE  ); //Button 2
-   /*CHECK*/ GPIO_config( &g_gpio, GPIO_2, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE ); 
+    GPIO_config( &g_gpio, GPIO_0, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE ); //Button 1
+    GPIO_config( &g_gpio, GPIO_1, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE ); //Button 2
+    GPIO_config( &g_gpio, GPIO_2, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_3, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_4, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_5, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_6, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_7, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
 
-   GPIO_set_outputs(&g_gpio, GPIO_1_MASK | GPIO_2_MASK);
+//initialize the GPIOs to High for LEDS, high for ESP8266 Reset, High for ESP8266 GPOI0 (stay out of program mode on reset)
+    uint32_t GPIOOutState = 0x00000000; //State hold for GPIO for reading and Masking GPIO Outputs, set as ALL ON
+    //Set Initial GPIO states
+    GPIO_set_output( &g_gpio, GPIO_0, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_1, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_2, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_3, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_4, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_5, 1 ); //ESP8266-GPIO0 (high at boot, low after reset activates ESP8266 program mode) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_6, 1 ); //ESP8266-GPIO2 (high at boot) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_7, 1 ); //ESP8266-RESET (high at boot, low is active) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    //GPIO_set_outputs(&g_gpio, GPIO_1_MASK | GPIO_2_MASK);
+    //Read back GPIo Output States
+    GPIOOutState = GPIO_get_outputs( &g_gpio );
+
+
+    /**************************************************************************
+    * Configure the PWMs for Outputs
+    *************************************************************************/
+	PWM_set_duty_cycle(&the_pwm, PWM_1, 0); //Default PWM for LED5 (D4) (Parked code) - Not used in design
+	PWM_set_duty_cycle(&the_pwm, PWM_2, 1); //Default PWM LED6 (D3) (Parked code) - Not used in design
+	PWM_set_duty_cycle(&the_pwm, PWM_3, 2); //Default PWM LED7 (D2) (Parked code) - Not used in design
+
+
 
 #ifdef VERBOSEDEBUGCONSOLE
 	iprintf("CoreGPIO configured\n");
@@ -189,9 +233,7 @@ int main( void )
  
 	GPIO_enable_irq( &g_gpio, GPIO_0 ); //enable IRQ for button 1
 	GPIO_enable_irq( &g_gpio, GPIO_1 ); //enable IRQ for button 2
-/*
- * The following section was modified by TM on 4/18/17
- */
+
 	NVIC_EnableIRQ(FabricIrq1_IRQn);
     NVIC_EnableIRQ(FabricIrq2_IRQn);
 
@@ -215,7 +257,6 @@ int main( void )
 	iprintf("Timer initialized and started\n");
 #endif
 
-	char commandcontrol[6]={0};
 
 /**************************************************************************
      * For-loop to check for input ffrom the ESP8266 via UART from Browser action.
@@ -241,7 +282,8 @@ int main( void )
 	            if ( rx_size > 0 && rx_data[0] == '*')  //seems like enough trash is observed and flushed before the next * is seen so the buffer is effectively cleared
 
 	            {
-							#ifdef VERBOSEDEBUGCONSOLE  //Test Printout
+							delay (10); //Delay for processing - required when semihosting is disabled in production builds
+	            	        #ifdef VERBOSEDEBUGCONSOLE  //Test Printout
 							iprintf("Test Array Printout of UART Buffer:\n"); //Identify operation via semihosting debug print (only check two not to overload semihosting)
 							for(int y=0; y<MAX_RX_DATA_SIZE; y++) //read in the full buffer
 							{
@@ -259,7 +301,7 @@ int main( void )
 									iprintf("Found  LED 0 ON Command\n");
 									#endif
 									PWM_set_duty_cycle(&the_pwm, PWM_2, 255); //turn on LED3
-									GPIO_set_outputs(&g_gpio, 0x00000000); //update GPIO pattern 1 for indicator LED - remember, this board's LEDs are inverted - a 0 is on!
+									GPIO_set_output( &g_gpio, GPIO_0, 0 ); //update GPIO pattern 1 for indicator LED - remember, this board's LEDs are inverted - a 0 is on!
 								}
 								else if (rx_data[y+1] == '0' && rx_data[y+2] == 'F') //Search for the business end of L1O
 							    {
@@ -267,7 +309,7 @@ int main( void )
 									iprintf("Found  LED 0 OFF Command\n");
 									#endif
 									PWM_set_duty_cycle(&the_pwm, PWM_2, 0); //turn off LED3
-									GPIO_set_outputs(&g_gpio, 0x00000001); //update GPIO pattern 1 for indicator LED - remember, this board's LEDs are inverted - a 0 is on!
+									GPIO_set_output( &g_gpio, GPIO_0, 1 ); //update GPIO pattern 1 for indicator LED - remember, this board's LEDs are inverted - a 0 is on!
 								}
 
 								else if (rx_data[y+1] == '1' && rx_data[y+2] == 'O') //Search for the business end of L1O
@@ -275,7 +317,7 @@ int main( void )
 									#ifdef VERBOSEDEBUGCONSOLE  //Test Printout
 									iprintf("Found  LED 1 ON Command\n");
 									#endif
-									PWM_set_duty_cycle(&the_pwm, PWM_3, 0); //turn on LED3, remember LEDS are tied to 3.3 V such that state of 0 is on!
+									GPIO_set_output( &g_gpio, GPIO_1, 0 ); //turn on LED3, remember LEDS are tied to 3.3 V such that state of 0 is on!
 								}
 								else if (rx_data[y+1] == '1' && rx_data[y+2] == 'F') //Search for the business end of L1O
 								{
@@ -283,7 +325,7 @@ int main( void )
 									iprintf("Found  LED 1 OFF Command\n");
 									#endif
 
-									PWM_set_duty_cycle(&the_pwm, PWM_3, 200); //turn on LED3, remember LEDS are tied to 3.3 V such that state of 0 is on!
+									GPIO_set_output( &g_gpio, GPIO_1, 1 ); //turn on LED3, remember LEDS are tied to 3.3 V such that state of 0 is on!
 								}
 								else
 								{}  //Rounding out the IF statements
