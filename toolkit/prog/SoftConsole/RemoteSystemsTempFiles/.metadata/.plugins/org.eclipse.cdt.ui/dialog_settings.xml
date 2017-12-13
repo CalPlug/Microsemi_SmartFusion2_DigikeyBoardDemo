@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+<<<<<<< HEAD:MsDkDemo/SoftConsole/.metadata/.plugins/org.eclipse.cdt.ui/dialog_settings.xml
+	<item value="C:\Users\Hiperwall\Desktop\DigiKeyBoard\SoftConsole\digikeyboard\CMSIS\startup_gcc\production-smartfusion2-execute-in-place.ld" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+=======
+>>>>>>> e94ff2074ecdbbaad46b6abfb0aa23a6121776cd:SF2_Project/MsDkDemo/SoftConsole/RemoteSystemsTempFiles/.metadata/.plugins/org.eclipse.cdt.ui/dialog_settings.xml
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>
