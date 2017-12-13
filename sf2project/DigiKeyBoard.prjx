@@ -860,8 +860,8 @@ SIZE="5864"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1512874710"
-SIZE="634"
+TIME="1513100482"
+SIZE="856"
 PARENT="<project>\component\work\SF2_MSS_sys\SF2_MSS_sys.cxf"
 PARENT="<project>\component\work\SF2_MSS_sys_sb\SF2_MSS_sys_sb.cxf"
 ENDFILE
@@ -884,22 +884,22 @@ SIZE="6454"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys.edn,syn_edn"
 STATE="utd"
-TIME="1512972322"
-SIZE="1619910"
+TIME="1513100616"
+SIZE="1354809"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys.so,so"
 STATE="utd"
-TIME="1512972322"
+TIME="1513100617"
 SIZE="281"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1512972322"
+TIME="1513100616"
 SIZE="3017"
 ENDFILE
 VALUE "<project>\synthesis\SF2_MSS_sys_syn.prj,prj"
 STATE="utd"
-TIME="1512972323"
+TIME="1513100617"
 SIZE="7969"
 ENDFILE
 ENDLIST
@@ -1231,8 +1231,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1328,16 +1328,16 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+SmartDesign;SF2_MSS_sys_sb;0
+StartPage;StartPage;0
+SmartDesign;SF2_MSS_sys_sb_MSS;0
+SmartDesign;SF2_MSS_sys;0
 Reports;Reports;0
 ReportsCurrentItem;Run PROGRAM Action:SF2_MSS_sys_PROGRAM.log
 Constraint Manager;Constraint Manager;0
 HDL;constraint\SF2_MSS_sys_derived_constraints.sdc;0
-SmartDesign;SF2_MSS_sys_sb;0
 HDL;constraint\io\user.pdc;0
-SmartDesign;SF2_MSS_sys;0
-SmartDesign;SF2_MSS_sys_sb_MSS;0
-StartPage;StartPage;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;SF2_MSS_sys_sb
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CoreGPIO_Driver::work","","FALSE","FALSE"

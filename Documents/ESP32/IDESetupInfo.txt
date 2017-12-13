@@ -1,0 +1,15 @@
+ESP32 Toolchain Setup with Arduino IDE
+
+There is a well documented workflow for this.  Two guides are especially good:
+
+Guide 1: https://techtutorialsx.com/2017/06/05/esp-wroom-32-uploading-a-program-with-arduino-ide/
+
+Guide 2: https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/windows.md
+
+In general here are some tips to make it work out well:
+
+1) Follow the folder paths to the letter.  The ESP32 tools should be in a folder named esp32 in a folder named espressif in a folder named tools in your Arduino sketches folder (you may need to create this path, including the tools folder)
+2) You can download the zip file from Github and build out the files in the folder from this rather than cloning using the GIT utility.
+3) When you run the git.exe file to download the xtensa tools, do so with elevated (admin provledges (run as administrator).  I had issues having it properly build out the folders without this and had to have it run a couple times.
+4) Chean up the files in the ESP32 folder so just the ones critical for the Arduino IDE to recognize the toolchain exist.
+5) remove the external libraries path from Arduino --> properties dueing this operation.  Once I did this, it seemed to work better. 
