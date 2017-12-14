@@ -22,3 +22,5 @@ When a button is pressed, the D9 LED comes on and action is happening until LED 
 
 A version of this firmware has been released as a programmable flash file - press this up to the Microsemi SF2 Digikey Maker board PCB using FlashPro Software (https://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software) or build the project and upload with Libero SOC 11.8 SP2.  (see this directory: \toolkit\ESP_FWProg\designer\SF2_MSS_sys\export)
 74880 is the baud rate for debug messages from the ESP01 bootloader
+
+Note:  Observe upload settings for each board in Arduino.  This is important to make sure communications works even with proper connectivity.  Make sure you are uploading to the poper board - the serial port number is a quick indication of this.  See screenshots in the Documents folder

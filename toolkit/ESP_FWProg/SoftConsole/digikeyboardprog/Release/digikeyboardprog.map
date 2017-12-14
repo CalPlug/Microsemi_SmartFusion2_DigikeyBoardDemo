@@ -1623,7 +1623,7 @@ END GROUP
  .debug_str     0x00016af7      0xb99 ./main.o
                                0xecc0 (size before relaxing)
 
-.debug_loc      0x00000000     0x77dc
+.debug_loc      0x00000000     0x77dd
  *(.debug_loc)
  .debug_loc     0x00000000      0xacd ./drivers/mss_sys_services/mss_comblk.o
  .debug_loc     0x00000acd     0x1b23 ./drivers/mss_sys_services/mss_sys_services.o
@@ -1636,7 +1636,7 @@ END GROUP
  .debug_loc     0x000067dd      0x9fe ./drivers/CoreGPIO/core_gpio.o
  .debug_loc     0x000071db      0x2c5 ./CMSIS/startup_gcc/newlib_stubs.o
  .debug_loc     0x000074a0       0xbe ./CMSIS/system_m2sxxx.o
- .debug_loc     0x0000755e      0x27e ./main.o
+ .debug_loc     0x0000755e      0x27f ./main.o
 
 .debug_macinfo
  *(.debug_macinfo)

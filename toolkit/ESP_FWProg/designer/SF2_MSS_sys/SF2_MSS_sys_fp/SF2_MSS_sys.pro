@@ -14,6 +14,14 @@
     <SerializationOption>
         Skip
     </SerializationOption>
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
+        <name>
+            E2001OV11W
+        </name>
+        <id>
+            E2001OV11W
+        </id>
+    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>

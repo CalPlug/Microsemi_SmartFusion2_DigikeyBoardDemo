@@ -1575,15 +1575,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Export FlashPro Express Job:SF2_MSS_sys_exportJob.log
-Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
-SmartDesign;SF2_MSS_sys;0
-SmartDesign;SF2_MSS_sys_sb_MSS;0
-HDL;constraint\io\user.pdc;0
-SmartDesign;SF2_MSS_sys_sb;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CoreGPIO_Driver::work","","FALSE","FALSE"

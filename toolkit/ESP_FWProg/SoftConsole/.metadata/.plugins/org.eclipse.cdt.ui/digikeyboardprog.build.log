@@ -1,4 +1,4 @@
-18:32:18 **** Incremental Build of configuration Release for project digikeyboardprog ****
+00:35:21 **** Incremental Build of configuration Release for project digikeyboardprog ****
 make all 
 Building file: ../hal/CortexM3/GNU/hal.S
 Invoking: Cross ARM GNU Assembler
@@ -106,5 +106,5 @@ arm-none-eabi-size --format=berkeley "digikeyboardprog.elf"
 Finished building: digikeyboardprog.siz
  
 
-18:32:41 Build Finished (took 22s.773ms)
+00:35:43 Build Finished (took 22s.708ms)
 

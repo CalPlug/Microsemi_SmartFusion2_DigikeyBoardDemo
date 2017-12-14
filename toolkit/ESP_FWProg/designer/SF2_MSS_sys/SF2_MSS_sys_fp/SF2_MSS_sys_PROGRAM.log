@@ -16,17 +16,17 @@ programmer 'E2001OV11W' : Scan and Check Chain PASSED.
 programmer 'E2001OV11W' : device 'M2S010' : Executing action PROGRAM
 programmer 'E2001OV11W' : device 'M2S010' : Family: Igloo2
 programmer 'E2001OV11W' : device 'M2S010' : Product:      M2GL005
-programmer 'E2001OV11W' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007a6844
+programmer 'E2001OV11W' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007a6944
 programmer 'E2001OV11W' : device 'M2S010' : EXPORT CRCERR[1] = 0
 programmer 'E2001OV11W' : device 'M2S010' : EXPORT EDCERR[1] = 0
 programmer 'E2001OV11W' : device 'M2S010' : Programming FPGA Array and eNVM...
 programmer 'E2001OV11W' : device 'M2S010' : ===================================================================================
 programmer 'E2001OV11W' : device 'M2S010' : EXPORT DSN[128] = 878af3a0dd27b17f2ff48a6c7c88828d
 programmer 'E2001OV11W' : device 'M2S010' : ===================================================================================
-programmer 'E2001OV11W' : device 'M2S010' : Finished: Wed Dec 13 18:34:03 2017 (Elapsed time 00:00:28)
+programmer 'E2001OV11W' : device 'M2S010' : Finished: Thu Dec 14 11:17:26 2017 (Elapsed time 00:00:28)
 programmer 'E2001OV11W' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E2001OV11W' : Chain programming PASSED.
-Chain Programming Finished: Wed Dec 13 18:34:03 2017 (Elapsed time 00:00:28)
+Chain Programming Finished: Thu Dec 14 11:17:26 2017 (Elapsed time 00:00:28)
 
                         o - o - o - o - o - o
 
