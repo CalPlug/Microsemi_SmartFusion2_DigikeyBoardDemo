@@ -3,8 +3,8 @@
 	<list key="installedFeatures">
 		<item value="gnu.io.rxtx.sdk:2.1.7.4_v20071016-417C7DP1Bh_eEaQJBrHBHg"/>
 		<item value="gnu.io.rxtx:2.1.7.4_v20071016-7B57e7UAXMAAqGAGf"/>
-		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:3.2.1.201508190739"/>
-		<item value="ilg.gnuarmeclipse.managedbuild.cross:1.14.1.201508190739"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:4.1.4.201704251808"/>
+		<item value="ilg.gnuarmeclipse.managedbuild.cross:2.4.1.201704251808"/>
 		<item value="org.eclipse.cdt.build.crossgcc:8.6.0.201502131403"/>
 		<item value="org.eclipse.cdt.gdb:8.6.0.201502131403"/>
 		<item value="org.eclipse.cdt.launch.remote:8.6.0.201502131403"/>

@@ -9,19 +9,19 @@ Part:			M2S010TQ144STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      545                100 %                
+SLE      375                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys:	545 (36.21 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys:	375 (35.11 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           442                100 %                
-ARI1          446                100 %                
-BLACK BOX     105                100 %                
+CFG           457                100 %                
+ARI1          157                100 %                
+BLACK BOX     110                100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys:	993 (65.98 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys:	724 (67.79 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -29,7 +29,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     1                  100 %                
 =====================================================
-Total MEMORY ELEMENTS in the block SF2_MSS_sys:	1 (0.07 % Utilization)
+Total MEMORY ELEMENTS in the block SF2_MSS_sys:	1 (0.09 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -37,15 +37,15 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block SF2_MSS_sys:	2 (0.13 % Utilization)
+Total GLOBAL BUFFERS in the block SF2_MSS_sys:	2 (0.19 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       27                 100 %                
+IO       34                 100 %                
 =================================================
-Total IO PADS in the block SF2_MSS_sys:	27 (1.79 % Utilization)
+Total IO PADS in the block SF2_MSS_sys:	34 (3.18 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb   ########
@@ -55,19 +55,19 @@ Instance path:   SF2_MSS_sys.SF2_MSS_sys_sb
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      545                100 %                
+SLE      375                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	545 (36.21 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	375 (35.11 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           442                100 %                
-ARI1          446                100 %                
-BLACK BOX     105                100 %                
+CFG           457                100 %                
+ARI1          157                100 %                
+BLACK BOX     110                100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys.SF2_MSS_sys_sb:	993 (65.98 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys.SF2_MSS_sys_sb:	724 (67.79 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -75,7 +75,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     1                  100 %                
 =====================================================
-Total MEMORY ELEMENTS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	1 (0.07 % Utilization)
+Total MEMORY ELEMENTS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	1 (0.09 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -83,7 +83,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     2                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	2 (0.13 % Utilization)
+Total GLOBAL BUFFERS in the block SF2_MSS_sys.SF2_MSS_sys_sb:	2 (0.19 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   CoreAPB3   ########
@@ -93,9 +93,10 @@ Instance path:   SF2_MSS_sys_sb.CoreAPB3
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      29                 6.56 %               
+CFG      30                 6.56 %               
+ARI1     2                  1.27 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreAPB3:	29 (1.93 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreAPB3:	32 (3.00 % Utilization)
 
 -----------------------------------------------------------------------
 ########   Utilization report for  cell:   COREAPB3_MUXPTOB3   ########
@@ -105,9 +106,10 @@ Instance path:   CoreAPB3.COREAPB3_MUXPTOB3
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      25                 5.66 %               
+CFG      26                 5.69 %               
+ARI1     2                  1.27 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	25 (1.66 % Utilization)
+Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	28 (2.62 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   CoreGPIO   ########
@@ -117,18 +119,18 @@ Instance path:   SF2_MSS_sys_sb.CoreGPIO
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      45                 8.26 %               
+SLE      120                32 %                 
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.CoreGPIO:	45 (2.99 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.CoreGPIO:	120 (11.24 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           171                38.7 %               
-BLACK BOX     3                  2.86 %               
+CFG           215                47 %                 
+BLACK BOX     8                  7.27 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreGPIO:	174 (11.56 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreGPIO:	223 (20.88 % Utilization)
 
 
 MEMORY ELEMENTS
@@ -136,7 +138,7 @@ Name         Total elements     Utilization     Notes
 -----------------------------------------------------
 RAM64X18     1                  100 %                
 =====================================================
-Total MEMORY ELEMENTS in the block SF2_MSS_sys_sb.CoreGPIO:	1 (0.07 % Utilization)
+Total MEMORY ELEMENTS in the block SF2_MSS_sys_sb.CoreGPIO:	1 (0.09 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   CoreResetP   ########
@@ -146,18 +148,18 @@ Instance path:   SF2_MSS_sys_sb.CoreResetP
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      9                  1.65 %               
+SLE      9                  2.4 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.CoreResetP:	9 (0.60 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.CoreResetP:	9 (0.84 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           2                  0.4520 %             
-BLACK BOX     92                 87.6 %               
+CFG           2                  0.4380 %             
+BLACK BOX     92                 83.6 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreResetP:	94 (6.25 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.CoreResetP:	94 (8.80 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -165,7 +167,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block SF2_MSS_sys_sb.CoreResetP:	1 (0.07 % Utilization)
+Total GLOBAL BUFFERS in the block SF2_MSS_sys_sb.CoreResetP:	1 (0.09 % Utilization)
 
 -------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CCC_0_FCCC   ########
@@ -175,9 +177,9 @@ Instance path:   SF2_MSS_sys_sb.SF2_MSS_sys_sb_CCC_0_FCCC
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  0.9520 %             
+BLACK BOX     1                  0.9090 %             
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CCC_0_FCCC:	1 (0.07 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CCC_0_FCCC:	1 (0.09 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -185,7 +187,7 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  50 %                 
 ===================================================
-Total GLOBAL BUFFERS in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CCC_0_FCCC:	1 (0.07 % Utilization)
+Total GLOBAL BUFFERS in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CCC_0_FCCC:	1 (0.09 % Utilization)
 
 ----------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb   ########
@@ -195,19 +197,19 @@ Instance path:   SF2_MSS_sys_sb.SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      114                20.9 %               
+SLE      114                30.4 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb:	114 (7.57 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb:	114 (10.67 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           99                 22.4 %               
-ARI1          19                 4.26 %               
-BLACK BOX     4                  3.81 %               
+CFG           140                30.6 %               
+ARI1          19                 12.1 %               
+BLACK BOX     4                  3.64 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb:	122 (8.11 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb:	163 (15.26 % Utilization)
 
 -----------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CoreUARTapb_0_COREUART   ########    
@@ -217,19 +219,19 @@ Instance path:   SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.SF2_MSS_sys_sb_CoreUAR
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      90                 16.5 %               
+SLE      90                 24 %                 
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.SF2_MSS_sys_sb_CoreUARTapb_0_COREUART:	90 (5.98 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.SF2_MSS_sys_sb_CoreUARTapb_0_COREUART:	90 (8.43 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           91                 20.6 %               
-ARI1          19                 4.26 %               
-BLACK BOX     4                  3.81 %               
+CFG           113                24.7 %               
+ARI1          19                 12.1 %               
+BLACK BOX     4                  3.64 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.SF2_MSS_sys_sb_CoreUARTapb_0_COREUART:	114 (7.57 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_CoreUARTapb.SF2_MSS_sys_sb_CoreUARTapb_0_COREUART:	136 (12.73 % Utilization)
 
 ---------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen   ######## 
@@ -239,18 +241,18 @@ Instance path:   SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTap
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      19                 3.49 %               
+SLE      19                 5.07 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen:	19 (1.26 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen:	19 (1.78 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      10                 2.26 %               
-ARI1     14                 3.14 %               
+CFG      10                 2.19 %               
+ARI1     14                 8.92 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen:	24 (1.59 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen:	24 (2.25 % Utilization)
 
 --------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async   ######## 
@@ -260,18 +262,18 @@ Instance path:   SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTap
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      41                 7.52 %               
+SLE      41                 10.9 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async:	41 (2.72 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async:	41 (3.84 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           75                 17 %                 
-BLACK BOX     3                  2.86 %               
+CFG           75                 16.4 %               
+BLACK BOX     3                  2.73 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async:	78 (5.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Rx_async:	78 (7.30 % Utilization)
 
 --------------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async   ######## 
@@ -281,19 +283,19 @@ Instance path:   SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTap
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      21                 3.85 %               
+SLE      21                 5.6 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async:	21 (1.40 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async:	21 (1.97 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           5                  1.13 %               
-ARI1          5                  1.12 %               
-BLACK BOX     1                  0.9520 %             
+CFG           23                 5.03 %               
+ARI1          5                  3.18 %               
+BLACK BOX     1                  0.9090 %             
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async:	11 (0.73 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb_CoreUARTapb_0_COREUART.SF2_MSS_sys_sb_CoreUARTapb_0_Tx_async:	29 (2.72 % Utilization)
 
 ---------------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_FABOSC_0_OSC   ########
@@ -303,9 +305,9 @@ Instance path:   SF2_MSS_sys_sb.SF2_MSS_sys_sb_FABOSC_0_OSC
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  0.9520 %             
+BLACK BOX     1                  0.9090 %             
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_FABOSC_0_OSC:	1 (0.07 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_FABOSC_0_OSC:	1 (0.09 % Utilization)
 
 ------------------------------------------------------------------------
 ########   Utilization report for  cell:   SF2_MSS_sys_sb_MSS   ########
@@ -315,9 +317,10 @@ Instance path:   SF2_MSS_sys_sb.SF2_MSS_sys_sb_MSS
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-BLACK BOX     1                  0.9520 %             
+CFG           44                 9.63 %               
+BLACK BOX     1                  0.9090 %             
 ======================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_MSS:	1 (0.07 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.SF2_MSS_sys_sb_MSS:	45 (4.21 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm   ########
@@ -327,18 +330,18 @@ Instance path:   SF2_MSS_sys_sb.corepwm
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      377                69.2 %               
+SLE      132                35.2 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.corepwm:	377 (25.05 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SF2_MSS_sys_sb.corepwm:	132 (12.36 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      141                31.9 %               
-ARI1     427                95.7 %               
+CFG      26                 5.69 %               
+ARI1     136                86.6 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.corepwm:	568 (37.74 % Utilization)
+Total COMBINATIONAL LOGIC in the block SF2_MSS_sys_sb.corepwm:	162 (15.17 % Utilization)
 
 ---------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_pwm_gen   ########
@@ -348,18 +351,18 @@ Instance path:   corepwm.corepwm_pwm_gen
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      8                  1.47 %               
+SLE      1                  0.2670 %             
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_pwm_gen:	8 (0.53 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_pwm_gen:	1 (0.09 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      24                 5.43 %               
-ARI1     192                43 %                 
+CFG      3                  0.6560 %             
+ARI1     24                 15.3 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_pwm_gen:	216 (14.35 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_pwm_gen:	27 (2.53 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_reg_if   ########
@@ -369,18 +372,18 @@ Instance path:   corepwm.corepwm_reg_if
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      329                60.4 %               
+SLE      98                 26.1 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_reg_if:	329 (21.86 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_reg_if:	98 (9.18 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      113                25.6 %               
-ARI1     161                36.1 %               
+CFG      20                 4.38 %               
+ARI1     38                 24.2 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_reg_if:	274 (18.21 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_reg_if:	58 (5.43 % Utilization)
 
 ----------------------------------------------------------------------
 ########   Utilization report for  cell:   corepwm_timebase   ########
@@ -390,18 +393,18 @@ Instance path:   corepwm.corepwm_timebase
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      32                 5.87 %               
+SLE      32                 8.53 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_timebase:	32 (2.13 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block corepwm.corepwm_timebase:	32 (3.00 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      1                  0.2260 %             
-ARI1     74                 16.6 %               
+CFG      1                  0.2190 %             
+ARI1     74                 47.1 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block corepwm.corepwm_timebase:	75 (4.98 % Utilization)
+Total COMBINATIONAL LOGIC in the block corepwm.corepwm_timebase:	75 (7.02 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

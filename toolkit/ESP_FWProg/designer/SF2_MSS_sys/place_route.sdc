@@ -1,7 +1,7 @@
 # Microsemi Corp.
-# Date: 2017-Dec-08 20:34:37
+# Date: 2017-Dec-13 17:51:12
 # This file was generated based on the following SDC source files:
-#   C:/Users/Hiperwall/Desktop/DigiKeyBoard/constraint/SF2_MSS_sys_derived_constraints.sdc
+#   C:/Users/calplug/Documents/GitHub/Microsemi_SmartFusion2_DigikeyBoardDemo/toolkit/ESP_FWProg/constraint/SF2_MSS_sys_derived_constraints.sdc
 #
 
 create_clock -name {SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT} -period 20 [ get_pins { SF2_MSS_sys_sb_0/FABOSC_0/I_RCOSC_25_50MHZ/CLKOUT } ]

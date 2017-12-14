@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Resource Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)</text>
-<text>Date: Fri Dec 08 20:33:11 2017
+<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)</text>
+<text>Date: Wed Dec 13 15:07:21 2017
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys.edn</cell>
+ <cell>C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\synthesis\SF2_MSS_sys.edn</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -106,15 +106,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>954</cell>
+ <cell>659</cell>
  <cell>12084</cell>
- <cell>7.89</cell>
+ <cell>5.45</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>581</cell>
+ <cell>411</cell>
  <cell>12084</cell>
- <cell>4.81</cell>
+ <cell>3.40</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -124,15 +124,15 @@
 </row>
 <row>
  <cell>User I/O</cell>
- <cell>27</cell>
+ <cell>34</cell>
  <cell>84</cell>
- <cell>32.14</cell>
+ <cell>40.48</cell>
 </row>
 <row>
  <cell>-- Single-ended I/O</cell>
- <cell>27</cell>
+ <cell>34</cell>
  <cell>84</cell>
- <cell>32.14</cell>
+ <cell>40.48</cell>
 </row>
 <row>
  <cell>-- Differential I/O Pairs</cell>
@@ -204,8 +204,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>918</cell>
- <cell>545</cell>
+ <cell>623</cell>
+ <cell>375</cell>
 </row>
 <row>
  <cell>RAM64x18 Interface Logic</cell>
@@ -224,8 +224,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>954</cell>
- <cell>581</cell>
+ <cell>659</cell>
+ <cell>411</cell>
 </row>
 </table>
 <section><name>MSS Resource Usage</name></section>
@@ -313,15 +313,15 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>50</cell>
+ <cell>12</cell>
 </row>
 <row>
  <cell>5</cell>
- <cell>10</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>9</cell>
- <cell>25</cell>
+ <cell>4</cell>
 </row>
 <row>
  <cell>14</cell>
@@ -333,7 +333,7 @@
 </row>
 <row>
  <cell>Total</cell>
- <cell>91</cell>
+ <cell>23</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -346,7 +346,7 @@
 </header>
 <row>
  <cell>Input I/O</cell>
- <cell>7</cell>
+ <cell>14</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -389,7 +389,7 @@
  <cell>LVCMOS25</cell>
  <cell> 2.50v</cell>
  <cell> N/A</cell>
- <cell> 7</cell>
+ <cell> 14</cell>
  <cell> 20</cell>
  <cell> 0</cell>
 </row>
@@ -413,7 +413,7 @@
 </row>
 <row>
  <cell>UnPlaced</cell>
- <cell> 27</cell>
+ <cell> 34</cell>
  <cell>100.00%</cell>
 </row>
 </table>
@@ -425,7 +425,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>547</cell>
+ <cell>377</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/FAB_CCC_GL0</cell>
 </row>
@@ -440,7 +440,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>536</cell>
+ <cell>366</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/MSS_READY</cell>
 </row>
@@ -471,27 +471,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>166</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>102</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>69</cell>
+ <cell>68</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
@@ -501,9 +481,9 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>59</cell>
+ <cell>51</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[6]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
 <row>
  <cell></cell>
@@ -511,39 +491,9 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>47</cell>
+ <cell>37</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[7]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[1]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
 <row>
  <cell></cell>
@@ -561,14 +511,64 @@
  <cell>Driver: SF2_MSS_sys_sb_0/corepwm_0_0/xhdl58.reg_if_inst/G2.1.prescale_reg7</cell>
 </row>
 <row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave2_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreAPB3_0/iPSELS_raw[2]</cell>
+</row>
+<row>
  <cell>29</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[2]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreGPIO_0/N_360</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreGPIO_0/GEN_BITS.0.APB_32.un15_fixed_config_0_a2_0_a2_RNIGB3N</cell>
+</row>
+<row>
+ <cell>27</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave1_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreAPB3_0/iPSELS_raw[1]</cell>
+</row>
+<row>
+ <cell>24</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
+</row>
+<row>
+ <cell>23</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreUARTapb_0/uUART/baud_clock</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreUARTapb_0/uUART/make_SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen/baud_clock_int</cell>
+</row>
+<row>
+ <cell>22</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/corepwm_0_0/prescale_cnt</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/corepwm_0_0/G0b.timebase_inst/sync_pulse_1_cry_0</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -579,27 +579,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>166</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>102</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>69</cell>
+ <cell>68</cell>
  <cell>INT_NET</cell>
  <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[4]</cell>
 </row>
@@ -609,9 +589,9 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>59</cell>
+ <cell>51</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[6]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[2]</cell>
 </row>
 <row>
  <cell></cell>
@@ -619,39 +599,9 @@
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
 </row>
 <row>
- <cell>47</cell>
+ <cell>37</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[7]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>33</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[0]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
-</row>
-<row>
- <cell>32</cell>
- <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[1]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PADDR[3]</cell>
 </row>
 <row>
  <cell></cell>
@@ -669,14 +619,64 @@
  <cell>Driver: SF2_MSS_sys_sb_0/corepwm_0_0/xhdl58.reg_if_inst/G2.1.prescale_reg7</cell>
 </row>
 <row>
+ <cell>31</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave2_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreAPB3_0/iPSELS_raw[2]</cell>
+</row>
+<row>
  <cell>29</cell>
  <cell>INT_NET</cell>
- <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[2]</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreGPIO_0/N_360</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreGPIO_0/GEN_BITS.0.APB_32.un15_fixed_config_0_a2_0_a2_RNIGB3N</cell>
+</row>
+<row>
+ <cell>27</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave1_PSELx</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreAPB3_0/iPSELS_raw[1]</cell>
+</row>
+<row>
+ <cell>24</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreAPB3_0_APBmslave0_PWDATA[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
  <cell>Driver: SF2_MSS_sys_sb_0/SF2_MSS_sys_sb_MSS_0/MSS_ADLIB_INST</cell>
+</row>
+<row>
+ <cell>23</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/CoreUARTapb_0/uUART/baud_clock</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/CoreUARTapb_0/uUART/make_SF2_MSS_sys_sb_CoreUARTapb_0_Clock_gen/baud_clock_int</cell>
+</row>
+<row>
+ <cell>22</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : SF2_MSS_sys_sb_0/corepwm_0_0/prescale_cnt</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: SF2_MSS_sys_sb_0/corepwm_0_0/G0b.timebase_inst/sync_pulse_1_cry_0</cell>
 </row>
 </table>
 </doc>

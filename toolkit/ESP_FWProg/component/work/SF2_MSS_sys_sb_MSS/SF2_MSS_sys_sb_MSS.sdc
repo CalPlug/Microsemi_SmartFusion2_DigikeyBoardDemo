@@ -1,6 +1,6 @@
 set_component SF2_MSS_sys_sb_MSS
 # Microsemi Corp.
-# Date: 2017-Nov-01 15:11:02
+# Date: 2017-Dec-13 14:58:19
 #
 
 create_clock -period 28.5714 [ get_pins { MSS_ADLIB_INST/CLK_CONFIG_APB } ]

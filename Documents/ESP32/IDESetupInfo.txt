@@ -2,9 +2,11 @@ ESP32 Toolchain Setup with Arduino IDE
 
 There is a well documented workflow for this.  Two guides are especially good:
 
-Guide 1: https://techtutorialsx.com/2017/06/05/esp-wroom-32-uploading-a-program-with-arduino-ide/
+Guide 1: https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide#installing-the-esp32-arduino-core
 
 Guide 2: https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/windows.md
+
+Using the ESP32WRROM Module:  https://techtutorialsx.com/2017/06/05/esp-wroom-32-uploading-a-program-with-arduino-ide/
 
 In general here are some tips to make it work out well:
 

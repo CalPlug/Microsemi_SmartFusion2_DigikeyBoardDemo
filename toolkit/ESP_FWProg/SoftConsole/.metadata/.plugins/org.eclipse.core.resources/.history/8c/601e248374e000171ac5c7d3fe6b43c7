@@ -1,0 +1,433 @@
+/*******************************************************************************
+ *Digi-Key Board Demo Programmer
+ *Application code (c) Copyright 2017 Microsemi SoC Products Group & Calit2 at the University of California, Irvine.
+ *Base Example code (c) Copyright 2015 Microsemi SoC Products Group.  All rights reserved.
+ *Extended application by Dr. Michael Klopfer (Calit2) + Crystal Lai (Calit2), Paolo Caros (Calit2) + Calit2 student team with support from Tim McCarthy (Microsemi)
+ *This example project allows access to the ESP8266 and ESP32 on-board the Microsemi SF2 Digikey Maker board for programming
+ *Initial Build v1.0: Dec 2017
+ *
+ */
+
+#include "platform.h"
+#include "drivers/CorePWM/core_pwm.h"
+#include "drivers/mss_timer/mss_timer.h"
+#include "CMSIS/system_m2sxxx.h"
+#include "hal.h"
+#include "drivers/CoreUARTapb/core_uart_apb.h"
+#include "drivers/CoreGPIO/core_gpio.h"
+#include "m2sxxx.h"
+#include <stdio.h>  //used for ARM Semihosting (Console Debug)
+
+//**************************************************************************************************
+//Debugging Control     NOTE: Comment out on production eNVM builds to avoid Semihosting errors!!  (There is no target for the debug messages when running without a console)
+//**************************************************************************************************
+
+//#define VERBOSEDEBUGCONSOLE //Verbose debugging in console using ARM Semihosting, comment out to disable console debug messages - Production build will not compile if you do not comment out!
+
+#ifdef VERBOSEDEBUGCONSOLE
+	   extern void initialise_monitor_handles(void); //ARM Semihosting enabled
+#endif
+
+/******************************************************************************
+ * Sample baud value to achieve UART communication at a 74880 baud rate with a (50MHz Digikeyboard clock source.)
+ * This value is calculated using the following equation:
+ *      BAUD_VALUE = (CLOCK / (16 * BAUD_RATE)) - 1
+ *      For CoreUART
+ *****************************************************************************/
+#define BAUD_VALUE    57
+	   // 57 as calculated baud value for 74880, used for ESP8266
+	   //56, 0F sent, same with 58
+
+
+/******************************************************************************
+ * Maximum UART receiver buffer size.
+ *****************************************************************************/
+#define MAX_RX_DATA_SIZE    10 //RX Buffer Length
+ 
+
+/******************************************************************************
+ * CoreGPIO instance data.
+ *****************************************************************************/
+gpio_instance_t g_gpio;
+
+
+/******************************************************************************
+ * CoreUARTapb instance data.
+ *****************************************************************************/
+
+UART_instance_t g_uart;
+
+
+#define COREUARTAPB0_BASE_ADDR	0x50002000
+
+/******************************************************************************
+ * TX Send message (This was originally a heatbeat - now it is used to clear the display in the bowser)
+ *****************************************************************************/
+uint8_t g_message[] ="";  //Blanking message for webpage - can be used in example to send as heartbeat
+
+/******************************************************************************
+ * CorePWM declare base_addr.
+ *****************************************************************************/
+#define COREPWM_BASE_ADDR 0x50000000
+
+/******************************************************************************
+ * CorePWM instance data.
+ *****************************************************************************/
+pwm_instance_t the_pwm;
+uint32_t duty_cycle = 1;  //Set PWM initial duty cycle
+
+/******************************************************************************
+ * Delay count used to time the delay between duty cycle updates.  (Unless fabric is changed please do not modify, unless you have an exceedingly good reason to do so)
+ *****************************************************************************/
+#define DELAY_COUNT     6500  //principle multiplier to set delays in function (changing this changes the length of all delays, modify with caution, should be set so a delay of 1000 = 1 second, hence a unit is equalled approximately to 1 ms)
+
+/******************************************************************************
+ * PWM prescale and period configuration values to set PWM frequency and duty cycle.  (Unless fabric is changed please do not modify, unless you have an exceedingly good reason to do so, these values work for hobby servos)
+ *****************************************************************************/
+#define PWM_PRESCALE    250  //Pre-scale value 4
+#define PWM_PERIOD      499  //full period
+//Set PWM Period and duty cycle values
+
+
+/******************************************************************************
+//LED Name mapping to PWM Outputs
+ ******************************************************************************/
+#define LED2 2 //(Digi-Key Board- Pin 118 )
+#define LED3 3 //(Digi-Key Board- Pin 122)
+#define LED4 4 //(Digi-Key Board- Pin 123)
+#define LED5 5 //(Digi-Key Board- Pin 124)
+#define LED6 6 //(Digi-Key Board- Pin 125)
+#define LED7 7 //(Digi-Key Board- Pin 128)
+#define LED8 8 //(Digi-Key Board -Pin 129)
+
+/*  //Identify GPIO Output numbers for use in "GPIO_set_output()" function (alternative)
+typedef enum __gpio_id_t {
+GPIO_0 = 0,
+GPIO_1 = 1,
+GPIO_2 = 2,
+GPIO_3 = 3,
+GPIO_4 = 4,
+GPIO_5 = 5,
+GPIO_6 = 6,
+GPIO_7 = 7
+} gpio_id_t;
+*/
+
+/******************************************************************************
+ * Local function prototypes.
+ *****************************************************************************/
+void delay( int mult );
+
+
+/******************************************************************************
+ * Program MAIN function.
+ *****************************************************************************/
+int main( void )
+{
+#ifdef VERBOSEDEBUGCONSOLE
+	initialise_monitor_handles();
+	iprintf("Debug messages via ARM Semihosting initialized\n");  //Notification of Semihosting enabled
+#endif
+/**************************************************************************
+ * Initialize the CorePWM instance setting the prescale and period values.
+ *************************************************************************/
+		PWM_init( &the_pwm, COREPWM_BASE_ADDR, PWM_PRESCALE, PWM_PERIOD );
+	    delay(200);  //add ~200ms delay to prevent HAL assertion issue
+
+/**************************************************************************
+* Initialize CoreUARTapb with its base address, baud value, and line
+* configuration.
+*************************************************************************/
+
+	UART_init( &g_uart, COREUARTAPB0_BASE_ADDR,
+	BAUD_VALUE, (DATA_8_BITS | NO_PARITY) ); //set to communicate with 115200/8/N/1
+
+	/**************************************************************************
+* Initialize communication components of application
+*************************************************************************/
+//Initialize UART RX buffer
+
+	    uint8_t rx_data[MAX_RX_DATA_SIZE]={0}; //initialize buffer as all 0's
+	    size_t rx_size;
+
+#ifdef VERBOSEDEBUGCONSOLE
+	iprintf("CoreUARTapb initialized\n");
+#endif
+
+// MSS Timer Initialization
+		/*--------------------------------------------------------------------------
+		* Ensure the CMSIS-PAL provided g_FrequencyPCLK0 global variable contains
+		* the correct frequency of the APB bus connecting the MSS timer to the
+		* rest of the system.
+		*/
+		SystemCoreClockUpdate();
+
+#ifdef VERBOSEDEBUGCONSOLE
+		iprintf("MSS Timer Initialized\n");
+#endif
+
+/**************************************************************************
+* Initialize the CoreGPIO driver with the base address of the CoreGPIO
+* instance to use and the initial state of the outputs.
+*************************************************************************/
+    GPIO_init( &g_gpio, COREGPIO_BASE_ADDR, GPIO_APB_32_BITS_BUS );
+
+/**************************************************************************
+* Configure the GPIOs for the indicator LEDs
+*************************************************************************/
+    GPIO_config( &g_gpio, GPIO_0, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED0
+    GPIO_config( &g_gpio, GPIO_1, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED1
+    GPIO_config( &g_gpio, GPIO_2, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED2
+    GPIO_config( &g_gpio, GPIO_3, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED3
+    GPIO_config( &g_gpio, GPIO_4, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //LED4
+    GPIO_config( &g_gpio, GPIO_5, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 GPIO 0  (Program low)
+    GPIO_config( &g_gpio, GPIO_6, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 GPIO 2  GPIO Input
+    GPIO_config( &g_gpio, GPIO_7, GPIO_OUTPUT_MODE | GPIO_IRQ_LEVEL_HIGH );  //ESP8266 Board Reset (Active low)
+
+
+/**************************************************************************
+* Configure the GPIOs for Inputs and Outputs.
+*************************************************************************/
+    GPIO_config( &g_gpio, GPIO_0, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE ); //Button 1
+    GPIO_config( &g_gpio, GPIO_1, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE ); //Button 2
+    GPIO_config( &g_gpio, GPIO_2, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_3, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_4, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_5, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_6, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+    GPIO_config( &g_gpio, GPIO_7, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
+
+//initialize the GPIOs to High for LEDS, high for ESP8266 Reset, High for ESP8266 GPOI0 (stay out of program mode on reset)
+    uint32_t GPIOOutState = 0x00000000; //State hold for GPIO for reading and Masking GPIO Outputs, set as ALL ON
+    //Set Initial GPIO states
+    GPIO_set_output( &g_gpio, GPIO_0, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_1, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_2, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_3, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_4, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_5, 1 ); //ESP8266-GPIO0 (high at boot, low after reset activates ESP8266 program mode) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_6, 1 ); //ESP8266-GPIO2 (high at boot) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    GPIO_set_output( &g_gpio, GPIO_7, 1 ); //ESP8266-RESET (high at boot, low is active) Set GPIO state for individual pin, alternative function that takes care of bitmasking
+    //GPIO_set_outputs(&g_gpio, GPIO_1_MASK | GPIO_2_MASK);
+    //Read back GPIo Output States
+    GPIOOutState = GPIO_get_outputs( &g_gpio );
+
+
+    /**************************************************************************
+    * Configure the PWMs for Outputs
+    *************************************************************************/
+	PWM_set_duty_cycle(&the_pwm, PWM_1, 0); //Default PWM for LED5 (D4) (Parked code) - Not used in design
+
+
+
+
+#ifdef VERBOSEDEBUGCONSOLE
+	iprintf("CoreGPIO configured\n");
+#endif
+    
+/**************************************************************************
+* Enable individual GPIO interrupts. The interrupts must be enabled both at
+* the GPIO peripheral and Cortex-M3 interrupt controller levels.
+*************************************************************************/
+ 
+	GPIO_enable_irq( &g_gpio, GPIO_0 ); //enable IRQ for button 1
+	GPIO_enable_irq( &g_gpio, GPIO_1 ); //enable IRQ for button 2
+
+	NVIC_EnableIRQ(FabricIrq1_IRQn);
+    NVIC_EnableIRQ(FabricIrq2_IRQn);
+
+	// FabricIrq1 is from GPIN[0] which is connected to SW1; FabricIrq2 is from GPIN[1] which is connected to SW2
+	NVIC_SetPriority(FabricIrq1_IRQn, 6u);
+	NVIC_SetPriority(FabricIrq2_IRQn, 5u);	// set IRQ2 to a higher level than IRQ1; If SW2 is pressed while SW1 is depresses SW2 IRQ2 ISR will be executed
+
+/**************************************************************************
+* Configure Timer1
+* Use the timer input frequency as load value to achieve a one second
+* periodic interrupt.
+*************************************************************************/
+	uint32_t timer1_load_value;
+    timer1_load_value = g_FrequencyPCLK0 *5;		// modify for 10 second delay  - this is the rate of clear for the displayed messages
+    MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
+    MSS_TIM1_load_immediate(timer1_load_value);
+    MSS_TIM1_start();
+    MSS_TIM1_enable_irq();
+
+#ifdef VERBOSEDEBUGCONSOLE
+	iprintf("Timer initialized and started\n");
+#endif
+
+
+/**************************************************************************
+     * For-loop to check for input ffrom the ESP8266 via UART from Browser action.
+*************************************************************************/
+		while(1)
+	    {
+//Endless loop - all we care about here are the interrupts
+	    }
+}
+
+
+/*==============================================================================
+ * Toggle LEDs and send message via UART on TIM1 interrupt.
+ */
+void Timer1_IRQHandler(void)
+{
+	//This has no use in this project
+	 size_t size_in_fifo;
+     size_in_fifo = UART_fill_tx_fifo( &g_uart, g_message, sizeof(g_message)); //send the hearbeat message to let the tablet know the link is still active
+     UART_send( &g_uart, (const uint8_t *)&g_message, size_in_fifo );
+#ifdef VERBOSEDEBUGCONSOLE
+     initialise_monitor_handles();
+     iprintf("Blanking message sent\n");
+#endif
+
+/* Clear TIM1 interrupt */
+    MSS_TIM1_clear_irq();
+}
+
+
+/**********************************************************************
+* Interrupt driven control of function execution.
+*********************************************************************/
+//Buttons are handled through interrupts.  GPIO 0 interrupt service routine is FabricIrq1 ISR.  GPIO 0: This interrupt service routine function will be called when the SW1.  
+//It will keep getting called as long as the SW1 button is pressed because the GPIO 0 input is configured as a level interrupt source.
+
+//Example:
+//Enable Interrupt for Button 1 - GPIO_disable_irq( &g_gpio, GPIO_0 ); is changed to GPIO_enable_irq( &g_gpio, GPIO_0 );
+//Enable Interrupt for Button 2 - GPIO_disable_irq( &g_gpio, GPIO_1 ); is changed to GPIO_enable_irq( &g_gpio, GPIO_1 );
+
+void FabricIrq1_IRQHandler( void )
+{
+/**********************************************************************
+* Disable GPIO interrupts while updating the delay counter and
+* GPIO pattern since these can also be modified within the GPIO
+* interrupt service routines.
+*********************************************************************/
+	GPIO_disable_irq( &g_gpio, GPIO_0 );
+    GPIO_disable_irq( &g_gpio, GPIO_1 );
+
+/******************************************************************************
+* Write a message to the SoftConsole host via OpenOCD and the debugger
+*****************************************************************************/
+#ifdef VERBOSEDEBUGCONSOLE
+    	initialise_monitor_handles();
+		iprintf("ESP32 and ESP8266 Reset Sequence Initialized (Button 1) - \n"); //Reset Button
+#endif
+
+GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn Off Indicator Light
+
+//Reset Sequence
+GPIO_set_output( &g_gpio, GPIO_2, 0 ); //For ESP32, Bring Reset Low to reset Board
+GPIO_set_output( &g_gpio, GPIO_7, 0 ); //For ESP8266, Bring Reset Low to reset the board
+delay (500);
+GPIO_set_output( &g_gpio, GPIO_7, 1 ); //For ESP8266, Bring Reset high to re-enable the board
+GPIO_set_output( &g_gpio, GPIO_2, 1 ); //For ESP32, Bring Reset high to re-enable the Board
+delay (500); //allow to restart
+
+//Setup Defaults
+GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program)  //keep high
+GPIO_set_output( &g_gpio, GPIO_4, 0 ); //Keep ESP32 GPIO 2 low to permit auto programming as required
+
+GPIO_set_output( &g_gpio, GPIO_0, 1 ); //Turn Off Indicator Light
+
+
+	
+
+/********************************************************************
+* Clear interrupt both at the GPIO levels.
+*********************************************************************/
+    GPIO_clear_irq( &g_gpio, GPIO_0 );
+    GPIO_clear_irq( &g_gpio, GPIO_1 );
+
+/********************************************************************
+* Clear the interrupt in the Cortex-M3 NVIC.
+*********************************************************************/
+    NVIC_ClearPendingIRQ(FabricIrq1_IRQn);
+    GPIO_enable_irq( &g_gpio, GPIO_0 ); //re-enable IRQ for Button 1
+    GPIO_enable_irq( &g_gpio, GPIO_1 );  //re-enable IRQ for Button 2
+}
+
+void FabricIrq2_IRQHandler( void )
+{
+/**********************************************************************
+* If SW2 (stop switch) is pressed, disable PWM outputs and halt until 
+*board is reset or debugger is re-launched, this is an effective E-STOP
+***********************************************************************/
+//This functionality is uncalled and unused
+	GPIO_disable_irq( &g_gpio, GPIO_0 );	// disable the GPIO_0 (SW1) interrupt
+    GPIO_disable_irq( &g_gpio, GPIO_1 );	// keep the GPIO_1 (SW2) interrupt enabled
+
+
+/******************************************************************************
+ * Write a message to the SoftConsole host via OpenOCD and the debugger
+*****************************************************************************/
+
+#ifdef VERBOSEDEBUGCONSOLE
+    	initialise_monitor_handles();
+		iprintf("ESP8266 and ESP32 Program Sequence Initialized (Button 2)- \n"); //Reset Button
+#endif
+		GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn On Indicator Light
+
+		//Reset ESP8266 EEPROM (if functionality is implemented in the ESP8266 firmware), toggle GPIO2 on ESP8266
+		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high to triger reset (Command to reset EEPROM)
+		delay (3000);
+		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 high (normal operation)
+		delay (1000); //allow for reboot from ESP8266 with EEPROM Reset code, wait for bootloader to begin
+
+		//Begin programming mode
+
+		GPIO_set_output( &g_gpio, GPIO_4, 0 ); //For ESP32, HOLD GPIO 2 low (program)
+		GPIO_set_output( &g_gpio, GPIO_3, 0 ); //For ESP32, HOLD GPIO 0 low (program)
+		GPIO_set_output( &g_gpio, GPIO_5, 0 ); //For ESP8266, HOLD GPIO 0 low (program)
+		GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program)  //keep high
+		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high for program mode)
+
+		//Reset Sequence
+		delay (200);
+		GPIO_set_output( &g_gpio, GPIO_2, 0 ); //For ESP32, Bring Reset Low to reset Board
+		GPIO_set_output( &g_gpio, GPIO_7, 0 ); //For ESP8266, Bring Reset Low to reset the board
+		delay (200);
+		GPIO_set_output( &g_gpio, GPIO_7, 1 ); //For ESP8266, Bring Reset high to re-enable the board
+		GPIO_set_output( &g_gpio, GPIO_2, 1 ); //For ESP32, Bring Reset high to re-enable the Board
+		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 low (normal operation)  - it shouldn't care, may cause other issues, would tristate if possible, not connected in typical use
+		delay (500); //allow to restart
+
+		//Final Default settings
+		GPIO_set_output( &g_gpio, GPIO_3, 1 ); //For ESP32, Bring GPIO0 high to re-enable the board normal operation
+		GPIO_set_output( &g_gpio, GPIO_5, 1 ); //For ESP8266, Bring GPIO0 high to re-enable the board normal operation
+		GPIO_set_output( &g_gpio, GPIO_4, 0 ); //Keep ESP32 GPIO 2 low to permit auto programming as required
+		GPIO_set_output( &g_gpio, GPIO_1, 0 ); //For ESP8266, HOLD CHPD HIGH(program)  //keep high
+		GPIO_set_output( &g_gpio, GPIO_0, 1 ); //Turn Off Indicator Light
+
+
+/********************************************************************
+* Clear interrupt both at the GPIO levels.
+*********************************************************************/
+    GPIO_clear_irq( &g_gpio, GPIO_0 );
+    GPIO_clear_irq( &g_gpio, GPIO_1 );
+
+/********************************************************************
+* Clear the interrupt in the Cortex-M3 NVIC.
+*********************************************************************/
+    NVIC_ClearPendingIRQ(FabricIrq1_IRQn);
+    GPIO_enable_irq( &g_gpio, GPIO_0 ); //re-enable IRQ for Button 1
+    GPIO_enable_irq( &g_gpio, GPIO_1 );  //re-enable IRQ for Button 2
+
+}
+
+/******************************************************************************
+ * Delay function.
+ *****************************************************************************/
+void delay( int mult )
+{
+    volatile int counter = 0;
+
+    while ( counter < (DELAY_COUNT*mult) )
+    {
+        counter++;
+    }
+}
+
+
+
+
