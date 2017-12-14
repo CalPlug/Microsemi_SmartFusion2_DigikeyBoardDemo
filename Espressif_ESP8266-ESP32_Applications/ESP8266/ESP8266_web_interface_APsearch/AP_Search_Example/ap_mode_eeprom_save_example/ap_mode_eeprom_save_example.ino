@@ -1,7 +1,12 @@
-#include <EEPROM.h>
+//Example Code for AP/Client functionality for the ESP8266
+//Make sure to run the EEPROM sketch on a virgin board to setup the EEPROM!  EEPROM reset functions only work when outside the 
+//Developed by Dr. Michael Klopfer and Paolo Caraos (UC Irvine / Calit2)
+
+#include <EEPROM.h>  ////handles save and read with EEPROM on ESP8266
 #include <WiFiManager.h>
-#include <Button.h>
 WiFiManager wifiManager;
+
+//Initialize global variables
 char ssid[25];
 char pwd[25];/*
 char mqtt_server[25];
@@ -17,15 +22,21 @@ const char AES_IV[] ="1111111111111111";
 const char wifiMode[] = "tkip";
 char configured[] = {'0', 0};
 
-Button button = Button(D3,PULLUP);//Bring to ground
+//Counter Variables
+int buttonCount = 0;
+boolean change = false;
+int rst = 0; //reset tracker
+
+//Button Defs
+#define EEPROMRST 2  //This is intended for GPIO2 for compatability, which is pin D4 on the NodeMCU, this is the GPIO2 on the ESP8266 ESP01
 
 
+//**************Functions*****************
 
 void load_data()
 {
-//  Serial.println("Read data from EEPROM");
+  Serial.println("Read data from EEPROM");
   EEPROM.begin(512);
-  
   int count = 0;
   int address = 0;
   char data[100] = {};
@@ -35,7 +46,7 @@ void load_data()
     delay(1);
     if (read_char == '#')
     {
-//      Serial.println(data);
+      Serial.println(data);
       switch (count)
       {
         case 0: strcpy(configured, data); break;
@@ -55,8 +66,8 @@ void load_data()
     }
     ++address;
   }
-//  Serial.println("Read data complete");
-//  Serial.println(data);
+  Serial.print("Read data complete, this was read: ");
+  Serial.println(data);
   delay(100);
 }
 
@@ -75,10 +86,11 @@ void save_data(char* data)
   delay(100);
 }
 
-void configModeCallback (WiFiManager *myWiFiManager) {
+void configModeCallback (WiFiManager *myWiFiManager) 
+  {
   Serial.println("Entered config mode");
-  
-}
+  }
+
 
 void data_setup(char* data)
 {
@@ -100,26 +112,15 @@ void data_setup(char* data)
   strcat(data, sep);
   strcat(data, wifiManager.Encryption_Key.c_str());
   strcat(data, sep); */
+  
   Serial.println("Current values ready to be upated to EEPROM:");
   Serial.println(data);
   Serial.println();
 }
 
-void setup_wifi() { 
 
-/*  delay(10);
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());*/
+void setup_wifi() 
+{ 
     WiFi.mode(WIFI_STA);
     WiFi.disconnect();
     delay(100);
@@ -144,24 +145,23 @@ void setup_wifi() {
         delay(10);
        }
     }
-    Serial.println("");
+  Serial.println("");
   wifiManager.setAPCallback(configModeCallback);
-  //wifiUpdate(0);
+  //wifiUpdate(0); //This is a test that can be turned on to force the update script.  Only uncomment in testing.
   Serial.println("Setting up Wifi");
-    if (!wifiManager.autoConnect("DemoESP8266","")) {//credentials for SSID in AP mode
-      
+    if (!wifiManager.autoConnect("DemoESP8266","")) //credentials for SSID in AP mode
+    {
     Serial.println("failed to connect and hit timeout");
     //reset and try again, or maybe put it to deep sleep
     ESP.reset();
     }
-    else{
+    else
+    {
       char data[100] = {};
       Serial.println("Connected. Saving to EEPROM and resetting.");
-           
       configured[0] = '1';
       data_setup(data); 
       save_data(data);  
-         
       ESP.reset();
       delay(1000);
     }
@@ -169,19 +169,14 @@ void setup_wifi() {
   }
   
  
-
-  
-
-
-
-
-void setup() {
- // pinMode(13, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+void setup() 
+{
+  pinMode(EEPROMRST, INPUT_PULLUP); //hold pin high, low activates
+  attachInterrupt(digitalPinToInterrupt(EEPROMRST), EEPROMReset, FALLING); //Check for RESET command via interrupt
   Serial.begin(74880);
-
   Serial.println();
   Serial.println();
-  load_data();
+  load_data(); //Load Data From EEPROM
   Serial.println();
   Serial.println("First read");
   Serial.print("EEPROM recorded Configured state: "); Serial.println(configured);
@@ -222,47 +217,63 @@ void setup() {
           configured[0] = '0';
           data_setup(data); 
           save_data(data);  
-             
           ESP.reset();
           delay(1000);
         }
       }
-      
-    
   }
   WiFi.begin(ssid, pwd);
   Serial.println("Connected");
- 
-}
+ }
 
-int buttonCount = 0;
-boolean change = false;
-int rst = 0;
-
-void loop() {
-  // put your main code here, to run repeatedly:
-  if(WiFi.status() == WL_CONNECTED){
-    //Serial.println("Connected");//print to verify connection
-    //code in this block will run only if connected
-  }
+void EEPROMReset()
+{
+  //General and EEPROM Reset Fucntionality, called via interrupt, when this is called, this freezes everything and will exit wi
   int rst = 0;
-
-  if(button.uniquePress()){
-    buttonCount++;
-    change=true;
-    while(button.isPressed()){
-      delay(10);
+  while(digitalRead(EEPROMRST) == LOW)
+    {
+      delay(100); //This is in place to slow down the loop, it will freeze other operations!  Will either exit with a soft or hard reset   
       rst++;
-      
-      if(rst>=1000){//reset after 100 loops with button press (1 sec)
-        Serial.print("EEPROM Reset Command received.");
+      if(rst>=40) //Check to see if heald for more than 4 seconds, if so, hard reset
+      {//reset after 40 loops with button press (4 seconds)
+        Serial.println("EEPROM Reset (Hard or Soft) command received");
         wifiManager.resetSettings();
         delay(10);
-        Serial.print("Resetting EEPROM to default and restarting.");
+        Serial.println("Preparing to reset EEPROM to default and restart on button release.");
+       while(digitalRead(EEPROMRST) == LOW) //inside the IF statement to check if button is still being pressed (pin pulled low)     
+          {
+           //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
+          }
+        Serial.println("Now Resetting EEPROM to default and restarting (Hard Reset)");
+        delay (1000);
         char data[100] = "0#ssid#pw123456789#x#x#x#x#x#x";
         save_data(data);
         ESP.reset();
+       }
+      }
+      Serial.print("Soft Reset command received!");
+      while(digitalRead(EEPROMRST) == LOW) //inside the IF statement to check if button is still being pressed (pin pulled low)     
+        {
+         //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
         }
-    }
+      delay (500);
+      ESP.reset(); //Button not held for 10 seconds, loop terminates early - this provides dual function for this reset, soft and hard reset depending on hold time 
+}
+
+  
+void loop() 
+{
+  // put your main code here, to run repeatedly:
+  if(WiFi.status() == WL_CONNECTED)
+  {
+    //Serial.println("Connected");//print to verify connection
+    //code in this block will run only if connected
+    //CODE
+    //CODE
   }
+
+   //Code that operates whether or not WiFi is connected, but only once the main loop is reached!
+
+    //CODE
+    //CODE
 }

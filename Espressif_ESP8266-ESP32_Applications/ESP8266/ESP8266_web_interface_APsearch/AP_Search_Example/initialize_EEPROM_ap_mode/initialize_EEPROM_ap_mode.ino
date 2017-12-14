@@ -3,7 +3,7 @@
 #include <WiFiManager.h>
 
 #define NUM_ELEMENTS 10
-
+char data2[100];
 
 void save_data(char* data)
 {
@@ -54,15 +54,9 @@ void wipe_data()
   EEPROM.commit();
   Serial.println("Wipe data complete");
 }
-char data2[100];
+
 void setup() {
-//    Serial.begin(115200);
-//  Serial.println();
-//  Serial.println();
-//  Serial.println("HELLO PROGRAM");
-//  wipe_data();
-  // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial.begin(74880);
   Serial.println();
   Serial.println();
   Serial.println("HELLO PROGRAM");
