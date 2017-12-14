@@ -1,14 +1,14 @@
 Software Version: 11.8.2.4
 Opened 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys\SF2_MSS_sys_fp\SF2_MSS_sys.pro'
 The 'open_project' command succeeded.
-PDB file 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys\44f7d84e-8bbc-4ab4-8bbc-dab48bbcdab4.pdb' has been loaded successfully.
+PDB file 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys\0a4c0b2d-3792-44d1-b792-44d1379244d1.pdb' has been loaded successfully.
 DESIGN : SF2_MSS_sys;  CHECKSUM : 8FE0;  PDB_VERSION : 1.9
 The 'load_programming_data' command succeeded.
 File/Folder 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys\export\SF2_MSS_sysFLASH.stp' will be overwritten.
 Successfully exported STAPL file: 'C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys\export\SF2_MSS_sysFLASH.stp'; file programs Fabric and eNVM.
 Fabric component digest: e92fee210a1898cd556c8e037f2970c0d3cdf32323738ac939b18f4d561d9eee
-eNVM component digest: c8dea04d047c150aa4115ddaac5270486629e58683c684cde6b9af84dece3df1
-Finished: Thu Dec 14 00:41:07 2017 (Elapsed time 00:00:12)
+eNVM component digest: 0073bc2742d105519535c04c482d09e05ecb2c04bff8e519fca989104cba8746
+Finished: Thu Dec 14 15:33:17 2017 (Elapsed time 00:00:13)
 
 The 'export_single_stapl' command succeeded.
 The 'set_programming_file' command succeeded.

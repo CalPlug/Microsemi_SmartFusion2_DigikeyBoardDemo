@@ -315,6 +315,7 @@ void FabricIrq1_IRQHandler( void )
 GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn Off Indicator Light
 GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program and use)  //keep high (low is IC powerdown)
 GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high for boot
+delay(100);//let pins stabilize before reset
 
 //Reset Sequence
 GPIO_set_output( &g_gpio, GPIO_2, 0 ); //For ESP32, Bring Reset Low to reset Board
@@ -369,10 +370,11 @@ void FabricIrq2_IRQHandler( void )
 		GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn On Indicator Light
 
 		//Reset ESP8266 EEPROM (if functionality is implemented in the ESP8266 firmware), toggle GPIO2 on ESP8266
-		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high to triger reset (Command to reset EEPROM)
-		delay (5000);
-		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 high (normal operation)
+		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 high to trigger reset (Command to reset EEPROM)
+		delay (7000); //hold low for 7 seconds
+		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high (normal operation)
 		delay (500); //allow for reboot from ESP8266 with EEPROM Reset code, wait for bootloader to begin
+		delay(100);//let pins stabilize before reset
 
 		//Begin programming mode
 		GPIO_set_output( &g_gpio, GPIO_4, 0 ); //For ESP32, HOLD GPIO 2 low (program)
@@ -382,8 +384,7 @@ void FabricIrq2_IRQHandler( void )
 		GPIO_set_output( &g_gpio, GPIO_5, 0 ); //For ESP8266, HOLD GPIO 0 low (program)
 		delay (10);
 		GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program)  //keep high
-		delay (10);
-		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high for program mode)
+
 
 		//Reset Sequence
 		delay (50);

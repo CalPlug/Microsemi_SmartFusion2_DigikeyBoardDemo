@@ -13,6 +13,9 @@
 WiFiManager wifiManager;
 Button button = Button(EEPROMRST,PULLUP);  //hold pin high, low activates
 
+//Define Compiler & Linker Defs
+//#define IRAM0     __attribute__((section(".iram0.text"))) //required for ISR?  Disable if interrupts are not used
+
 //Initialize global variables
 char ssid[25];
 char pwd[25];/*
@@ -28,6 +31,7 @@ const char AES_key[] ="2222222222222222";
 const char AES_IV[] ="1111111111111111";
 const char wifiMode[] = "tkip";
 char configured[] = {'0', 0};
+IPAddress ip;                    // the IP address of your shield
 
 //Counter Variables
 int buttonCount = 0;
@@ -39,9 +43,59 @@ int rst = 0; //reset tracker
 
 //**************Functions*****************
 
+//Note:  Issues with attach interrupt may exist, consider using static void ICACHE_RAM_ATTR EEPROMReset()
+//General and EEPROM Reset Fucntionality, called via interrupt, when this is called, this freezes everything and will exit will cause reset in some form or another
+//note: this function has no real effect until the EEPROM is set, setting an EEPROM that is already reset does nothing
+void EEPROMReset()  
+  {
+  WiFi.disconnect();//Close WiFi Connections
+  delay(200);
+  //noInterrupts(); //Disable further interrupt calls - Typically you want to turn this off, but this is the end of the line before a reset when an interrupt is called.
+  int rst = 0;
+  while(button.isPressed())
+    {
+      ESP.wdtFeed(); //Keep WDT Timer fed to prevent WDT restart
+      delay(100); //This is in place to slow down the loop, it will freeze other operations!  Will either exit with a soft or hard reset   
+      rst++;
+      if(rst>=50) //Check to see if heald for more than 4 seconds, if so, hard reset
+      {//reset after 40 loops with button press (4 seconds)
+        Serial.println("EEPROM Reset (Hard or Soft) command received");
+        //wifiManager.resetSettings();  //No need to use, you are just stacking deck chairs on the Titanic at this point, EEPROM will be erased
+        Serial.println("Preparing to default EEPROM (Hard Reset)");
+        delay(10);
+        while(button.isPressed()) //inside the IF statement to check if button is still being pressed (pin pulled low)     
+          {
+           //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
+           ESP.wdtFeed();
+          }
+        Serial.println("Now Resetting EEPROM to default and restarting (Hard Reset)");
+        delay (20);
+        char data[100] = "0#ssid#pw123456789#x#x#x#x#x#x"; //blank String with 0 as EEPROM config value
+        save_data(data);
+        delay (500);
+        Serial.println("EEPROM overwrite complete, restarting...");
+        ESP.reset();  //Board will reset before leaving loop
+        delay (2000);
+       }
+       else
+       {} //Rounding out IF statement
+      }
+      Serial.print("Soft Reset command received!  Will be issued on Button release"); //should already be released, this is just a warning
+      while(button.isPressed()) //inside the IF statement to check if button is still being pressed (pin pulled low)     
+        {
+         //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
+         ESP.wdtFeed(); //Keep WDT Timer fed to prevent WDT restart
+        }
+        Serial.println("Soft Reset command received, restarting...");
+      delay (500);
+        ESP.reset(); //alternative approach is using [ESP.restart();] //Button not held for 4 seconds, loop terminates early - this provides dual function for this reset, soft and hard reset depending on hold time
+      delay (2000); 
+}
+
 void setup() 
 {
-  //attachInterrupt(digitalPinToInterrupt(EEPROMRST), EEPROMReset, FALLING); //Check for RESET command via interrupt (alternative approach)
+  pinMode(EEPROMRST, INPUT_PULLUP);
+  //attachInterrupt(digitalPinToInterrupt(EEPROMRST), EEPROMReset, FALLING); //Check for RESET command via interrupt (alternative approach)  //this can cause issues, the alternate (less elegant way is using the trigger in the loop), disable if you are getting crashes on reset.
   Serial.begin(74880);
   Serial.println();
   Serial.println();
@@ -230,69 +284,37 @@ void setup_wifi()
     }
     delay(1000);
   }
-  
- 
-void EEPROMReset()
-{
-  //General and EEPROM Reset Fucntionality, called via interrupt, when this is called, this freezes everything and will exit will cause reset in some form or another
-  //note: this function has no real effect until the EEPROM is set, setting an EEPROM that is already reset does nothing
-  int rst = 0;
-  while(button.isPressed())
-    {
-      delay(100); //This is in place to slow down the loop, it will freeze other operations!  Will either exit with a soft or hard reset   
-      rst++;
-      if(rst>=40) //Check to see if heald for more than 4 seconds, if so, hard reset
-      {//reset after 40 loops with button press (4 seconds)
-        Serial.println("EEPROM Reset (Hard or Soft) command received");
-        wifiManager.resetSettings();
-        Serial.println("Preparing to default EEPROM (Hard Reset)");
-        delay(10);
-        while(button.isPressed()) //inside the IF statement to check if button is still being pressed (pin pulled low)     
-          {
-           //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
-          }
-        Serial.println("Now Resetting EEPROM to default and restarting (Hard Reset)");
-        delay (20);
-        char data[100] = "0#ssid#pw123456789#x#x#x#x#x#x";
-        save_data(data);
-        delay (500);
-        ESP.reset();  //Board will reset before leaving loop
-        delay (2000);
-       }
-       else
-       {} //Rounding out IF statement
-      }
-      Serial.print("Soft Reset command received!  Will be issued on Button release"); //should already be released, this is just a warning
-      while(button.isPressed()) //inside the IF statement to check if button is still being pressed (pin pulled low)     
-        {
-         //Stay in this loop until the button is released.  This prevents bootup issues if the pin is kept low at reset, this is an issue for GPIO2
-        }
-      delay (500);
-      ESP.restart(); //Button not held for 10 seconds, loop terminates early - this provides dual function for this reset, soft and hard reset depending on hold time
-      delay (2000); 
-}
 
   
+/*
+static void IRAM0 interruptHandler()  //Stub handler because there is only one interrupt event with one meaning.  This holds for mif more interrupts are to be used  (ISR Function)
+{
+  //EEPROMReset();  //Call the EEPROMReset function when interrupt is called, yes this is really long execution to be called by an interrupt routine!
+}
+*/
+
 void loop() 
 {
    //Code that operates whether or not WiFi is connected, but only once the main loop is reached!
     Serial.println("In Loop: ");
     //CODE
     //CODE
+  
     if (button.uniquePress()) //alternative to call reset function from interrupt
       {
-        //provide user a means to know reset was triggered
-      EEPROMReset();
-      }   
-  
-
+            EEPROMReset();
+            //Comment: Final Developer should provide user a means to know reset was triggered
+      }
+ 
   if(WiFi.status() == WL_CONNECTED)
     {
-    //Serial.println("Connected");//print to verify connection
     //code in this block will run only if connected
     //CODE
     //CODE
-    Serial.println("I'm Connected!");
+    Serial.print("I'm Connected! My IP is: ");
+     //print the local IP address
+    ip = WiFi.localIP();
+    Serial.println(ip);
     }
     delay (1000); //this is just temporary to slow down the loop in testing
   }

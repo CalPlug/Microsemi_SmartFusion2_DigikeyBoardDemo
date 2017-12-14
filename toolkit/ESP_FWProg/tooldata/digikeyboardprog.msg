@@ -164,3 +164,4 @@ Implementation;Synthesis|| MT447 ||@W:Timing constraint (through [get_nets { SF2
 Implementation;Place and Route;RootName:SF2_MSS_sys
 Implementation;Place and Route||(null)||Please refer to the log file for details about 4 Info(s)||SF2_MSS_sys_layout_log.log;liberoaction://open_report/file/SF2_MSS_sys_layout_log.log||(null);(null)
 Implementation;Generate Bitstream;RootName:SF2_MSS_sys
+Implementation;Generate Bitstream||(null)||Please refer to the log file for details||SF2_MSS_sys_generateBitstream.log;liberoaction://open_report/file/SF2_MSS_sys_generateBitstream.log||(null);(null)
