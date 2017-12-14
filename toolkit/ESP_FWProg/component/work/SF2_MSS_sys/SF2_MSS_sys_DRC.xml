@@ -5,8 +5,8 @@
   <drc>
     <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
-    <message>No Top Level Ports</message>
-    <detail>You must create at least one port for a valid design</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/SF2_MSS_sys/instances/SF2_MSS_sys</crossprobe>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin SF2_MSS_sys_sb_0:GPIO_IN[7:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/SF2_MSS_sys/pins/SF2_MSS_sys_sb_0:GPIO_IN</crossprobe>
   </drc>
 </drcreport>

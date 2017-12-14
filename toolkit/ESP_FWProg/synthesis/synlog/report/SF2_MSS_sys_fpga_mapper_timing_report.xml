@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\synlog\SF2_MSS_sys_fpga_mapper.srr</data>
+<data>C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\synthesis\synlog\SF2_MSS_sys_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>SF2_MSS_sys_sb_0/CCC_0/GL0</data>
 <data>70.0 MHz</data>
-<data>83.0 MHz</data>
-<data>2.235</data>
+<data>78.0 MHz</data>
+<data>1.468</data>
 </row>
 <row>
 <data>SF2_MSS_sys_sb_0/CCC_0/GL1</data>

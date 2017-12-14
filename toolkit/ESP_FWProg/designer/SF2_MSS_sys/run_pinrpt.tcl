@@ -1,6 +1,6 @@
 DESIGN=SF2_MSS_sys
-DESDIR=C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys
-TARGET_DIR=C:\Users\Hiperwall\Desktop\DigiKeyBoard\designer\SF2_MSS_sys
+DESDIR=C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys
+TARGET_DIR=C:\Users\calplug\Documents\GitHub\Microsemi_SmartFusion2_DigikeyBoardDemo\toolkit\ESP_FWProg\designer\SF2_MSS_sys
 FAM=SmartFusion2
 DIE=PA4M1000_N
 PACKAGE=tq144

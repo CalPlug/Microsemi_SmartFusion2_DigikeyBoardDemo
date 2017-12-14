@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Global Net Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)</text>
-<text>Date: Fri Dec 08 20:34:06 2017
+<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)</text>
+<text>Date: Wed Dec 13 17:50:41 2017
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -17,17 +17,17 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>GB[1] </cell>
- <cell>(219, 54)</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
  <cell>SF2_MSS_sys_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
- <cell>547</cell>
+ <cell>377</cell>
 </row>
 <row>
  <cell>2</cell>
- <cell>GB[2] </cell>
- <cell>(220, 54)</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 54)</cell>
  <cell>SF2_MSS_sys_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIDDQA/U0_YNn</cell>
- <cell>536</cell>
+ <cell>366</cell>
 </row>
 </table>
 <text></text>
@@ -51,8 +51,8 @@
 <row>
  <cell>1</cell>
  <cell>SF2_MSS_sys_sb_0/CORERESETP_0/MSS_HPMS_READY_int:Q</cell>
- <cell>(288, 64)</cell>
- <cell>GB[2] </cell>
+ <cell>(388, 37)</cell>
+ <cell>GB[1] </cell>
  <cell>SF2_MSS_sys_sb_0/CORERESETP_0/MSS_HPMS_READY_int</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
@@ -77,8 +77,8 @@
  <cell>1</cell>
  <cell>SF2_MSS_sys_sb_0/CCC_0/CCC_INST/INST_CCC_IP:GL0</cell>
  <cell>CCC-NE1 (390, 92)</cell>
- <cell>GL0 =&gt; GL1</cell>
- <cell>GB[1] </cell>
+ <cell>GL0 =&gt; GL2</cell>
+ <cell>GB[2] </cell>
  <cell>SF2_MSS_sys_sb_0/CCC_0/GL0_net</cell>
  <cell>HARDWIRED</cell>
  <cell>1</cell>
@@ -109,10 +109,10 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>GB[1] </cell>
- <cell>(219, 54)</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
  <cell>SF2_MSS_sys_sb_0/CCC_0/GL0_INST/U0_YNn</cell>
- <cell>547</cell>
+ <cell>377</cell>
  <cell>1</cell>
  <cell>(218, 102)</cell>
  <cell>1</cell>
@@ -124,8 +124,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(219, 24)</cell>
- <cell>12</cell>
+ <cell>(219, 27)</cell>
+ <cell>16</cell>
 </row>
 <row>
  <cell> </cell>
@@ -134,67 +134,7 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(219, 27)</cell>
- <cell>29</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>4</cell>
  <cell>(219, 30)</cell>
- <cell>29</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>5</cell>
- <cell>(219, 33)</cell>
- <cell>37</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>6</cell>
- <cell>(219, 36)</cell>
- <cell>67</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>7</cell>
- <cell>(219, 39)</cell>
- <cell>53</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>8</cell>
- <cell>(219, 42)</cell>
- <cell>66</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>9</cell>
- <cell>(219, 45)</cell>
  <cell>2</cell>
 </row>
 <row>
@@ -203,8 +143,28 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
- <cell>10</cell>
- <cell>(219, 48)</cell>
+ <cell>4</cell>
+ <cell>(219, 33)</cell>
+ <cell>22</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(219, 36)</cell>
+ <cell>32</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(219, 39)</cell>
  <cell>33</cell>
 </row>
 <row>
@@ -213,9 +173,49 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
- <cell>11</cell>
+ <cell>7</cell>
+ <cell>(219, 42)</cell>
+ <cell>32</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(219, 48)</cell>
+ <cell>16</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
  <cell>(219, 51)</cell>
- <cell>37</cell>
+ <cell>16</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10</cell>
+ <cell>(219, 57)</cell>
+ <cell>65</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11</cell>
+ <cell>(219, 60)</cell>
+ <cell>24</cell>
 </row>
 <row>
  <cell> </cell>
@@ -224,8 +224,8 @@
  <cell></cell>
  <cell></cell>
  <cell>12</cell>
- <cell>(219, 57)</cell>
- <cell>37</cell>
+ <cell>(219, 63)</cell>
+ <cell>25</cell>
 </row>
 <row>
  <cell> </cell>
@@ -234,8 +234,8 @@
  <cell></cell>
  <cell></cell>
  <cell>13</cell>
- <cell>(219, 60)</cell>
- <cell>66</cell>
+ <cell>(219, 66)</cell>
+ <cell>19</cell>
 </row>
 <row>
  <cell> </cell>
@@ -244,8 +244,8 @@
  <cell></cell>
  <cell></cell>
  <cell>14</cell>
- <cell>(219, 63)</cell>
- <cell>36</cell>
+ <cell>(219, 69)</cell>
+ <cell>31</cell>
 </row>
 <row>
  <cell> </cell>
@@ -254,8 +254,8 @@
  <cell></cell>
  <cell></cell>
  <cell>15</cell>
- <cell>(219, 66)</cell>
- <cell>9</cell>
+ <cell>(219, 72)</cell>
+ <cell>12</cell>
 </row>
 <row>
  <cell> </cell>
@@ -264,8 +264,8 @@
  <cell></cell>
  <cell></cell>
  <cell>16</cell>
- <cell>(219, 72)</cell>
- <cell>11</cell>
+ <cell>(219, 78)</cell>
+ <cell>10</cell>
 </row>
 <row>
  <cell> </cell>
@@ -275,27 +275,17 @@
  <cell></cell>
  <cell>17</cell>
  <cell>(219, 81)</cell>
- <cell>12</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>18</cell>
- <cell>(219, 84)</cell>
- <cell>10</cell>
+ <cell>21</cell>
 </row>
 <row>
  <cell>2</cell>
- <cell>GB[2] </cell>
- <cell>(220, 54)</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 54)</cell>
  <cell>SF2_MSS_sys_sb_0/CORERESETP_0/MSS_HPMS_READY_int_RNIDDQA/U0_YNn</cell>
- <cell>536</cell>
+ <cell>366</cell>
  <cell>1</cell>
- <cell>(218, 24)</cell>
- <cell>12</cell>
+ <cell>(218, 27)</cell>
+ <cell>16</cell>
 </row>
 <row>
  <cell> </cell>
@@ -304,8 +294,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(218, 27)</cell>
- <cell>29</cell>
+ <cell>(218, 30)</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell> </cell>
@@ -314,8 +304,8 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(218, 30)</cell>
- <cell>29</cell>
+ <cell>(218, 33)</cell>
+ <cell>22</cell>
 </row>
 <row>
  <cell> </cell>
@@ -324,8 +314,8 @@
  <cell></cell>
  <cell></cell>
  <cell>4</cell>
- <cell>(218, 33)</cell>
- <cell>37</cell>
+ <cell>(218, 36)</cell>
+ <cell>27</cell>
 </row>
 <row>
  <cell> </cell>
@@ -334,8 +324,8 @@
  <cell></cell>
  <cell></cell>
  <cell>5</cell>
- <cell>(218, 36)</cell>
- <cell>67</cell>
+ <cell>(218, 39)</cell>
+ <cell>31</cell>
 </row>
 <row>
  <cell> </cell>
@@ -344,8 +334,8 @@
  <cell></cell>
  <cell></cell>
  <cell>6</cell>
- <cell>(218, 39)</cell>
- <cell>51</cell>
+ <cell>(218, 42)</cell>
+ <cell>32</cell>
 </row>
 <row>
  <cell> </cell>
@@ -354,8 +344,8 @@
  <cell></cell>
  <cell></cell>
  <cell>7</cell>
- <cell>(218, 42)</cell>
- <cell>66</cell>
+ <cell>(218, 48)</cell>
+ <cell>16</cell>
 </row>
 <row>
  <cell> </cell>
@@ -364,8 +354,8 @@
  <cell></cell>
  <cell></cell>
  <cell>8</cell>
- <cell>(218, 45)</cell>
- <cell>2</cell>
+ <cell>(218, 51)</cell>
+ <cell>14</cell>
 </row>
 <row>
  <cell> </cell>
@@ -374,8 +364,8 @@
  <cell></cell>
  <cell></cell>
  <cell>9</cell>
- <cell>(218, 48)</cell>
- <cell>33</cell>
+ <cell>(218, 57)</cell>
+ <cell>65</cell>
 </row>
 <row>
  <cell> </cell>
@@ -384,8 +374,8 @@
  <cell></cell>
  <cell></cell>
  <cell>10</cell>
- <cell>(218, 51)</cell>
- <cell>37</cell>
+ <cell>(218, 60)</cell>
+ <cell>24</cell>
 </row>
 <row>
  <cell> </cell>
@@ -394,8 +384,8 @@
  <cell></cell>
  <cell></cell>
  <cell>11</cell>
- <cell>(218, 57)</cell>
- <cell>37</cell>
+ <cell>(218, 63)</cell>
+ <cell>25</cell>
 </row>
 <row>
  <cell> </cell>
@@ -404,8 +394,8 @@
  <cell></cell>
  <cell></cell>
  <cell>12</cell>
- <cell>(218, 60)</cell>
- <cell>66</cell>
+ <cell>(218, 66)</cell>
+ <cell>18</cell>
 </row>
 <row>
  <cell> </cell>
@@ -414,8 +404,8 @@
  <cell></cell>
  <cell></cell>
  <cell>13</cell>
- <cell>(218, 63)</cell>
- <cell>29</cell>
+ <cell>(218, 69)</cell>
+ <cell>31</cell>
 </row>
 <row>
  <cell> </cell>
@@ -424,8 +414,8 @@
  <cell></cell>
  <cell></cell>
  <cell>14</cell>
- <cell>(218, 66)</cell>
- <cell>8</cell>
+ <cell>(218, 72)</cell>
+ <cell>12</cell>
 </row>
 <row>
  <cell> </cell>
@@ -434,8 +424,8 @@
  <cell></cell>
  <cell></cell>
  <cell>15</cell>
- <cell>(218, 72)</cell>
- <cell>11</cell>
+ <cell>(218, 78)</cell>
+ <cell>10</cell>
 </row>
 <row>
  <cell> </cell>
@@ -445,17 +435,7 @@
  <cell></cell>
  <cell>16</cell>
  <cell>(218, 81)</cell>
- <cell>12</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>17</cell>
- <cell>(218, 84)</cell>
- <cell>10</cell>
+ <cell>21</cell>
 </row>
 </table>
 <text></text>

@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
 #--  Project file C:\Users\Hiperwall\Desktop\DigiKeyBoard\synthesis\SF2_MSS_sys_syn.prj
-#--  Written on Fri Dec 01 17:00:34 2017
+#--  Written on Fri Dec 08 20:33:06 2017
 
 
 #project files
@@ -26,7 +26,7 @@ add_file -vhdl -lib COREPWM_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/compone
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd"
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd"
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd"
-add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd"
+add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8.vhd"
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd"
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd"
 add_file -vhdl -lib COREUARTAPB_LIB "C:/Users/Hiperwall/Desktop/DigiKeyBoard/component/work/SF2_MSS_sys_sb/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd"

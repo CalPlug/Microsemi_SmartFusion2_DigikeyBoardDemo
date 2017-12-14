@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
-<text>SmartTime Version 11.8.1.12</text>
-<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
-Date: Fri Dec 08 20:34:46 2017 </text>
+<text>SmartTime Version 11.8.2.4</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
+Date: Wed Dec 13 17:51:22 2017 </text>
 <table>
 <header>
 </header>
@@ -50,52 +50,52 @@ Date: Fri Dec 08 20:34:46 2017 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>         1023</cell>
- <cell>            5</cell>
- <cell>         1028</cell>
+ <cell>          634</cell>
+ <cell>           10</cell>
+ <cell>          644</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>          539</cell>
+ <cell>          369</cell>
  <cell>            6</cell>
- <cell>          545</cell>
+ <cell>          375</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           20</cell>
- <cell>           20</cell>
+ <cell>           22</cell>
+ <cell>           22</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>         1562</cell>
- <cell>           31</cell>
- <cell>         1593</cell>
+ <cell>         1003</cell>
+ <cell>           38</cell>
+ <cell>         1041</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>         1023</cell>
- <cell>            5</cell>
- <cell>         1028</cell>
+ <cell>          634</cell>
+ <cell>           10</cell>
+ <cell>          644</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>          539</cell>
+ <cell>          369</cell>
  <cell>            6</cell>
- <cell>          545</cell>
+ <cell>          375</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           20</cell>
- <cell>           20</cell>
+ <cell>           22</cell>
+ <cell>           22</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>         1562</cell>
- <cell>           31</cell>
- <cell>         1593</cell>
+ <cell>         1003</cell>
+ <cell>           38</cell>
+ <cell>         1041</cell>
 </row>
 </table>
 <section>
@@ -111,52 +111,52 @@ Date: Fri Dec 08 20:34:46 2017 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>         1023</cell>
- <cell>            3</cell>
- <cell>         1026</cell>
+ <cell>          634</cell>
+ <cell>            8</cell>
+ <cell>          642</cell>
 </row>
 <row>
  <cell>Recovery</cell>
- <cell>          539</cell>
+ <cell>          369</cell>
  <cell>            6</cell>
- <cell>          545</cell>
+ <cell>          375</cell>
 </row>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>           12</cell>
- <cell>           12</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>         1562</cell>
- <cell>           21</cell>
- <cell>         1583</cell>
+ <cell>         1003</cell>
+ <cell>           24</cell>
+ <cell>         1027</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>         1023</cell>
- <cell>            3</cell>
- <cell>         1026</cell>
+ <cell>          634</cell>
+ <cell>            8</cell>
+ <cell>          642</cell>
 </row>
 <row>
  <cell>Removal</cell>
- <cell>          539</cell>
+ <cell>          369</cell>
  <cell>            6</cell>
- <cell>          545</cell>
+ <cell>          375</cell>
 </row>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>           12</cell>
- <cell>           12</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>         1562</cell>
- <cell>           21</cell>
- <cell>         1583</cell>
+ <cell>         1003</cell>
+ <cell>           24</cell>
+ <cell>         1027</cell>
 </row>
 </table>
 <section>
@@ -168,7 +168,12 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>GPIO_IN[0]</item>
  <item>GPIO_IN[1]</item>
  <item>GPIO_IN[2]</item>
- <item>RX</item>
+ <item>GPIO_IN[3]</item>
+ <item>GPIO_IN[4]</item>
+ <item>GPIO_IN[5]</item>
+ <item>GPIO_IN[6]</item>
+ <item>GPIO_IN[7]</item>
+ <item>RX_0</item>
 </list>
 <text></text>
 <text> - Min input delay constraint missing on ports:</text>
@@ -177,7 +182,12 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>GPIO_IN[0]</item>
  <item>GPIO_IN[1]</item>
  <item>GPIO_IN[2]</item>
- <item>RX</item>
+ <item>GPIO_IN[3]</item>
+ <item>GPIO_IN[4]</item>
+ <item>GPIO_IN[5]</item>
+ <item>GPIO_IN[6]</item>
+ <item>GPIO_IN[7]</item>
+ <item>RX_0</item>
 </list>
 <text></text>
 <text></text>
@@ -187,15 +197,13 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>GPIO_OUT[0]</item>
  <item>GPIO_OUT[1]</item>
  <item>GPIO_OUT[2]</item>
+ <item>GPIO_OUT[3]</item>
+ <item>GPIO_OUT[4]</item>
+ <item>GPIO_OUT[5]</item>
+ <item>GPIO_OUT[6]</item>
+ <item>GPIO_OUT[7]</item>
  <item>PWM[0]</item>
- <item>PWM[1]</item>
- <item>PWM[2]</item>
- <item>PWM[3]</item>
- <item>PWM[4]</item>
- <item>PWM[5]</item>
- <item>PWM[6]</item>
- <item>PWM[7]</item>
- <item>TX</item>
+ <item>TX_0</item>
 </list>
 <text></text>
 <text> - Min output delay constraint missing on ports:</text>
@@ -204,15 +212,13 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>GPIO_OUT[0]</item>
  <item>GPIO_OUT[1]</item>
  <item>GPIO_OUT[2]</item>
+ <item>GPIO_OUT[3]</item>
+ <item>GPIO_OUT[4]</item>
+ <item>GPIO_OUT[5]</item>
+ <item>GPIO_OUT[6]</item>
+ <item>GPIO_OUT[7]</item>
  <item>PWM[0]</item>
- <item>PWM[1]</item>
- <item>PWM[2]</item>
- <item>PWM[3]</item>
- <item>PWM[4]</item>
- <item>PWM[5]</item>
- <item>PWM[6]</item>
- <item>PWM[7]</item>
- <item>TX</item>
+ <item>TX_0</item>
 </list>
 <text></text>
 <text></text>
@@ -222,6 +228,11 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[0]:D</item>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[1]:D</item>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[2]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[3]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[4]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[5]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[6]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[7]:D</item>
 </list>
 <text></text>
 <text> - Recovery uncconstrained for the following pins:</text>
@@ -241,6 +252,11 @@ Date: Fri Dec 08 20:34:46 2017 </text>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[0]:D</item>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[1]:D</item>
  <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[2]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[3]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[4]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[5]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[6]:D</item>
+ <item>SF2_MSS_sys_sb_0/CoreGPIO_0/gpin1[7]:D</item>
 </list>
 <text></text>
 <text> - Removal uncconstrained for the following pins:</text>
@@ -441,14 +457,14 @@ Date: Fri Dec 08 20:34:46 2017 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Setup</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <separator/>
 <row>
@@ -466,14 +482,14 @@ Date: Fri Dec 08 20:34:46 2017 </text>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 <row>
  <cell>Total Hold</cell>
  <cell>            0</cell>
- <cell>            8</cell>
- <cell>            8</cell>
+ <cell>           10</cell>
+ <cell>           10</cell>
 </row>
 </table>
 <section>
@@ -496,17 +512,51 @@ Date: Fri Dec 08 20:34:46 2017 </text>
 <row>
  <cell>Output Setup</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            2</cell>
+ <cell>            2</cell>
 </row>
 <separator/>
 <row>
  <cell>Output Hold</cell>
  <cell>            0</cell>
- <cell>            0</cell>
- <cell>            0</cell>
+ <cell>            2</cell>
+ <cell>            2</cell>
 </row>
 </table>
+<section>
+<name>Enhancement Suggestions</name>
+<text></text>
+<text> - Max delay constraint missing on  inputports:</text>
+<text>   </text>
+<list>
+ <item>FTDI_C_RX</item>
+ <item>RX</item>
+</list>
+<text></text>
+<text> - Min delay constraint missing on  inputports:</text>
+<text>   </text>
+<list>
+ <item>FTDI_C_RX</item>
+ <item>RX</item>
+</list>
+<text></text>
+<text></text>
+<text> - Max delay constraint missing on  outputports:</text>
+<text>   </text>
+<list>
+ <item>FTDI_C_TX</item>
+ <item>TX</item>
+</list>
+<text></text>
+<text> - Min delay constraint missing on  outputports:</text>
+<text>   </text>
+<list>
+ <item>FTDI_C_TX</item>
+ <item>TX</item>
+</list>
+<text></text>
+<text></text>
+</section>
 </section>
 </section>
 </doc>

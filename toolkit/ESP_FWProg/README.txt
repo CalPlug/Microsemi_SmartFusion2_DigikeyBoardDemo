@@ -1,37 +1,37 @@
-This folder contains an update to the most recent Libero project for the Embedded World robotic arm demo (Servo-arm2_rep4.zip dated 3/29/17) 
-which was downloaded from the Calit2 transfer system.  The following changes were made to the project:
-1. The Libero SoC project was renamed Servo-arm3 (the project was previously named Servo-arm2).
-2. CoreGPIO was modified to use individual interrupts for the General Purpose Inputs (GPI[2:0]) instead of the OR'd implementation
-   used in the previous version of the design.  GPI[0] is connected to SW1 on the Future Electronics Creative board.  INT[0] is 
-   connected to the Cortex-M3 NVIC interrupt 1 (MSS_INT_F2M[1]).  GPI[1] is connected to SW2 on the Future Electronics Creative board.  INT[1] is 
-   connected to the Cortex-M3 NVIC interrupt 2 (MSS_INT_F2M[2]).  GPI[2] is connected to pin 3 of the Mikro Bus Adapter 5 connector (MIKRO_CS).
-3. CorePWM was updated to the latest version (v4.4.101).
-The pin assignments were unchanged from the previous release.
+This Firmware provides access to the programming features for the ESP8266 and ESP32.  The buttons on the board are now set with a timed sequence to allow programming of the ESP8266 and ESP32.
 
-A SoftConsole project based on the CoreGPIO Interrupt Blink sample project (SF2_GNU_SC4_interrupt_blink) was used to test the interrrupts.
-The followign changes were made to the original sample project.
-1. Driver configuration files and firmware drivers exported from Libero were imported into the sample project.
-2. The fabric GPIO block was configured as follows:
-   - GPIO_0: inout; GPIO interrupt set as a level triggered interrupt (high)
-   - GPIO_1: input; GPIO interrupt set as an edge triggered interrupt (high)
-    Interrupt service routines were added for the General Purpose Input interrupts (INT[0] and INT[1]).
-3. The Cortex-M3 NVIC was configured so that IRQ2 had a higher priority than IR1.  If both interrupts are received IRQ2 is serviced.
-4. Semihosting was used to send messages to a terminal to indicate switches were pressed.
+Developed by Dr. Michael Klopfer (UC Irvine / Calit2)
+All original code is copyright of the regents of the University of California and released into the public domain.
 
-After launching the debugger the SoftConsole terminal will display: 
-"SF2_GNU_SC4_interrupt_blink_project
-CoreGPIO Initialized"
-LED1 will blink together (LED1 will be red and LED2 will be green).  
 
-If SW1 is pressed, the terminal will display 
-"Switch 1 pressed - FabricIRq1"
-LED1 will turn off and LED2 will be green.  The LEDs will continue this way if SW1 remains depressed.  When SW1 is released
-LED1 and LED2 will toggle rather than blinking together as previously (LED1 will be red; LED2 will be green).
+NOTE: The on-board FTDI must be programmed so that Port B and Port C are presented as virtual com ports to the connected computer.  In programming, the lower com port is directly connected to the ESP32, the higher com port is connected via pin mapping in the SF2 to the ESP8266.  The Enable and reset functions are implemented in this firmware using the buttons on the demoboard.
 
-If SW2 is pressed (with SW1 depressed or released), the terminal will display
-"Switch 2 pressed - FabricIRq2; Restart the debugger to run the application"
-LED1 and LED2 will both be red.  The ISR loops forever in this state.  The debugger must be relaunched to get out of this state.
-(This was to simulate pressing the emergency stop button).
+Programming instructions:
 
-Tim McCarthy
-April 18, 2017
+Looad the developed firmware to the SF2 Digikey board via FlashPro firmware up load or using Libero 11.8 SP2.
+
+Usage:
+To Program the ESP8266:
+1) Plug in ESP8266 ESP01 Device
+2) Remove jumpers for J10 and J11 (this isolates the ESP32)
+3) Press Button 2
+4) Upload Code
+5) Press Button 1 (resets ESP8266), removed jumpers prevent ESP32 reset.
+(Note, where implemented in sample code the EEPROM for AP/client ESP8266 firmwares will be reset by an extended hold of GPIO2)  Be aware of this operation!
+
+To Program the ESP32:
+1) Remove ESP8266 module (This isolates this module from the programming mode)
+2) Remove jumpers for J10 and J11 to allow sequence to set GPIO2 to LOW. This first run sets GPIO2 low.  You can use this feature with jumpers back on to manualally override the auto program and reset functionality of the Arduino IDE
+3) Press Button 2 to set GPIO2 low.  Note: because jumpers are removed, the ESP32 will not enter programming mode
+2) Replace jumpers for J10 and J11 to permit default program mode whereby the Arduino IDE will allow the board to ener program mode and reset it afterwards.  These jumpers allow the Arduino IDE to control the program and reset modes after GPIO2 is set to 0.
+4) Upload Code
+5) Press Button 1 (resets ESP32)
+6)Replace ESP8266 module if desired.
+
+
+Note: When a button is pressed, the D9 LED comes on and action is happening until LED extinguishes.  Proceed to the next step when LED is off.
+
+(Button 3 is hard reset for the SF2)
+
+A version of this firmware has been released as a programmable flash file - press this up to the Microsemi SF2 Digikey Maker board PCB using FlashPro Software (https://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software) or build the project and upload with Libero SOC 11.8 SP2.  (see this directory: \toolkit\ESP_FWProg\designer\SF2_MSS_sys\export)
+74880 is the baud rate for debug messages from the ESP01 bootloader
