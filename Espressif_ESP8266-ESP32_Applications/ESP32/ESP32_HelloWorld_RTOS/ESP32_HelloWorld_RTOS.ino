@@ -60,4 +60,6 @@ void loop()
     xTaskCreate(&hello_task, "hello_task", 2048, NULL, 5, NULL);
     xTaskCreate(&a_task, "a_task", 2048, NULL, 5, NULL);
     xTaskCreate(&blinky, "blinky", 512,NULL,5,NULL );
+     while (1)
+    {} //Just loop after first run, treat this as a main() function rather than a loop
 }
