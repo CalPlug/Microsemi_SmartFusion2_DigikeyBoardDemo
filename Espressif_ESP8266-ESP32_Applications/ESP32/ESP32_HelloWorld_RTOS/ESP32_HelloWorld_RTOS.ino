@@ -1,3 +1,11 @@
+//Sample RTOS Demo for the EspressIf ESP32 in Arduino IDE
+
+//Michael Klopfer, Ph.D. 
+//University of California, Irvine
+
+//Based on the example:  https://exploreembedded.com/wiki/Hello_World_with_ESP32_Explained
+//Also see:  https://www.hackster.io/mjrobot/iot-made-simple-playing-with-the-esp32-on-arduino-ide-0fe58c
+
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
