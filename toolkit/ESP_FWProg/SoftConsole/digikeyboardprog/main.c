@@ -197,9 +197,9 @@ int main( void )
     GPIO_config( &g_gpio, GPIO_6, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
     GPIO_config( &g_gpio, GPIO_7, GPIO_INOUT_MODE | GPIO_IRQ_EDGE_POSITIVE );  //Parked (unused Input)
 
-//initialize the GPIOs to High for LEDS, high for ESP8266 Reset, High for ESP8266 GPOI0 (stay out of program mode on reset)
+  //initialize the GPIOs to High for LEDS, high for ESP8266 Reset, High for ESP8266 GPOI0 (stay out of program mode on reset)
     uint32_t GPIOOutState = 0x00000000; //State hold for GPIO for reading and Masking GPIO Outputs, set as ALL ON
-    //Set Initial GPIO states
+  //Set Initial GPIO states
     GPIO_set_output( &g_gpio, GPIO_0, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
     GPIO_set_output( &g_gpio, GPIO_1, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
     GPIO_set_output( &g_gpio, GPIO_2, 1 ); //(LED OFF - inverted) Set GPIO state for individual pin, alternative function that takes care of bitmasking
@@ -208,8 +208,7 @@ int main( void )
     GPIO_set_output( &g_gpio, GPIO_5, 1 ); //ESP8266-GPIO0 (high at boot, low after reset activates ESP8266 program mode) Set GPIO state for individual pin, alternative function that takes care of bitmasking
     GPIO_set_output( &g_gpio, GPIO_6, 1 ); //ESP8266-GPIO2 (high at boot) Set GPIO state for individual pin, alternative function that takes care of bitmasking
     GPIO_set_output( &g_gpio, GPIO_7, 1 ); //ESP8266-RESET (high at boot, low is active) Set GPIO state for individual pin, alternative function that takes care of bitmasking
-    //GPIO_set_outputs(&g_gpio, GPIO_1_MASK | GPIO_2_MASK);
-    //Read back GPIo Output States
+
     GPIOOutState = GPIO_get_outputs( &g_gpio );
 
 
@@ -217,7 +216,6 @@ int main( void )
     * Configure the PWMs for Outputs
     *************************************************************************/
 	PWM_set_duty_cycle(&the_pwm, PWM_1, 0); //Default PWM for LED5 (D4) (Parked code) - Not used in design
-
 
 
 
@@ -317,6 +315,7 @@ void FabricIrq1_IRQHandler( void )
 GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn Off Indicator Light
 GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program and use)  //keep high (low is IC powerdown)
 GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high for boot
+delay(100);//let pins stabilize before reset
 
 //Reset Sequence
 GPIO_set_output( &g_gpio, GPIO_2, 0 ); //For ESP32, Bring Reset Low to reset Board
@@ -332,7 +331,6 @@ GPIO_set_output( &g_gpio, GPIO_4, 0 ); //Keep ESP32 GPIO 2 low to permit auto pr
 GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high in operation
 
 GPIO_set_output( &g_gpio, GPIO_0, 1 ); //Turn Off Indicator Light
-
 
 	
 
@@ -372,13 +370,13 @@ void FabricIrq2_IRQHandler( void )
 		GPIO_set_output( &g_gpio, GPIO_0, 0 ); //Turn On Indicator Light
 
 		//Reset ESP8266 EEPROM (if functionality is implemented in the ESP8266 firmware), toggle GPIO2 on ESP8266
-		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high to triger reset (Command to reset EEPROM)
-		delay (1000);
-		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 high (normal operation)
+		GPIO_set_output( &g_gpio, GPIO_6, 0 ); //For ESP8266, HOLD GPIO 2 high to trigger reset (Command to reset EEPROM)
+		delay (7000); //hold low for 7 seconds
+		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high (normal operation)
 		delay (500); //allow for reboot from ESP8266 with EEPROM Reset code, wait for bootloader to begin
+		delay(100);//let pins stabilize before reset
 
 		//Begin programming mode
-
 		GPIO_set_output( &g_gpio, GPIO_4, 0 ); //For ESP32, HOLD GPIO 2 low (program)
 		delay (10);
 		GPIO_set_output( &g_gpio, GPIO_3, 0 ); //For ESP32, HOLD GPIO 0 low (program)
@@ -386,8 +384,7 @@ void FabricIrq2_IRQHandler( void )
 		GPIO_set_output( &g_gpio, GPIO_5, 0 ); //For ESP8266, HOLD GPIO 0 low (program)
 		delay (10);
 		GPIO_set_output( &g_gpio, GPIO_1, 1 ); //For ESP8266, HOLD CHPD HIGH(program)  //keep high
-		delay (10);
-		GPIO_set_output( &g_gpio, GPIO_6, 1 ); //For ESP8266, HOLD GPIO 2 high for program mode)
+
 
 		//Reset Sequence
 		delay (50);
@@ -397,8 +394,7 @@ void FabricIrq2_IRQHandler( void )
 		GPIO_set_output( &g_gpio, GPIO_7, 1 ); //For ESP8266, Bring Reset high to re-enable the board
 		delay (30);
 		GPIO_set_output( &g_gpio, GPIO_2, 1 ); //For ESP32, Bring Reset high to re-enable the Board
-
-		delay (200); //allow to restart
+		delay (400); //allow to restart
 
 		//Final Default settings
 		GPIO_set_output( &g_gpio, GPIO_3, 1 ); //For ESP32, Bring GPIO0 high to re-enable the board normal operation
@@ -439,7 +435,3 @@ void delay( int mult )
         counter++;
     }
 }
-
-
-
-

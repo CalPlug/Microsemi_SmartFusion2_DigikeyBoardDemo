@@ -1115,7 +1115,7 @@ END GROUP
                 0x000004b0                . = ALIGN (0x10)
  *fill*         0x000004ac        0x4 
 
-.text           0x000004b0     0x1820
+.text           0x000004b0     0x1830
  CREATE_OBJECT_SYMBOLS
                 0x000004b0                __text_load = LOADADDR (.text)
                 0x000004b0                __text_start = .
@@ -1214,39 +1214,39 @@ END GROUP
                 0x00001730       0x30 ./main.o
                 0x00001730                Timer1_IRQHandler
  .text.FabricIrq1_IRQHandler
-                0x00001760       0xf0 ./main.o
+                0x00001760      0x108 ./main.o
                 0x00001760                FabricIrq1_IRQHandler
  .text.FabricIrq2_IRQHandler
-                0x00001850      0x240 ./main.o
-                0x00001850                FabricIrq2_IRQHandler
+                0x00001868      0x238 ./main.o
+                0x00001868                FabricIrq2_IRQHandler
  .text.__libc_init_array
-                0x00001a90       0x50 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-init.o)
-                0x00001a90                __libc_init_array
+                0x00001aa0       0x50 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-init.o)
+                0x00001aa0                __libc_init_array
  .text.startup.register_fini
-                0x00001ae0       0x14 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x00001af4        0xc c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-atexit.o)
-                0x00001af4                atexit
+                0x00001af0       0x14 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x00001b04        0xc c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-atexit.o)
+                0x00001b04                atexit
  .text.__libc_fini_array
-                0x00001b00       0x34 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-fini.o)
-                0x00001b00                __libc_fini_array
+                0x00001b10       0x34 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-fini.o)
+                0x00001b10                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x00001b34        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-lock.o)
-                0x00001b34                __retarget_lock_acquire_recursive
+                0x00001b44        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-lock.o)
+                0x00001b44                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x00001b38        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-lock.o)
-                0x00001b38                __retarget_lock_release_recursive
+                0x00001b48        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-lock.o)
+                0x00001b48                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x00001b3c       0xc4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__atexit.o)
-                0x00001b3c                __register_exitproc
+                0x00001b4c       0xc4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__atexit.o)
+                0x00001b4c                __register_exitproc
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x00001c00        0x0 linker stubs
+ .glue_7t       0x00001c10        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001c00        0x0 linker stubs
+ .glue_7        0x00001c10        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x00001c00        0x0 linker stubs
-                0x00001c00                . = ALIGN (0x4)
+ .vfp11_veneer  0x00001c10        0x0 linker stubs
+                0x00001c10                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -1257,65 +1257,65 @@ END GROUP
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.g_pwm_id_mask_lut
-                0x00001c00       0x11 ./drivers/CorePWM/core_pwm.o
- *fill*         0x00001c11        0x3 
+                0x00001c10       0x11 ./drivers/CorePWM/core_pwm.o
+ *fill*         0x00001c21        0x3 
  .rodata.g_pwm_negedge_offset_lut
-                0x00001c14       0x44 ./drivers/CorePWM/core_pwm.o
+                0x00001c24       0x44 ./drivers/CorePWM/core_pwm.o
  .rodata.g_pwm_posedge_offset_lut
-                0x00001c58       0x44 ./drivers/CorePWM/core_pwm.o
+                0x00001c68       0x44 ./drivers/CorePWM/core_pwm.o
  .rodata._global_impure_ptr
-                0x00001c9c        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-impure.o)
-                0x00001c9c                _global_impure_ptr
+                0x00001cac        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-impure.o)
+                0x00001cac                _global_impure_ptr
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
- .eh_frame      0x00001ca0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .eh_frame      0x00001cb0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
  *(.vector_table)
  *(.init)
- .init          0x00001ca0        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
-                0x00001ca0                _init
- .init          0x00001ca4        0x8 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+ .init          0x00001cb0        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x00001cb0                _init
+ .init          0x00001cb4        0x8 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
  *(.fini)
- .fini          0x00001cac        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
-                0x00001cac                _fini
- .fini          0x00001cb0        0x8 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
-                0x00001cb8                PROVIDE (__preinit_array_start, .)
+ .fini          0x00001cbc        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crti.o
+                0x00001cbc                _fini
+ .fini          0x00001cc0        0x8 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtn.o
+                0x00001cc8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x00001cb8                PROVIDE (__preinit_array_end, .)
-                0x00001cb8                PROVIDE (__init_array_start, .)
+                0x00001cc8                PROVIDE (__preinit_array_end, .)
+                0x00001cc8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  .init_array.00000
-                0x00001cb8        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__call_atexit.o)
+                0x00001cc8        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg.a(lib_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x00001cbc        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
-                0x00001cc0                PROVIDE (__init_array_end, .)
-                0x00001cc0                PROVIDE (__fini_array_start, .)
+ .init_array    0x00001ccc        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+                0x00001cd0                PROVIDE (__init_array_end, .)
+                0x00001cd0                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x00001cc0        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+ .fini_array    0x00001cd0        0x4 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00001cc4                PROVIDE (__fini_array_end, .)
-                0x00001cd0                . = ALIGN (0x10)
- *fill*         0x00001cc4        0xc 
-                0x00001cd0                __exidx_start = .
+                0x00001cd4                PROVIDE (__fini_array_end, .)
+                0x00001ce0                . = ALIGN (0x10)
+ *fill*         0x00001cd4        0xc 
+                0x00001ce0                __exidx_start = .
 
-.v4_bx          0x00001cd0        0x0
- .v4_bx         0x00001cd0        0x0 linker stubs
+.v4_bx          0x00001ce0        0x0
+ .v4_bx         0x00001ce0        0x0 linker stubs
 
-.iplt           0x00001cd0        0x0
- .iplt          0x00001cd0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+.iplt           0x00001ce0        0x0
+ .iplt          0x00001ce0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
-.rel.dyn        0x00001cd0        0x0
- .rel.iplt      0x00001cd0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
+.rel.dyn        0x00001ce0        0x0
+ .rel.iplt      0x00001ce0        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001cd0                __exidx_end = .
-                0x00001cd0                _etext = .
+                0x00001ce0                __exidx_end = .
+                0x00001ce0                _etext = .
 
-.data           0x20000000      0x450 load address 0x00001cd0
-                0x00001cd0                __data_load = LOADADDR (.data)
-                0x00001cd0                _sidata = LOADADDR (.data)
+.data           0x20000000      0x450 load address 0x00001ce0
+                0x00001ce0                __data_load = LOADADDR (.data)
+                0x00001ce0                _sidata = LOADADDR (.data)
                 0x20000000                __data_start = .
                 0x20000000                _sdata = .
  *(.jcr)
@@ -1355,10 +1355,10 @@ END GROUP
  *fill*         0x2000044c        0x4 
                 0x20000450                _edata = .
 
-.igot.plt       0x20000450        0x0 load address 0x00002120
+.igot.plt       0x20000450        0x0 load address 0x00002130
  .igot.plt      0x20000450        0x0 c:/microsemi/softconsole_v5.1/arm-none-eabi-gcc/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7-m/crtbegin.o
 
-.bss            0x20000450      0x1b0 load address 0x00002120
+.bss            0x20000450      0x1b0 load address 0x00002130
                 0x20000450                __bss_start__ = .
                 0x20000450                _sbss = .
  *(.shbss)
@@ -1428,7 +1428,7 @@ END GROUP
                 0x20000600                _ebss = .
                 [!provide]                PROVIDE (end, .)
 
-.heap           0x20000600     0xea00 load address 0x00002120
+.heap           0x20000600     0xea00 load address 0x00002130
                 0x20000600                __heap_start__ = .
                 0x20001600                . = (. + MIN_SIZE_HEAP)
  *fill*         0x20000600     0x1000 
@@ -1436,7 +1436,7 @@ END GROUP
  *fill*         0x20001600     0xda00 
                 0x2000f000                _eheap = .
 
-.stack          0x2000f000     0x1000 load address 0x00002120
+.stack          0x2000f000     0x1000 load address 0x00002130
                 0x2000f000                __stack_start__ = .
                 0x20010000                . = (. + MAIN_STACK_SIZE)
  *fill*         0x2000f000     0x1000 
@@ -1502,7 +1502,7 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x114ab
+.debug_info     0x00000000    0x114ba
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000       0xc5 ./hal/CortexM3/GNU/hal.o
  .debug_info    0x000000c5       0xcf ./hal/CortexM3/GNU/hw_reg_access.o
@@ -1521,7 +1521,7 @@ END GROUP
  .debug_info    0x0000ddcf       0xd1 ./CMSIS/startup_gcc/startup_m2sxxx.o
  .debug_info    0x0000dea0      0xb70 ./CMSIS/system_m2sxxx.o
  .debug_info    0x0000ea10       0x21 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_info    0x0000ea31     0x2a7a ./main.o
+ .debug_info    0x0000ea31     0x2a89 ./main.o
 
 .debug_abbrev   0x00000000     0x25c4
  *(.debug_abbrev)
@@ -1544,7 +1544,7 @@ END GROUP
  .debug_abbrev  0x000021c1       0x13 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
  .debug_abbrev  0x000021d4      0x3f0 ./main.o
 
-.debug_line     0x00000000     0x54cc
+.debug_line     0x00000000     0x54cf
  *(.debug_line)
  .debug_line    0x00000000       0x4d ./hal/CortexM3/GNU/hal.o
  .debug_line    0x0000004d       0x8b ./hal/CortexM3/GNU/hw_reg_access.o
@@ -1563,7 +1563,7 @@ END GROUP
  .debug_line    0x0000493b      0x18e ./CMSIS/startup_gcc/startup_m2sxxx.o
  .debug_line    0x00004ac9      0x332 ./CMSIS/system_m2sxxx.o
  .debug_line    0x00004dfb       0x58 ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
- .debug_line    0x00004e53      0x679 ./main.o
+ .debug_line    0x00004e53      0x67c ./main.o
 
 .debug_frame    0x00000000     0x18bc
  *(.debug_frame)
@@ -1623,7 +1623,7 @@ END GROUP
  .debug_str     0x00016af7      0xb99 ./main.o
                                0xecc0 (size before relaxing)
 
-.debug_loc      0x00000000     0x77dc
+.debug_loc      0x00000000     0x77f3
  *(.debug_loc)
  .debug_loc     0x00000000      0xacd ./drivers/mss_sys_services/mss_comblk.o
  .debug_loc     0x00000acd     0x1b23 ./drivers/mss_sys_services/mss_sys_services.o
@@ -1636,7 +1636,7 @@ END GROUP
  .debug_loc     0x000067dd      0x9fe ./drivers/CoreGPIO/core_gpio.o
  .debug_loc     0x000071db      0x2c5 ./CMSIS/startup_gcc/newlib_stubs.o
  .debug_loc     0x000074a0       0xbe ./CMSIS/system_m2sxxx.o
- .debug_loc     0x0000755e      0x27e ./main.o
+ .debug_loc     0x0000755e      0x295 ./main.o
 
 .debug_macinfo
  *(.debug_macinfo)

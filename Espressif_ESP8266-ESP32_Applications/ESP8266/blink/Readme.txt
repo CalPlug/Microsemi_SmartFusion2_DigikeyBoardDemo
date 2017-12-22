@@ -1,0 +1,1 @@
+This is a generic example program to test communications with the connected Espressif board
