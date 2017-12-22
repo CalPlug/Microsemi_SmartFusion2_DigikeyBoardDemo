@@ -14,10 +14,10 @@ void setup()
 
  void a_task(void *pvParameter)
 {
-    printf("Hello world!\n");
+    printf("Hello world!\n");  //using STDIO to print via serial (equiv. to Serial.print())
     for (int i = 10; i >= 0; i--) {
         printf("Restarting in %d seconds...\n", i);
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        vTaskDelay(1000 / portTICK_RATE_MS);  //Delay via ticks in ESP32
     }
     printf("Restarting now.\n");
     fflush(stdout);
