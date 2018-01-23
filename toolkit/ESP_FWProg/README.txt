@@ -1,4 +1,4 @@
-This Firmware provides access to the programming features for the ESP8266 and ESP32.  The buttons on the board are now set with a timed sequence to allow programming of the ESP8266 and ESP32.
+This Firmware provides access to the programming features for the ESP8266 and ESP32.  The buttons on the board are now set with a timed sequence to allow programming of the ESP8266 and ESP32.  For the ESP32, either the Maker board's programming sequence is used (determined by jumper positions), or the Arduino IDE controlls the programming mode.  For the ESP8266, the Maker board mediates the ESP8266 entering the programming mode.
 
 Developed by Dr. Michael Klopfer (UC Irvine / Calit2)
 All original code is copyright of the regents of the University of California and released into the public domain.
