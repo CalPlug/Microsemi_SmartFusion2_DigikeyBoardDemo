@@ -13,25 +13,25 @@ Load the developed firmware to the SF2 Digikey board via FlashPro firmware up lo
 Usage:
 To Program the ESP8266:
 1) Plug in ESP8266 ESP01 Device
-2) Remove jumpers for J10 and J11 (this isolates the ESP32)
-3) Press Button 2
-4) Upload Code
-5) Press Button 1 (resets ESP8266), removed jumpers prevent ESP32 reset.
+2) Remove jumpers for J10 and J11 (this isolates the ESP32) - step required if the ESP32 is soldered on
+3) Press Button 2, wait aproximately 1/2 second.
+4) Upload Code in Arduino IDE (mind com port and programmer settings!)
+5) After upload is finished, press Button 1 (resets ESP8266), removed jumpers prevent ESP32 reset.
 (Note, where implemented in sample code the EEPROM for AP/client ESP8266 firmwares will be reset by an extended hold of GPIO2)  Be aware of this operation!
 
-To Program the ESP32 (Procedure 1):
+To Program the ESP32 (Procedure 1) - [Only used if the ESP32 is soldered on]:
 1) Remove ESP8266 module (This isolates this module from the programming mode)
 2) Remove jumpers for J10 and J11 to allow sequence to set GPIO2 to LOW. This first run sets GPIO2 low.  You can use this feature with jumpers back on to manualally override the auto program and reset functionality of the Arduino IDE
-3)Press Button 2
+3)Press Button 2, wait aproximately 1/2 second.
 2) Replace jumpers for J10 and J11 to permit default program mode whereby the Arduino IDE will allow the board to ener program mode and reset it afterwards.  These jumpers allow the Arduino IDE to control the program and reset modes after GPIO2 is set to 0.
-4) Upload Code
+4) Upload Code in Arduino IDE (mind com port and programmer settings!)
 5) Press Button 1 (resets ESP32) (optional in this procedure)
 6) Replace ESP8266 module if desired
 
-To Program the ESP32(Procedure 2: Alternate):
+To Program the ESP32(Procedure 2: Alternate) - [Only used if the ESP32 is soldered on]:
 1) Remove ESP8266 module (This isolates this module from the programming mode)
-2) Make sure jumpers for J10 and J11 are in place for positions 1-2.  This procedure disables the Arduino Auto program feature.
-3) Upload Code
+2) Make sure jumpers for J10 and J11 are in place for positions 1-2.  This procedure disables the Arduino Auto program feature and uses the capability of the SF2 programming firmware to control the ESP32 entering program mode.
+3) Upload Code in Arduino IDE (mind com port and programmer settings!)
 4) Press Button 1 (resets ESP32) (required in this procedure)
 
 
