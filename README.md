@@ -10,9 +10,7 @@ Project Advisors: Dr. Michael Klopfer and Prof. G.P. Li
 Dec 10, 2017 v. 1.0
 
 
-
-Project copyright of the Regents of the University of California and released into the bublic domain.  Project elements copyright of denoted authors and used fairly per licensing requirements.
-
+Project copyright of the Regents of the University of California and released into the public domain.  Project elements copyright of denoted authors and used fairly per licensing requirements.
 
 
 
