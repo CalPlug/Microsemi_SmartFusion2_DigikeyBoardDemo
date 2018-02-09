@@ -1,25 +1,110 @@
-12:29:41 **** Incremental Build of configuration Debug for project digikeyboard ****
+23:57:46 **** Build of configuration Debug for project digikeyboard ****
 make all 
+Building file: ../drivers_config/sys_config/sys_config.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers_config/sys_config/sys_config.d" -MT"drivers_config/sys_config/sys_config.o" -c -o "drivers_config/sys_config/sys_config.o" "../drivers_config/sys_config/sys_config.c"
+Finished building: ../drivers_config/sys_config/sys_config.c
+ 
+Building file: ../drivers/mss_sys_services/mss_comblk.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_sys_services/mss_comblk.d" -MT"drivers/mss_sys_services/mss_comblk.o" -c -o "drivers/mss_sys_services/mss_comblk.o" "../drivers/mss_sys_services/mss_comblk.c"
+Finished building: ../drivers/mss_sys_services/mss_comblk.c
+ 
+Building file: ../drivers/mss_sys_services/mss_sys_services.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_sys_services/mss_sys_services.d" -MT"drivers/mss_sys_services/mss_sys_services.o" -c -o "drivers/mss_sys_services/mss_sys_services.o" "../drivers/mss_sys_services/mss_sys_services.c"
+Finished building: ../drivers/mss_sys_services/mss_sys_services.c
+ 
+Building file: ../drivers/mss_spi/mss_spi.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_spi/mss_spi.d" -MT"drivers/mss_spi/mss_spi.o" -c -o "drivers/mss_spi/mss_spi.o" "../drivers/mss_spi/mss_spi.c"
+Finished building: ../drivers/mss_spi/mss_spi.c
+ 
+Building file: ../drivers/mss_rtc/mss_rtc.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_rtc/mss_rtc.d" -MT"drivers/mss_rtc/mss_rtc.o" -c -o "drivers/mss_rtc/mss_rtc.o" "../drivers/mss_rtc/mss_rtc.c"
+Finished building: ../drivers/mss_rtc/mss_rtc.c
+ 
+Building file: ../drivers/mss_nvm/mss_nvm.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_nvm/mss_nvm.d" -MT"drivers/mss_nvm/mss_nvm.o" -c -o "drivers/mss_nvm/mss_nvm.o" "../drivers/mss_nvm/mss_nvm.c"
+Finished building: ../drivers/mss_nvm/mss_nvm.c
+ 
+Building file: ../drivers/mss_hpdma/mss_hpdma.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/mss_hpdma/mss_hpdma.d" -MT"drivers/mss_hpdma/mss_hpdma.o" -c -o "drivers/mss_hpdma/mss_hpdma.o" "../drivers/mss_hpdma/mss_hpdma.c"
+Finished building: ../drivers/mss_hpdma/mss_hpdma.c
+ 
+Building file: ../drivers/CoreUARTapb/core_uart_apb.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CoreUARTapb/core_uart_apb.d" -MT"drivers/CoreUARTapb/core_uart_apb.o" -c -o "drivers/CoreUARTapb/core_uart_apb.o" "../drivers/CoreUARTapb/core_uart_apb.c"
+Finished building: ../drivers/CoreUARTapb/core_uart_apb.c
+ 
+Building file: ../drivers/CorePWM/core_pwm.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CorePWM/core_pwm.d" -MT"drivers/CorePWM/core_pwm.o" -c -o "drivers/CorePWM/core_pwm.o" "../drivers/CorePWM/core_pwm.c"
+Finished building: ../drivers/CorePWM/core_pwm.c
+ 
+Building file: ../drivers/CoreGPIO/core_gpio.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CoreGPIO/core_gpio.d" -MT"drivers/CoreGPIO/core_gpio.o" -c -o "drivers/CoreGPIO/core_gpio.o" "../drivers/CoreGPIO/core_gpio.c"
+Finished building: ../drivers/CoreGPIO/core_gpio.c
+ 
+Building file: ../CMSIS/system_m2sxxx.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"CMSIS/system_m2sxxx.d" -MT"CMSIS/system_m2sxxx.o" -c -o "CMSIS/system_m2sxxx.o" "../CMSIS/system_m2sxxx.c"
+Finished building: ../CMSIS/system_m2sxxx.c
+ 
 Building file: ../main.c
 Invoking: Cross ARM C Compiler
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:57:0: warning: "COREUARTAPB0_BASE_ADDR" redefined
+ #define COREUARTAPB0_BASE_ADDR 0x50002000
+ 
+In file included from ../main.c:9:0:
+../platform.h:34:0: note: this is the location of the previous definition
+ #define COREUARTAPB0_BASE_ADDR        0x50002000UL
+ 
+../main.c:80:0: warning: "COREPWM_BASE_ADDR" redefined
+ #define COREPWM_BASE_ADDR 0x50000000
+ 
+In file included from ../main.c:9:0:
+../platform.h:16:0: note: this is the location of the previous definition
+ #define COREPWM_BASE_ADDR      0x50000000UL
+ 
 Finished building: ../main.c
+ 
+Building file: ../src/demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -c -o "src/demo.o" "../src/demo.c"
+Finished building: ../src/demo.c
+ 
+Building file: ../drivers/CoreSPI/core_spi.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CoreSPI/core_spi.d" -MT"drivers/CoreSPI/core_spi.o" -c -o "drivers/CoreSPI/core_spi.o" "../drivers/CoreSPI/core_spi.c"
+Finished building: ../drivers/CoreSPI/core_spi.c
+ 
+Building file: ../drivers/CoreI2C/core_i2c.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CoreI2C/core_i2c.d" -MT"drivers/CoreI2C/core_i2c.o" -c -o "drivers/CoreI2C/core_i2c.o" "../drivers/CoreI2C/core_i2c.c"
+Finished building: ../drivers/CoreI2C/core_i2c.c
+ 
+Building file: ../drivers/CoreI2C/i2c_interrupt.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I../drivers_config/sys_config -I../CMSIS -I../hal/CortexM3/GNU -I../hal/CortexM3 -I.. -I../hal -I../drivers/CoreGPIO -std=gnu11 --specs=cmsis.specs -MMD -MP -MF"drivers/CoreI2C/i2c_interrupt.d" -MT"drivers/CoreI2C/i2c_interrupt.o" -c -o "drivers/CoreI2C/i2c_interrupt.o" "../drivers/CoreI2C/i2c_interrupt.c"
+Finished building: ../drivers/CoreI2C/i2c_interrupt.c
  
 Building target: digikeyboard.elf
 Invoking: Cross ARM C Linker
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"digikeyboard.map" --specs=rdimon.specs -o "digikeyboard.elf"  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_spi/mss_spi.o  ./drivers/mss_rtc/mss_rtc.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CorePWM/core_pwm.o  ./drivers/CoreGPIO/core_gpio.o  ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
-Finished building target: digikeyboard.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "digikeyboard.elf"  "digikeyboard.hex"
-Finished building: digikeyboard.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "digikeyboard.elf"
-   text	   data	    bss	    dec	    hex	filename
-  23736	   2528	  39264	  65528	   fff8	digikeyboard.elf
-Finished building: digikeyboard.siz
- 
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T ../CMSIS/startup_gcc/debug-in-microsemi-smartfusion2-esram.ld -Xlinker --gc-sections -Wl,-Map,"digikeyboard.map" --specs=rdimon.specs -o "digikeyboard.elf"  ./src/demo.o  ./hal/CortexM3/GNU/hal.o ./hal/CortexM3/GNU/hw_reg_access.o  ./hal/CortexM3/cortex_nvic.o  ./drivers_config/sys_config/sys_config.o  ./drivers/mss_sys_services/mss_comblk.o ./drivers/mss_sys_services/mss_sys_services.o  ./drivers/mss_spi/mss_spi.o  ./drivers/mss_rtc/mss_rtc.o  ./drivers/mss_nvm/mss_nvm.o  ./drivers/mss_hpdma/mss_hpdma.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CoreSPI/core_spi.o  ./drivers/CorePWM/core_pwm.o  ./drivers/CoreI2C/core_i2c.o ./drivers/CoreI2C/i2c_interrupt.o  ./drivers/CoreGPIO/core_gpio.o  ./CMSIS/startup_gcc/startup_m2sxxx.o  ./CMSIS/system_m2sxxx.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+./main.o: In function `main':
+C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\digikeyboard\Debug/../main.c:150: undefined reference to `MCP3903ResetOSR'
+C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\digikeyboard\Debug/../main.c:151: undefined reference to `MCP3903SetGain'
+./main.o: In function `Timer1_IRQHandler':
+C:\Users\Mike Klopfer\Documents\GitHub\Microsemi_SmartFusion2_FutureCreativeBoard_BaseDesign\FCBBaseDesign\SoftConsole\digikeyboard\Debug/../main.c:268: undefined reference to `MCP3903ReadADC'
+collect2.exe: error: ld returned 1 exit status
+makefile:58: recipe for target 'digikeyboard.elf' failed
+make: *** [digikeyboard.elf] Error 1
 
-12:29:47 Build Finished (took 6s.114ms)
+23:58:22 Build Finished (took 35s.966ms)
 
