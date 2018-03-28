@@ -68,7 +68,7 @@ int rst = 0; //reset tracker
 //Note:  Issues with attach interrupt may exist, consider using static void ICACHE_RAM_ATTR EEPROMReset()
 //General and EEPROM Reset Fucntionality, called via interrupt, when this is called, this freezes everything and will exit will cause reset in some form or another
 //note: this function has no real effect until the EEPROM is set, setting an EEPROM that is already reset does nothing
-//Also, this code uses an EEPROM array, here is an alternative approach using JSON:  https://forum.arduino.cc/index.php?topic=527374.0 and https://randomnerdtutorials.com/wifimanager-with-esp8266-autoconnect-custom-parameter-and-manage-your-ssid-and-password/
+//Also, this code uses an EEPROM array, here is an alternative approach using JSON:  https://forum.arduino.cc/index.php?topic=527374.0 and https://randomnerdtutorials.com/wifimanager-with-esp8266-autoconnect-custom-parameter-and-manage-your-ssid-and-password/ and https://github.com/zhouhan0126/WIFIMANAGER-ESP32/blob/master/examples/AutoConnectWithFSParameters/AutoConnectWithFSParameters.ino
 
 void EEPROMReset()  
   {
@@ -242,6 +242,7 @@ void configModeCallback (WiFiManager *myWiFiManager) {
   // print the ssid that we should connect to to configure the ESP32
   Serial.print("Created config portal AP ");
   Serial.println(myWiFiManager->getConfigPortalSSID());
+  //more info on the captive portal:  https://diyprojects.io/wifimanager-library-easily-manage-wi-fi-connection-projects-esp8266/#.WrviTYj4_cs
 }
 
 
