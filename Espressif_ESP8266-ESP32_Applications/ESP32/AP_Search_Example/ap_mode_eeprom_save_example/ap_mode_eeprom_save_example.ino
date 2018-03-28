@@ -4,17 +4,17 @@
 
 //this is a quick demo of functionality - it does not include structure within the RTOS framework!!
 
-//ESP32 example Wifi Connectivi
-#include <WiFi.h>
-#include <EEPROM.h>  ////handles save and read with EEPROM on ESP32, use ESP32 version included with default Arduino core for ESP32
-#include <WiFiManager.h>
+//ESP32 example Wifi Connectivity
 #include <Button.h> //Debounce functionality, library tested on ESP8266, functional on ESP32
-#include <DNSServer.h> //used to handle the captive portal functionality (functional alone) if implemented (https://github.com/zhouhan0126/DNSServer---esp32)
+#include <WiFi.h> //Default ESP32 Arduino Wifi Library
+#include <EEPROM.h>  ////handles save and read with EEPROM on ESP32, use ESP32 version included with default Arduino core for ESP32
+#include <WiFiManager.h> //Updated ESP32 WifiManager!  Use the version included with this code!
 #include <WiFiClient.h>
-#include <WebServer.h> //Modified for the ESP32 (https://github.com/bbx10/WebServer_tng)
+#include <DNSServer.h> //used to handle the captive portal functionality (functional alone) if implemented (https://github.com/zhouhan0126/DNSServer---esp32)
 #include <ESPmDNS.h>
 
 //Simple Setup to serve data on HTTP when requested on port 80
+#include <WebServer.h> //Modified for the ESP32 (https://github.com/bbx10/WebServer_tng)
 //WiFiServer server(80);
 
 //Watchdog Timer for ESP32 in Arduino
@@ -240,7 +240,7 @@ void configModeCallback (WiFiManager *myWiFiManager) {
   Serial.println("Entered config mode");
   Serial.println(WiFi.softAPIP());
   // print the ssid that we should connect to to configure the ESP32
-  Serial.print("Created config portal AP ");
+  Serial.print("Created config portal AP named:  ");
   Serial.println(myWiFiManager->getConfigPortalSSID());
   //more info on the captive portal:  https://diyprojects.io/wifimanager-library-easily-manage-wi-fi-connection-projects-esp8266/#.WrviTYj4_cs
 }
@@ -295,17 +295,18 @@ void setup_wifi()
         Serial.print(" (");
         Serial.print(WiFi.RSSI(i));
         Serial.print(")");
-        Serial.println((WiFi.encryptionType(i) == 7 )?" ":"*"); //ENC_TYPE_NONE is assumed to be a byte = 7 Note:  TKIP (WPA) = 2, WEP = 5, CCMP (WPA) = 4, NONE = 7, AUTO = 8
+        Serial.println((WiFi.encryptionType(i) == WIFI_AUTH_OPEN )?" ":"*"); //ENC_TYPE_NONE is for ESP8266 and is assumed to be a byte = 7? Note:  TKIP (WPA) = 2, WEP = 5, CCMP (WPA) = 4, NONE = 7, AUTO = 8
         delay(10);
        }
     }
   Serial.println("");
   wifiManager.setAPCallback(configModeCallback);  //fetches ssid and pass and tries to connect
-  //wifiManager.setTimeout(180); //Timeout for WiFi Manager - this sets the max time the WiFi Manager will stay active
+  wifiManager.setTimeout(60); //Timeout for WiFi Manager - this sets the max time the WiFi Manager will stay active - remember, the WiFi manager only runs when the EEPROM data is invalid or does not allow a connection, usually first run, and will be active until a tested conenction is OK then it will cache these
   //wifiManager.setBreakAfterConfig(true);  //exit after config instead of connecting, for testing
   //wifiManager.resetSettings();  //reset settings - for testing
-  //wifiUpdate(0); //This is a test that can be turned on to force the update script.  Only uncomment in testing
+  //wifiManager.wifiUpdate(0); //This is a test that can be turned on to force the update script to save credentials for testing.  Only uncomment in testing, function may be depricated
   //wifiManager.resetSettings();   //reset settings - for testing
+  //wifiManager.setMinimumSignalQuality();
   
   Serial.println("Setting up Wifi");
     if (!wifiManager.autoConnect("DemoESP32","")) //credentials for SSID in AP mode (NOTE: to set custom ip for portal, an example is shown: wifiManager.setAPConfig(IPAddress(10,0,1,1), IPAddress(10,0,1,1), IPAddress(255,255,255,0)))
@@ -352,7 +353,7 @@ void loop()
       */
  
   if(WiFi.status() == WL_CONNECTED)
-    {
+    {   
     /*
     //code in this block will run only if connected
       WiFiClient client = server.available();   // Listen for incoming clients (see this example on simple HTTP servers: https://randomnerdtutorials.com/wifimanager-with-esp8266-autoconnect-custom-parameter-and-manage-your-ssid-and-password/)
@@ -368,6 +369,10 @@ void loop()
      //print the local IP address
     ip = WiFi.localIP();
     Serial.println(ip);
+    Serial.printf(" with MAC address: %s\n", WiFi.macAddress().c_str());
+    Serial.printf(" with BSSID: %s\n", WiFi.BSSIDstr().c_str());
+    Serial.printf(" with a RSSI (signal) of: %d dBm\n", WiFi.RSSI());
+    
     }
     delay (1000); //this is just temporary to slow down the loop in testing
   }
