@@ -1,6 +1,8 @@
 How to use AP mode
 =====
 
+By Paolo Caraos
+
 *NOTE: EEPROM must first be initialized with the program initEEPROM.ino* You must 
 first upload this program to initialize the values in the EEPROM. These values are
 necessary for the AP mode control flow to work.

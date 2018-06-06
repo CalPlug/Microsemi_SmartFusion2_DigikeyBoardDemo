@@ -1,13 +1,23 @@
 How to use AP mode
 =====
 
+By Paolo Caraos, Justin Le
+
 *NOTE: EEPROM must first be initialized with the program initEEPROM.ino* You must 
 first upload this program to initialize the values in the EEPROM. These values are
 necessary for the AP mode control flow to work.
 
 The purpose of this AP mode script is to provide the control flow for saving
 credentials obtained via WiFiManager library to the EEPROM, since the WiFiManager
-library does not provide that feature. There are 3 key functions in this control flow.
+library does not provide that feature.
+
+### Control Flow
+The control flow is shown in controlflow.png. Hard reset is by default coded to
+be triggered by holding the button for a certain period. Holding the button for
+less than the required period will trigger the soft reset.
+
+### Functions
+There are 3 key functions in this control flow.
 
 * APModeSetup() is used to setup the ap configuration portal that will
 gather WiFi and MQTT credentials. In the standard arduino program, this 
