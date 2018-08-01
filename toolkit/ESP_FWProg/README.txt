@@ -4,7 +4,8 @@ Developed by Dr. Michael Klopfer (UC Irvine / Calit2)
 All original code is copyright of the regents of the University of California and released into the public domain.
 
 
-NOTE: The on-board FTDI must be programmed so that Port B and Port C are presented as virtual com ports to the connected computer.  In programming, the lower com port is directly connected to the ESP32, the higher com port is connected via pin mapping in the SF2 to the ESP8266.  The Enable and reset functions are implemented in this firmware using the buttons on the demoboard.
+NOTE: The on-board FTDI must be programmed so that Port B and Port C are presented as virtual com ports to the connected computer - this is done using the FTDI Tool.  
+A specific firmware is used to provide the capability to flash the ESP32 and ESP8266 onboard this device py providing signal passthrough and reboot/program mode actuation for these chipsets.  The Enable and reset functions are implemented in this firmware using the buttons on the demoboard.  This firmware should onl be used when programming, it provides no other function.  When programming the ESP devices, two com ports will appear on your system (provided the FTDI is configured properly) - the lower com port is directly connected to the ESP32, the higher com port is connected via pin mapping in the SF2 to the ESP8266.  
 
 Programming instructions:
 
